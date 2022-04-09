@@ -18,3 +18,15 @@ dotnet_style_qualification_for_field = false:warning
 dotnet_style_qualification_for_method = false:warning
 dotnet_style_qualification_for_property = false:warning
 ```
+
+### General | Predefined type preferences
+| Description                         | Preference             | Severity   |
+| :---------------------------------- | :--------------------- | :--------: |
+| For locals, parameters, and members | Prefer predefined type | ⚠ Warning |
+| For member access expressions       | Prefer predefined type | ⚠ Warning |
+
+``` EditorConfig
+dotnet_style_predefined_type_for_locals_parameters_members = true:warning
+dotnet_style_predefined_type_for_member_access = true:warning
+```
+
