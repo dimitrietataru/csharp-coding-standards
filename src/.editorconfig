@@ -23,3 +23,13 @@ tab_width = 4
 indent_size = 2
 indent_style = space
 tab_width = 2
+
+
+## CSharp ##
+[*.cs]
+
+# Code Style | General | 'this.' preferences
+dotnet_style_qualification_for_event = false:warning
+dotnet_style_qualification_for_field = false:error
+dotnet_style_qualification_for_method = false:error
+dotnet_style_qualification_for_property = false:warning
