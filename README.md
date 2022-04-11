@@ -146,7 +146,7 @@ csharp_style_unused_value_expression_statement_preference = discard_variable:sug
 
 ### Code Style | General | Expression-bodied members
 | Description                             | Preference    | Severity      |
-| :-------------------------------------- | :-------------| :-----------: |
+| :-------------------------------------- | :------------ | :-----------: |
 | Use expression body for methods         | Never         | 🞅 Refactoring |
 | Use expression body for constructors    | Never         | 🞅 Refactoring |
 | Use expression body for operators       | Never         | 🞅 Refactoring |
@@ -171,3 +171,24 @@ csharp_style_expression_bodied_local_functions = false:suggestion
 ```
 
 </details>
+
+### Code Style | General | Pattern matching preferences
+| Description                                         | Preference | Severity      |
+| :-------------------------------------------------- | :--------- | :-----------: |
+| Prefer pattern matching                             | Yes        | 🛈 Suggestion  |
+| Prefer pattern matching over _is_ with _cast_ check | Yes        | ⚠ Warning    |
+| Prefer pattern matching over _as_ with _null_ check | Yes        | ⚠ Warning    |
+| Prefer pattern matching over mixed type check       | Yes        | 🛈 Suggestion  |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+csharp_style_prefer_pattern_matching = true:suggestion
+csharp_style_pattern_matching_over_is_with_cast_check = true:warning
+csharp_style_pattern_matching_over_as_with_null_check = true:warning
+csharp_style_prefer_not_pattern = true:suggestion
+```
+
+</details>
+
