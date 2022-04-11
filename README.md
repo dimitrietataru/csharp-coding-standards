@@ -76,3 +76,24 @@ dotnet_style_prefer_auto_properties = true:silent
 ```
 
 </details>
+
+### Code Style | General | Parentheses preferences
+| Description                                                    | Preference           | Severity      |
+| :------------------------------------------------------------- | :------------------- | :-----------: |
+| In arithmetic operators: _*_ _/_ _%_ _+_ _-_ _<<_ _>>_ _&_ _^_ | Always for clarity   | 🛈 Suggestion  |
+| In other binary operators: _&&_ _??_ _and_ _or_                | Always for clarity   | 🛈 Suggestion  |
+| In relational operators: _<_ _>_ _<=_ _>=_ _is_ _as_ _==_ _!=_ | Always for clarity   | 🛈 Suggestion  |
+| In other operators                                             | Never if unnecessary | ⚠ Warning    |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:suggestion
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:suggestion
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:suggestion
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary:warning
+```
+
+</details>
+
