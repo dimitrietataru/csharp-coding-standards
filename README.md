@@ -97,3 +97,77 @@ dotnet_style_parentheses_in_other_operators = never_if_unnecessary:warning
 
 </details>
 
+### Code Style | General | Expression preferences
+| Description                                              | Preference | Severity      |
+| :------------------------------------------------------- | :--------- | :-----------: |
+| Prefer object initializer                                | Yes        | 🛈 Suggestion  |
+| Prefer collection initializer                            | Yes        | 🛈 Suggestion  |
+| Prefer simplified boolean expressions                    | Yes        | ⚠ Warning    |
+| Prefer switch expression                                 | Yes        | 🛈 Suggestion  |
+| Prefer conditional expression over _if_ with assignments | Yes        | 🞅 Refactoring |
+| Prefer conditional expression over _if_ with returns     | No         | 🞅 Refactoring |
+| Prefer explicit tuple name                               | Yes        | 🛈 Suggestion  |
+| Prefer simple 'default' expression                       | Yes        | ⚠ Warning    |
+| Prefer inferred tuple element names                      | No         | 🛈 Suggestion  |
+| Prefer inferred anonymous type member names              | Yes        | 🞅 Refactoring |
+| Prefer local function over anonymous function            | Yes        | ⚠ Warning    |
+| Prefer compound assignments                              | Yes        | ⚠ Warning    |
+| Prefer implicit object creation when type is aparent     | Yes        | 🛈 Suggestion  |
+| Prefer index operator                                    | Yes        | 🛈 Suggestion  |
+| Prefer range operator                                    | Yes        | 🛈 Suggestion  |
+| Avoid unused value assignments                           | Discard    | 🛈 Suggestion  |
+| Avoid expression statements that implicitly ignore value | Discard    | 🛈 Suggestion  |
+| Use expression body for methods                          | Never      | 🞅 Refactoring |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_prefer_simplified_boolean_expressions = true:warning
+csharp_style_prefer_switch_expression = true:suggestion
+dotnet_style_prefer_conditional_expression_over_assignment = true:silent
+dotnet_style_prefer_conditional_expression_over_return = false:silent
+dotnet_style_explicit_tuple_names = true:suggestion
+csharp_prefer_simple_default_expression = true:warning
+dotnet_style_prefer_inferred_tuple_names = false:suggestion
+dotnet_style_prefer_inferred_anonymous_type_member_names = false:suggestion
+csharp_style_pattern_local_over_anonymous_function = true:warning
+dotnet_style_prefer_compound_assignment = true:warning
+csharp_style_implicit_object_creation_when_type_is_apparent = true:suggestion
+csharp_style_prefer_index_operator = true:suggestion
+csharp_style_prefer_range_operator = true:suggestion
+csharp_style_unused_value_assignment_preference = discard_variable:suggestion
+csharp_style_unused_value_expression_statement_preference = discard_variable:suggestion
+```
+
+</details>
+
+### Code Style | General | Expression-bodied members
+| Description                             | Preference    | Severity      |
+| :-------------------------------------- | :-------------| :-----------: |
+| Use expression body for methods         | Never         | 🞅 Refactoring |
+| Use expression body for constructors    | Never         | 🞅 Refactoring |
+| Use expression body for operators       | Never         | 🞅 Refactoring |
+| Use expression body for properties      | When possible | 🛈 Suggestion  |
+| Use expression body for indexers        | When possible | 🛈 Suggestion  |
+| Use expression body for accessors       | When possible | 🛈 Suggestion  |
+| Use expression body for lambdas         | Never         | 🛈 Suggestion  |
+| Use expression body for local functions | Never         | 🛈 Suggestion  |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+csharp_style_expression_bodied_methods = false:silent
+csharp_style_expression_bodied_constructors = false:silent
+csharp_style_expression_bodied_operators = false:silent
+csharp_style_expression_bodied_properties = true:suggestion
+csharp_style_expression_bodied_indexers = true:suggestion
+csharp_style_expression_bodied_accessors = true:suggestion
+csharp_style_expression_bodied_lambdas = false:suggestion
+csharp_style_expression_bodied_local_functions = false:suggestion
+```
+
+</details>
