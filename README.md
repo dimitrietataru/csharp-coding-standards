@@ -12,6 +12,9 @@ An opinionated C# .editorconfig
 | Qualify method access with _this._   | Do not prefer _this_ | ⚠ Warning |
 | Qualify event access with _this._    | Do not prefer _this_ | ⚠ Warning |
 
+<details>
+  <summary> .editorconfig </summary>
+
 ``` EditorConfig
 dotnet_style_qualification_for_event = false:warning
 dotnet_style_qualification_for_field = false:warning
@@ -19,16 +22,23 @@ dotnet_style_qualification_for_method = false:warning
 dotnet_style_qualification_for_property = false:warning
 ```
 
+</details>
+
 ### Code Style | General | Predefined type preferences
 | Description                         | Preference             | Severity   |
 | :---------------------------------- | :--------------------- | :--------: |
 | For locals, parameters, and members | Prefer predefined type | ⚠ Warning |
 | For member access expressions       | Prefer predefined type | ⚠ Warning |
 
+<details>
+  <summary> .editorconfig </summary>
+
 ``` EditorConfig
 dotnet_style_predefined_type_for_locals_parameters_members = true:warning
 dotnet_style_predefined_type_for_member_access = true:warning
 ```
+
+</details>
 
 ### Code Style | General | _var_ preferences
 | Description                    | Preference           | Severity     |
@@ -37,9 +47,32 @@ dotnet_style_predefined_type_for_member_access = true:warning
 | When variable type is apparent | Prefer _var_         | 🛈 Suggestion |
 | Elsewhere                      | Prefer _var_         | 🛈 Suggestion |
 
+<details>
+  <summary> .editorconfig </summary>
+
 ``` EditorConfig
 csharp_style_var_elsewhere = true:suggestion
 csharp_style_var_for_built_in_types = false:suggestion
 csharp_style_var_when_type_is_apparent = true:suggestion
 ```
 
+</details>
+
+### Code Style | General | Code block preferences
+| Description                               | Preference | Severity      |
+| :---------------------------------------- | :--------- | :-----------: |
+| Prefer braces                             | Yes        | ⚠ Warning    |
+| Prefer auto properties                    | Yes        | 🞅 Refactoring |
+| Prefer simple _using_ statement           | Yes        | 🛈 Suggestion  |
+| Prefer _System.HashCode_ in 'GetHashCode' | Yes        | 🛈 Suggestion  |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+csharp_prefer_braces = true:warning
+csharp_prefer_simple_using_statement = true:suggestion
+dotnet_style_prefer_auto_properties = true:silent
+```
+
+</details>
