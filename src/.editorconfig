@@ -105,3 +105,10 @@ csharp_prefer_static_local_function = true:warning
 
 # Code Style | General | Parameter preferences
 dotnet_code_quality_unused_parameters = non_public:warning
+
+# Code Style | General | New line preferences
+dotnet_style_allow_multiple_blank_lines_experimental = false:warning
+csharp_style_allow_embedded_statements_on_same_line_experimental = false:warning
+csharp_style_allow_blank_lines_between_consecutive_braces_experimental = false:warning
+dotnet_style_allow_statement_immediately_after_block_experimental = false:warning
+csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimental = false:warning

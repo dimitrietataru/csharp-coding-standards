@@ -256,3 +256,27 @@ csharp_prefer_static_local_function = true:warning
 ``` EditorConfig
 dotnet_code_quality_unused_parameters = non_public:warning
 ```
+
+</details>
+
+### Code Style | General | New line preferences
+| Description                                             | Preference | Severity   |
+| :------------------------------------------------------ | :--------- | :--------: |
+| Allow multiple blank lines                              | No         | ⚠ Warning |
+| Allow embeded statements on same line                   | No         | ⚠ Warning |
+| Allow blank lines between consecutive braces            | No         | ⚠ Warning |
+| Allow statement immediately after block                 | No         | ⚠ Warning |
+| Allow blank line after colon in constructor initializer | No         | ⚠ Warning |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+dotnet_style_allow_multiple_blank_lines_experimental = false:warning
+csharp_style_allow_embedded_statements_on_same_line_experimental = false:warning
+csharp_style_allow_blank_lines_between_consecutive_braces_experimental = false:warning
+dotnet_style_allow_statement_immediately_after_block_experimental = false:warning
+csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimental = false:warning
+```
+
+</details>
