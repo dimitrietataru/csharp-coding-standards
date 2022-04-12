@@ -95,3 +95,6 @@ csharp_style_conditional_delegate_call = true:suggestion
 dotnet_style_coalesce_expression = true:warning
 dotnet_style_null_propagation = true:warning
 dotnet_style_prefer_is_null_check_over_reference_equality_method = true:warning
+
+# Code Style | General | 'using' preferences
+csharp_using_directive_placement = outside_namespace:error

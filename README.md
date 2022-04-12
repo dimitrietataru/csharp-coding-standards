@@ -198,8 +198,8 @@ csharp_style_prefer_not_pattern = true:suggestion
 | Prefer throw-expression                        | Yes        | 🛈 Suggestion  |
 | Prefer conditional delegate call               | Yes        | 🛈 Suggestion  |
 | Prefer throw-expression                        | Yes        | 🛈 Suggestion  |
-| Prefer coalesce expression                     | Yes        | 🛈 Suggestion  |
-| Prefer null propagation                        | Yes        | 🛈 Suggestion  |
+| Prefer coalesce expression                     | Yes        | ⚠ Warning    |
+| Prefer null propagation                        | Yes        | ⚠ Warning    |
 | Prefer _is null_ for reference equality checks | Yes        | ⚠ Warning    |
 
 <details>
@@ -211,6 +211,20 @@ csharp_style_conditional_delegate_call = true:suggestion
 dotnet_style_coalesce_expression = true:warning
 dotnet_style_null_propagation = true:warning
 dotnet_style_prefer_is_null_check_over_reference_equality_method = true:warning
+```
+
+</details>
+
+### Code Style | General | _using_ preferences
+| Description                           | Preference        | Severity |
+| :------------------------------------ | :---------------- | :------: |
+| Preferred _using_ directive placement | Outside namespace | ⛔ Error |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+csharp_using_directive_placement = outside_namespace:error
 ```
 
 </details>
