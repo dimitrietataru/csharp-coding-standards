@@ -244,3 +244,15 @@ csharp_prefer_static_local_function = true:warning
 ```
 
 </details>
+
+### Code Style | General | Parameter preferences
+| Description             | Preference         | Severity   |
+| :---------------------- | :----------------- | :--------: |
+| Avoid unused parameters | Non-public methods | ⚠ Warning |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+dotnet_code_quality_unused_parameters = non_public:warning
+```
