@@ -192,3 +192,25 @@ csharp_style_prefer_not_pattern = true:suggestion
 
 </details>
 
+### Code Style | General | _null_ checking
+| Description                                    | Preference | Severity      |
+| :--------------------------------------------- | :--------- | :-----------: |
+| Prefer throw-expression                        | Yes        | 🛈 Suggestion  |
+| Prefer conditional delegate call               | Yes        | 🛈 Suggestion  |
+| Prefer throw-expression                        | Yes        | 🛈 Suggestion  |
+| Prefer coalesce expression                     | Yes        | 🛈 Suggestion  |
+| Prefer null propagation                        | Yes        | 🛈 Suggestion  |
+| Prefer _is null_ for reference equality checks | Yes        | ⚠ Warning    |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+csharp_style_throw_expression = true:suggestion
+csharp_style_conditional_delegate_call = true:suggestion
+dotnet_style_coalesce_expression = true:warning
+dotnet_style_null_propagation = true:warning
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:warning
+```
+
+</details>
