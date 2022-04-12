@@ -228,3 +228,19 @@ csharp_using_directive_placement = outside_namespace:error
 ```
 
 </details>
+
+### Code Style | General | Modifier preferences
+| Description                   | Preference | Severity   |
+| :---------------------------- | :--------- | :--------: |
+| Prefer readonly fields        | Yes        | ⚠ Warning |
+| Prefer static local functions | Yes        | ⚠ Warning |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+dotnet_style_readonly_field = true:warning
+csharp_prefer_static_local_function = true:warning
+```
+
+</details>

@@ -98,3 +98,7 @@ dotnet_style_prefer_is_null_check_over_reference_equality_method = true:warning
 
 # Code Style | General | 'using' preferences
 csharp_using_directive_placement = outside_namespace:error
+
+# Code Style | General | Modifier preferences
+dotnet_style_readonly_field = true:warning
+csharp_prefer_static_local_function = true:warning
