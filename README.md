@@ -1,6 +1,23 @@
 # csharp-coding-standards
 An opinionated C# .editorconfig
 
+## Table of contents
+* [Visual Studio options](#visual-studio-options)
+  * General
+    * [this. preferences](#code-style--general--this-preferences)
+    * [Predefined type preferences](#code-style--general--predefined-type-preferences)
+    * [var preferences](#code-style--general--var-preferences)
+    * [Code block preferences](#code-style--general--code-block-preferences)
+    * [Parentheses preferences](#code-style--general--parentheses-preferences)
+    * [Expression preferences](#code-style--general--expression-preferences)
+    * [Expression-bodied members](#code-style--general--expression-bodied-members)
+    * [Pattern matching preferences](#code-style--general--pattern-matching-preferences)
+    * [null checking](#code-style--general--null-checking)
+    * [using preferences](#code-style--general--using-preferences)
+    * [Modifier preferences](#code-style--general--modifier-preferences)
+    * [Parameter preferences](#code-style--general--parameter-preferences)
+    * [New line preferences](#code-style--general--new-line-preferences)
+
 ## Visual Studio options
 
 ### Code Style | General | _this._ preferences
