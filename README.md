@@ -297,3 +297,22 @@ csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimenta
 ```
 
 </details>
+
+### Code Style | Formatting | General
+| Description _________________________________________________________ | Value |
+| :-------------------------------------------------------------------- | :---: |
+| Automatically format when typing                                      |   🗹   |
+| Automatically format statement on _;_                                 |   🗹   |
+| Automatically format block on _}_                                     |   🗹   |
+| Automatically format on return                                        |   🗹   |
+| Automatically format on paste                                         |   🗹   |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+# Configurable at VS level
+```
+
+</details>
+
