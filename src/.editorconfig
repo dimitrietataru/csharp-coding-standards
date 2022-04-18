@@ -171,3 +171,7 @@ csharp_space_after_semicolon_in_for_statement = true
 
 # Code Style | Formatting | Spacing | Set spacing for operators
 csharp_space_around_binary_operators = before_and_after
+
+# Code Style | Formatting | Wrapping
+csharp_preserve_single_line_blocks = true
+csharp_preserve_single_line_statements = false

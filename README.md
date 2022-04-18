@@ -532,3 +532,18 @@ csharp_space_around_binary_operators = before_and_after
 
 </details>
 
+### Code Style | Formatting | Wrapping
+| Description _________________________________________________________________________ | Value |
+| :------------------------------------------------------------------------------------ | :---: |
+| Leave block on single line                                                            |   🗹   |
+| Leave statements and member declarations on the same line                             |   ☐   |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+csharp_preserve_single_line_blocks = true
+csharp_preserve_single_line_statements = false
+```
+
+</details>
