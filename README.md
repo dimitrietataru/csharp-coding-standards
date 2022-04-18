@@ -5,12 +5,12 @@ An opinionated C# .editorconfig
 
 ### Code Style | General | _this._ preferences
 
-| Description                          | Preference           | Severity   |
-| :----------------------------------- | :------------------- | :--------: |
-| Qualify field access with _this._    | Do not prefer _this_ | ⚠ Warning |
-| Qualify property access with _this._ | Do not prefer _this_ | ⚠ Warning |
-| Qualify method access with _this._   | Do not prefer _this_ | ⚠ Warning |
-| Qualify event access with _this._    | Do not prefer _this_ | ⚠ Warning |
+| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
+| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
+| Qualify field access with _this._                                     | Do not prefer _this_      | ⚠ Warning    |
+| Qualify property access with _this._                                  | Do not prefer _this_      | ⚠ Warning    |
+| Qualify method access with _this._                                    | Do not prefer _this_      | ⚠ Warning    |
+| Qualify event access with _this._                                     | Do not prefer _this_      | ⚠ Warning    |
 
 <details>
   <summary> .editorconfig </summary>
@@ -25,9 +25,9 @@ dotnet_style_qualification_for_property = false:warning
 </details>
 
 ### Code Style | General | Predefined type preferences
-| Description                         | Preference             | Severity   |
-| :---------------------------------- | :--------------------- | :--------: |
-| For locals, parameters, and members | Prefer predefined type | ⚠ Warning |
+| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
+| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
+| For locals, parameters, and members                                   | Prefer predefined type    | ⚠ Warning    |
 | For member access expressions       | Prefer predefined type | ⚠ Warning |
 
 <details>
@@ -41,11 +41,11 @@ dotnet_style_predefined_type_for_member_access = true:warning
 </details>
 
 ### Code Style | General | _var_ preferences
-| Description                    | Preference           | Severity     |
-| :----------------------------- | :------------------- | :----------: |
-| For built-in types             | Prefer explicit type | 🛈 Suggestion |
-| When variable type is apparent | Prefer _var_         | 🛈 Suggestion |
-| Elsewhere                      | Prefer _var_         | 🛈 Suggestion |
+| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
+| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
+| For built-in types                                                    | Prefer explicit type      | 🛈 Suggestion  |
+| When variable type is apparent                                        | Prefer _var_              | 🛈 Suggestion  |
+| Elsewhere                                                             | Prefer _var_              | 🛈 Suggestion  |
 
 <details>
   <summary> .editorconfig </summary>
@@ -59,12 +59,12 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 </details>
 
 ### Code Style | General | Code block preferences
-| Description                               | Preference | Severity      |
-| :---------------------------------------- | :--------- | :-----------: |
-| Prefer braces                             | Yes        | ⚠ Warning    |
-| Prefer auto properties                    | Yes        | 🞅 Refactoring |
-| Prefer simple _using_ statement           | Yes        | 🛈 Suggestion  |
-| Prefer _System.HashCode_ in 'GetHashCode' | Yes        | 🛈 Suggestion  |
+| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
+| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
+| Prefer braces                                                         | Yes                       | ⚠ Warning    |
+| Prefer auto properties                                                | Yes                       | 🞅 Refactoring |
+| Prefer simple _using_ statement                                       | Yes                       | 🛈 Suggestion  |
+| Prefer _System.HashCode_ in 'GetHashCode'                             | Yes                       | 🛈 Suggestion  |
 
 <details>
   <summary> .editorconfig </summary>
@@ -78,12 +78,12 @@ dotnet_style_prefer_auto_properties = true:silent
 </details>
 
 ### Code Style | General | Parentheses preferences
-| Description                                                    | Preference           | Severity      |
-| :------------------------------------------------------------- | :------------------- | :-----------: |
-| In arithmetic operators: _*_ _/_ _%_ _+_ _-_ _<<_ _>>_ _&_ _^_ | Always for clarity   | 🛈 Suggestion  |
-| In other binary operators: _&&_ _??_ _and_ _or_                | Always for clarity   | 🛈 Suggestion  |
-| In relational operators: _<_ _>_ _<=_ _>=_ _is_ _as_ _==_ _!=_ | Always for clarity   | 🛈 Suggestion  |
-| In other operators                                             | Never if unnecessary | ⚠ Warning    |
+| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
+| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
+| In arithmetic operators: _*_ _/_ _%_ _+_ _-_ _<<_ _>>_ _&_ _^_        | Always for clarity        | 🛈 Suggestion  |
+| In other binary operators: _&&_ _??_ _and_ _or_                       | Always for clarity        | 🛈 Suggestion  |
+| In relational operators: _<_ _>_ _<=_ _>=_ _is_ _as_ _==_ _!=_        | Always for clarity        | 🛈 Suggestion  |
+| In other operators                                                    | Never if unnecessary      | ⚠ Warning    |
 
 <details>
   <summary> .editorconfig </summary>
@@ -98,26 +98,26 @@ dotnet_style_parentheses_in_other_operators = never_if_unnecessary:warning
 </details>
 
 ### Code Style | General | Expression preferences
-| Description                                              | Preference | Severity      |
-| :------------------------------------------------------- | :--------- | :-----------: |
-| Prefer object initializer                                | Yes        | 🛈 Suggestion  |
-| Prefer collection initializer                            | Yes        | 🛈 Suggestion  |
-| Prefer simplified boolean expressions                    | Yes        | ⚠ Warning    |
-| Prefer switch expression                                 | Yes        | 🛈 Suggestion  |
-| Prefer conditional expression over _if_ with assignments | Yes        | 🞅 Refactoring |
-| Prefer conditional expression over _if_ with returns     | No         | 🞅 Refactoring |
-| Prefer explicit tuple name                               | Yes        | 🛈 Suggestion  |
-| Prefer simple 'default' expression                       | Yes        | ⚠ Warning    |
-| Prefer inferred tuple element names                      | No         | 🛈 Suggestion  |
-| Prefer inferred anonymous type member names              | Yes        | 🞅 Refactoring |
-| Prefer local function over anonymous function            | Yes        | ⚠ Warning    |
-| Prefer compound assignments                              | Yes        | ⚠ Warning    |
-| Prefer implicit object creation when type is aparent     | Yes        | 🛈 Suggestion  |
-| Prefer index operator                                    | Yes        | 🛈 Suggestion  |
-| Prefer range operator                                    | Yes        | 🛈 Suggestion  |
-| Avoid unused value assignments                           | Discard    | 🛈 Suggestion  |
-| Avoid expression statements that implicitly ignore value | Discard    | 🛈 Suggestion  |
-| Use expression body for methods                          | Never      | 🞅 Refactoring |
+| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
+| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
+| Prefer object initializer                                             | Yes                       | 🛈 Suggestion  |
+| Prefer collection initializer                                         | Yes                       | 🛈 Suggestion  |
+| Prefer simplified boolean expressions                                 | Yes                       | ⚠ Warning    |
+| Prefer switch expression                                              | Yes                       | 🛈 Suggestion  |
+| Prefer conditional expression over _if_ with assignments              | Yes                       | 🞅 Refactoring |
+| Prefer conditional expression over _if_ with returns                  | No                        | 🞅 Refactoring |
+| Prefer explicit tuple name                                            | Yes                       | 🛈 Suggestion  |
+| Prefer simple 'default' expression                                    | Yes                       | ⚠ Warning    |
+| Prefer inferred tuple element names                                   | No                        | 🛈 Suggestion  |
+| Prefer inferred anonymous type member names                           | Yes                       | 🞅 Refactoring |
+| Prefer local function over anonymous function                         | Yes                       | ⚠ Warning    |
+| Prefer compound assignments                                           | Yes                       | ⚠ Warning    |
+| Prefer implicit object creation when type is aparent                  | Yes                       | 🛈 Suggestion  |
+| Prefer index operator                                                 | Yes                       | 🛈 Suggestion  |
+| Prefer range operator                                                 | Yes                       | 🛈 Suggestion  |
+| Avoid unused value assignments                                        | Discard                   | 🛈 Suggestion  |
+| Avoid expression statements that implicitly ignore value              | Discard                   | 🛈 Suggestion  |
+| Use expression body for methods                                       | Never                     | 🞅 Refactoring |
 
 <details>
   <summary> .editorconfig </summary>
@@ -145,16 +145,16 @@ csharp_style_unused_value_expression_statement_preference = discard_variable:sug
 </details>
 
 ### Code Style | General | Expression-bodied members
-| Description                             | Preference    | Severity      |
-| :-------------------------------------- | :------------ | :-----------: |
-| Use expression body for methods         | Never         | 🞅 Refactoring |
-| Use expression body for constructors    | Never         | 🞅 Refactoring |
-| Use expression body for operators       | Never         | 🞅 Refactoring |
-| Use expression body for properties      | When possible | 🛈 Suggestion  |
-| Use expression body for indexers        | When possible | 🛈 Suggestion  |
-| Use expression body for accessors       | When possible | 🛈 Suggestion  |
-| Use expression body for lambdas         | Never         | 🛈 Suggestion  |
-| Use expression body for local functions | Never         | 🛈 Suggestion  |
+| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
+| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
+| Use expression body for methods                                       | Never                     | 🞅 Refactoring |
+| Use expression body for constructors                                  | Never                     | 🞅 Refactoring |
+| Use expression body for operators                                     | Never                     | 🞅 Refactoring |
+| Use expression body for properties                                    | When possible             | 🛈 Suggestion  |
+| Use expression body for indexers                                      | When possible             | 🛈 Suggestion  |
+| Use expression body for accessors                                     | When possible             | 🛈 Suggestion  |
+| Use expression body for lambdas                                       | Never                     | 🛈 Suggestion  |
+| Use expression body for local functions                               | Never                     | 🛈 Suggestion  |
 
 <details>
   <summary> .editorconfig </summary>
@@ -173,12 +173,12 @@ csharp_style_expression_bodied_local_functions = false:suggestion
 </details>
 
 ### Code Style | General | Pattern matching preferences
-| Description                                         | Preference | Severity      |
-| :-------------------------------------------------- | :--------- | :-----------: |
-| Prefer pattern matching                             | Yes        | 🛈 Suggestion  |
-| Prefer pattern matching over _is_ with _cast_ check | Yes        | ⚠ Warning    |
-| Prefer pattern matching over _as_ with _null_ check | Yes        | ⚠ Warning    |
-| Prefer pattern matching over mixed type check       | Yes        | 🛈 Suggestion  |
+| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
+| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
+| Prefer pattern matching                                               | Yes                       | 🛈 Suggestion  |
+| Prefer pattern matching over _is_ with _cast_ check                   | Yes                       | ⚠ Warning    |
+| Prefer pattern matching over _as_ with _null_ check                   | Yes                       | ⚠ Warning    |
+| Prefer pattern matching over mixed type check                         | Yes                       | 🛈 Suggestion  |
 
 <details>
   <summary> .editorconfig </summary>
@@ -193,14 +193,14 @@ csharp_style_prefer_not_pattern = true:suggestion
 </details>
 
 ### Code Style | General | _null_ checking
-| Description                                    | Preference | Severity      |
-| :--------------------------------------------- | :--------- | :-----------: |
-| Prefer throw-expression                        | Yes        | 🛈 Suggestion  |
-| Prefer conditional delegate call               | Yes        | 🛈 Suggestion  |
-| Prefer throw-expression                        | Yes        | 🛈 Suggestion  |
-| Prefer coalesce expression                     | Yes        | ⚠ Warning    |
-| Prefer null propagation                        | Yes        | ⚠ Warning    |
-| Prefer _is null_ for reference equality checks | Yes        | ⚠ Warning    |
+| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
+| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
+| Prefer throw-expression                                               | Yes                       | 🛈 Suggestion  |
+| Prefer conditional delegate call                                      | Yes                       | 🛈 Suggestion  |
+| Prefer throw-expression                                               | Yes                       | 🛈 Suggestion  |
+| Prefer coalesce expression                                            | Yes                       | ⚠ Warning    |
+| Prefer null propagation                                               | Yes                       | ⚠ Warning    |
+| Prefer _is null_ for reference equality checks                        | Yes                       | ⚠ Warning    |
 
 <details>
   <summary> .editorconfig </summary>
@@ -216,9 +216,9 @@ dotnet_style_prefer_is_null_check_over_reference_equality_method = true:warning
 </details>
 
 ### Code Style | General | _using_ preferences
-| Description                           | Preference        | Severity |
-| :------------------------------------ | :---------------- | :------: |
-| Preferred _using_ directive placement | Outside namespace | ⛔ Error |
+| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
+| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
+| Preferred _using_ directive placement                                 | Outside namespace         | ⛔ Error      |
 
 <details>
   <summary> .editorconfig </summary>
@@ -230,10 +230,10 @@ csharp_using_directive_placement = outside_namespace:error
 </details>
 
 ### Code Style | General | Modifier preferences
-| Description                   | Preference | Severity   |
-| :---------------------------- | :--------- | :--------: |
-| Prefer readonly fields        | Yes        | ⚠ Warning |
-| Prefer static local functions | Yes        | ⚠ Warning |
+| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
+| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
+| Prefer readonly fields                                                | Yes                       | ⚠ Warning    |
+| Prefer static local functions                                         | Yes                       | ⚠ Warning    |
 
 <details>
   <summary> .editorconfig </summary>
@@ -246,9 +246,9 @@ csharp_prefer_static_local_function = true:warning
 </details>
 
 ### Code Style | General | Parameter preferences
-| Description             | Preference         | Severity   |
-| :---------------------- | :----------------- | :--------: |
-| Avoid unused parameters | Non-public methods | ⚠ Warning |
+| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
+| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
+| Avoid unused parameters                                               | Non-public methods        | ⚠ Warning    |
 
 <details>
   <summary> .editorconfig </summary>
@@ -260,13 +260,13 @@ dotnet_code_quality_unused_parameters = non_public:warning
 </details>
 
 ### Code Style | General | New line preferences
-| Description                                             | Preference | Severity   |
-| :------------------------------------------------------ | :--------- | :--------: |
-| Allow multiple blank lines                              | No         | ⚠ Warning |
-| Allow embeded statements on same line                   | No         | ⚠ Warning |
-| Allow blank lines between consecutive braces            | No         | ⚠ Warning |
-| Allow statement immediately after block                 | No         | ⚠ Warning |
-| Allow blank line after colon in constructor initializer | No         | ⚠ Warning |
+| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
+| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
+| Allow multiple blank lines                                            | No                        | ⚠ Warning    |
+| Allow embeded statements on same line                                 | No                        | ⚠ Warning    |
+| Allow blank lines between consecutive braces                          | No                        | ⚠ Warning    |
+| Allow statement immediately after block                               | No                        | ⚠ Warning    |
+| Allow blank line after colon in constructor initializer               | No                        | ⚠ Warning    |
 
 <details>
   <summary> .editorconfig </summary>
