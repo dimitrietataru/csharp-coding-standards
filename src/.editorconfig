@@ -45,6 +45,7 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 
 # Code Style | General | Code block preferences
 csharp_prefer_braces = true:warning
+csharp_style_namespace_declarations = file_scoped:suggestion
 csharp_prefer_simple_using_statement = true:suggestion
 dotnet_style_prefer_auto_properties = true:silent
 
@@ -70,6 +71,7 @@ dotnet_style_prefer_compound_assignment = true:warning
 csharp_style_implicit_object_creation_when_type_is_apparent = true:suggestion
 csharp_style_prefer_index_operator = true:suggestion
 csharp_style_prefer_range_operator = true:suggestion
+csharp_style_prefer_tuple_swap = true:suggestion
 csharp_style_unused_value_assignment_preference = discard_variable:suggestion
 csharp_style_unused_value_expression_statement_preference = discard_variable:suggestion
 
@@ -89,12 +91,17 @@ csharp_style_pattern_matching_over_is_with_cast_check = true:warning
 csharp_style_pattern_matching_over_as_with_null_check = true:warning
 csharp_style_prefer_not_pattern = true:suggestion
 
+# Code Style | General | Variable preferences
+csharp_style_inlined_variable_declaration = true:warning
+csharp_style_deconstructed_variable_declaration = true:suggestion
+
 # Code Style | General | 'null' checking
 csharp_style_throw_expression = true:suggestion
 csharp_style_conditional_delegate_call = true:suggestion
 dotnet_style_coalesce_expression = true:warning
 dotnet_style_null_propagation = true:warning
 dotnet_style_prefer_is_null_check_over_reference_equality_method = true:warning
+csharp_style_prefer_null_check_over_type_check = true:suggestion
 
 # Code Style | General | 'using' preferences
 csharp_using_directive_placement = outside_namespace:error
@@ -175,3 +182,7 @@ csharp_space_around_binary_operators = before_and_after
 # Code Style | Formatting | Wrapping
 csharp_preserve_single_line_blocks = true
 csharp_preserve_single_line_statements = false
+
+# Advanced | Using directives
+dotnet_sort_system_directives_first = false
+dotnet_separate_import_directive_groups = false

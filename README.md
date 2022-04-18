@@ -12,6 +12,7 @@ An opinionated C# .editorconfig
     * [Expression preferences](#code-style--general--expression-preferences)
     * [Expression-bodied members](#code-style--general--expression-bodied-members)
     * [Pattern matching preferences](#code-style--general--pattern-matching-preferences)
+    * [Variable preferences](#code-style--general--variable-preferences)
     * [null checking](#code-style--general--null-checking)
     * [using preferences](#code-style--general--using-preferences)
     * [Modifier preferences](#code-style--general--modifier-preferences)
@@ -45,7 +46,7 @@ dotnet_style_qualification_for_property = false:warning
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
 | :-------------------------------------------------------------------- | :------------------------ | :-----------: |
 | For locals, parameters, and members                                   | Prefer predefined type    | ⚠ Warning    |
-| For member access expressions       | Prefer predefined type | ⚠ Warning |
+| For member access expressions                                         | Prefer predefined type    | ⚠ Warning    |
 
 <details>
   <summary> .editorconfig </summary>
@@ -79,6 +80,7 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
 | :-------------------------------------------------------------------- | :------------------------ | :-----------: |
 | Prefer braces                                                         | Yes                       | ⚠ Warning    |
+| Namespace declarations                                                | File scoped               | 🛈 Suggestion  |
 | Prefer auto properties                                                | Yes                       | 🞅 Refactoring |
 | Prefer simple _using_ statement                                       | Yes                       | 🛈 Suggestion  |
 | Prefer _System.HashCode_ in 'GetHashCode'                             | Yes                       | 🛈 Suggestion  |
@@ -88,8 +90,10 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 
 ``` EditorConfig
 csharp_prefer_braces = true:warning
+csharp_style_namespace_declarations = file_scoped:suggestion
 csharp_prefer_simple_using_statement = true:suggestion
 dotnet_style_prefer_auto_properties = true:silent
+# Missing: Prefer _System.HashCode_ in 'GetHashCode'
 ```
 
 </details>
@@ -132,9 +136,9 @@ dotnet_style_parentheses_in_other_operators = never_if_unnecessary:warning
 | Prefer implicit object creation when type is aparent                  | Yes                       | 🛈 Suggestion  |
 | Prefer index operator                                                 | Yes                       | 🛈 Suggestion  |
 | Prefer range operator                                                 | Yes                       | 🛈 Suggestion  |
+| Prefer tuple swap                                                     | Yes                       | 🛈 Suggestion  |
 | Avoid unused value assignments                                        | Discard                   | 🛈 Suggestion  |
 | Avoid expression statements that implicitly ignore value              | Discard                   | 🛈 Suggestion  |
-| Use expression body for methods                                       | Never                     | 🞅 Refactoring |
 
 <details>
   <summary> .editorconfig </summary>
@@ -155,6 +159,7 @@ dotnet_style_prefer_compound_assignment = true:warning
 csharp_style_implicit_object_creation_when_type_is_apparent = true:suggestion
 csharp_style_prefer_index_operator = true:suggestion
 csharp_style_prefer_range_operator = true:suggestion
+csharp_style_prefer_tuple_swap = true:suggestion
 csharp_style_unused_value_assignment_preference = discard_variable:suggestion
 csharp_style_unused_value_expression_statement_preference = discard_variable:suggestion
 ```
@@ -209,15 +214,31 @@ csharp_style_prefer_not_pattern = true:suggestion
 
 </details>
 
+### Code Style | General | Variable preferences
+| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
+| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
+| Prefer inlined variable declaration                                   | Yes                       | ⚠ Warning    |
+| Prefer deconstructed variable declaration                             | Yes                       | 🛈 Suggestion  |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+csharp_style_inlined_variable_declaration = true:warning
+csharp_style_deconstructed_variable_declaration = true:suggestion
+```
+
+</details>
+
 ### Code Style | General | _null_ checking
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
 | :-------------------------------------------------------------------- | :------------------------ | :-----------: |
 | Prefer throw-expression                                               | Yes                       | 🛈 Suggestion  |
 | Prefer conditional delegate call                                      | Yes                       | 🛈 Suggestion  |
-| Prefer throw-expression                                               | Yes                       | 🛈 Suggestion  |
 | Prefer coalesce expression                                            | Yes                       | ⚠ Warning    |
 | Prefer null propagation                                               | Yes                       | ⚠ Warning    |
 | Prefer _is null_ for reference equality checks                        | Yes                       | ⚠ Warning    |
+| Prefer _null_ check over type check                                   | Yes                       | 🛈 Suggestion  |
 
 <details>
   <summary> .editorconfig </summary>
@@ -228,6 +249,7 @@ csharp_style_conditional_delegate_call = true:suggestion
 dotnet_style_coalesce_expression = true:warning
 dotnet_style_null_propagation = true:warning
 dotnet_style_prefer_is_null_check_over_reference_equality_method = true:warning
+csharp_style_prefer_null_check_over_type_check = true:suggestion
 ```
 
 </details>
@@ -544,6 +566,22 @@ csharp_space_around_binary_operators = before_and_after
 ``` EditorConfig
 csharp_preserve_single_line_blocks = true
 csharp_preserve_single_line_statements = false
+```
+
+</details>
+
+### Advanced | Using directives
+| Description _________________________________________________________________________ | Value |
+| :------------------------------------------------------------------------------------ | :---: |
+| Place _System_ directives first when sorting usings                                   |   ☐   |
+| Separate using directive groups                                                       |   ☐   |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+dotnet_sort_system_directives_first = false
+dotnet_separate_import_directive_groups = false
 ```
 
 </details>
