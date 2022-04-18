@@ -411,3 +411,124 @@ csharp_new_line_between_query_expression_clauses = true
 ```
 
 </details>
+
+### Code Style | Formatting | Spacing | Set spacing for method declarations
+| Description _________________________________________________________________________ | Value |
+| :------------------------------------------------------------------------------------ | :---: |
+| Insert space between method name and its opening parenthesis                          |   ☐   |
+| Insert space within parameter list parentheses                                        |   ☐   |
+| Insert space within empty parameter list parentheses                                  |   ☐   |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+csharp_space_between_method_declaration_name_and_open_parenthesis = false
+csharp_space_between_method_declaration_parameter_list_parentheses = false
+csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+```
+
+</details>
+
+### Code Style | Formatting | Spacing | Set spacing for method calls
+| Description _________________________________________________________________________ | Value |
+| :------------------------------------------------------------------------------------ | :---: |
+| Insert space between method name and its opening parenthesis                          |   ☐   |
+| Insert space within argument list parentheses                                         |   ☐   |
+| Insert space within empty argument list parentheses                                   |   ☐   |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_call_parameter_list_parentheses = false
+csharp_space_between_method_call_empty_parameter_list_parentheses = false
+```
+
+</details>
+
+### Code Style | Formatting | Spacing | Set other spacing options
+| Description _________________________________________________________________________ | Value |
+| :------------------------------------------------------------------------------------ | :---: |
+| Insert space after keywords in control flow statements                                |   🗹   |
+| Insert space within parentheses of expressions                                        |   ☐   |
+| Insert space within parentheses of type casts                                         |   ☐   |
+| Insert space within parentheses of control flow statements                            |   ☐   |
+| Insert space after cast                                                               |   ☐   |
+| Insert space in declaration statements                                                |   ☐   |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+csharp_space_after_keywords_in_control_flow_statements = true
+csharp_space_between_parentheses = false
+csharp_space_after_cast = false
+csharp_space_around_declaration_statements = false
+```
+
+</details>
+
+### Code Style | Formatting | Spacing | Set spacing for brackets
+| Description _________________________________________________________________________ | Value |
+| :------------------------------------------------------------------------------------ | :---: |
+| Insert space before open square bracket                                               |   ☐   |
+| Insert space within empty square brackets                                             |   ☐   |
+| Insert space within square brackets                                                   |   ☐   |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+csharp_space_before_open_square_brackets = false
+csharp_space_between_square_brackets = false
+csharp_space_between_empty_square_brackets = false
+```
+
+</details>
+
+### Code Style | Formatting | Spacing | Set spacing for delimiters
+| Description _________________________________________________________________________ | Value |
+| :------------------------------------------------------------------------------------ | :---: |
+| Insert space before colon for base or interface in type declarations                  |   🗹   |
+| Insert space after colon for base or interface in type declarations                   |   🗹   |
+| Insert space before comma                                                             |   ☐   |
+| Insert space after comma                                                              |   🗹   |
+| Insert space before dot                                                               |   ☐   |
+| Insert space after dot                                                                |   ☐   |
+| Insert space before semicolon in _for_ statement                                      |   ☐   |
+| Insert space after semicolon in _for_ statement                                       |   🗹   |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+csharp_space_before_colon_in_inheritance_clause = true
+csharp_space_after_colon_in_inheritance_clause = true
+csharp_space_before_comma = false
+csharp_space_after_comma = true
+csharp_space_before_dot = false
+csharp_space_after_dot = false
+csharp_space_before_semicolon_in_for_statement = false
+csharp_space_after_semicolon_in_for_statement = true
+```
+
+</details>
+
+### Code Style | Formatting | Spacing | Set spacing for operators
+| Description _________________________________________________________________________ | Value |
+| :------------------------------------------------------------------------------------ | :---: |
+| Ignore spaces around binary operators                                                 |   ☐   |
+| Remove spaces before and after binary operators                                       |   ☐   |
+| Insert space before and after binary operators                                        |   🗹   |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+csharp_space_around_binary_operators = before_and_after
+```
+
+</details>
+
