@@ -299,13 +299,13 @@ csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimenta
 </details>
 
 ### Code Style | Formatting | General
-| Description _________________________________________________________ | Value |
-| :-------------------------------------------------------------------- | :---: |
-| Automatically format when typing                                      |   🗹   |
-| Automatically format statement on _;_                                 |   🗹   |
-| Automatically format block on _}_                                     |   🗹   |
-| Automatically format on return                                        |   🗹   |
-| Automatically format on paste                                         |   🗹   |
+| Description _________________________________________________________________________ | Value |
+| :------------------------------------------------------------------------------------ | :---: |
+| Automatically format when typing                                                      |   🗹   |
+| Automatically format statement on _;_                                                 |   🗹   |
+| Automatically format block on _}_                                                     |   🗹   |
+| Automatically format on return                                                        |   🗹   |
+| Automatically format on paste                                                         |   🗹   |
 
 <details>
   <summary> .editorconfig </summary>
@@ -316,3 +316,46 @@ csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimenta
 
 </details>
 
+### Code Style | Formatting | Indentation | General
+| Description _________________________________________________________________________ | Value |
+| :------------------------------------------------------------------------------------ | :---: |
+| Indent code blocks                                                                    |   🗹   |
+| Indent open and close braces                                                          |   ☐   |
+| Indent case contents                                                                  |   🗹   |
+| Indent case contents (when block)                                                     |   ☐   |
+| Indent case labels                                                                    |   🗹   |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+csharp_indent_block_contents = true
+csharp_indent_braces = false
+csharp_indent_case_contents = true
+csharp_indent_case_contents_when_block = false
+csharp_indent_switch_labels = true
+```
+
+</details>
+
+### Code Style | Formatting | Indentation | Label Indentation
+| Description _________________________________________________________________________ | Value |
+| :------------------------------------------------------------------------------------ | :---: |
+| Place _goto_ labels in leftmost column                                                |   ☐   |
+| Indent labels normally                                                                |   ☐   |
+| Place _goto_ labels one indent less than content                                      |   🗹   |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+csharp_indent_labels = one_less_than_current
+```
+
+</details>
+
+### Code Style | Formatting | New Lines
+
+### Code Style | Formatting | Spacing
+
+### Code Style | Formatting | Wrapping

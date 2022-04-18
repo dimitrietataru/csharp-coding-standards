@@ -114,3 +114,13 @@ dotnet_style_allow_statement_immediately_after_block_experimental = false:warnin
 csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimental = false:warning
 
 # Code Style | Formatting | General
+
+# Code Style | Formatting | Indentation | General
+csharp_indent_block_contents = true
+csharp_indent_braces = false
+csharp_indent_case_contents = true
+csharp_indent_case_contents_when_block = false
+csharp_indent_switch_labels = true
+
+# Code Style | Formatting | Indentation | Label Indentation
+csharp_indent_labels = one_less_than_current
