@@ -41,6 +41,17 @@ Compatible with Visual Studio 2022, and 2019*.
         * [Set spacing for delimiters](#code-style--formatting--spacing--set-spacing-for-delimiters)
         * [Set spacing for operators](#code-style--formatting--spacing--set-spacing-for-operators)
       * [Wrapping](#code-style--formatting--wrapping)
+* [Microsoft.CodeAnalysis.NetAnalyzers](#microsoftcodeanalysisnetanalyzers)
+  * [Design](#microsoftcodeanalysisnetanalyzers--design)
+  * [Documentation](#microsoftcodeanalysisnetanalyzers--documentation)
+  * [Globalization](#microsoftcodeanalysisnetanalyzers--globalization)
+  * [Interoperability](#microsoftcodeanalysisnetanalyzers--interoperability)
+  * [Maintainability](#microsoftcodeanalysisnetanalyzers--maintainability)
+  * [Naming](#microsoftcodeanalysisnetanalyzers--naming)
+  * [Performance](#microsoftcodeanalysisnetanalyzers--performance)
+  * [Reliability](#microsoftcodeanalysisnetanalyzers--reliability)
+  * [Security](#microsoftcodeanalysisnetanalyzers--security)
+  * [Usage](#microsoftcodeanalysisnetanalyzers--usage)
 
 
 ## Visual Studio options
@@ -635,3 +646,26 @@ csharp_preserve_single_line_statements = false
 ```
 
 </details>
+
+
+## Microsoft.CodeAnalysis.NetAnalyzers
+
+### Microsoft.CodeAnalysis.NetAnalyzers | Design
+
+### Microsoft.CodeAnalysis.NetAnalyzers | Documentation
+
+### Microsoft.CodeAnalysis.NetAnalyzers | Globalization
+
+### Microsoft.CodeAnalysis.NetAnalyzers | Interoperability
+
+### Microsoft.CodeAnalysis.NetAnalyzers | Maintainability
+
+### Microsoft.CodeAnalysis.NetAnalyzers | Naming
+
+### Microsoft.CodeAnalysis.NetAnalyzers | Performance
+
+### Microsoft.CodeAnalysis.NetAnalyzers | Reliability
+
+### Microsoft.CodeAnalysis.NetAnalyzers | Security
+
+### Microsoft.CodeAnalysis.NetAnalyzers | Usage
