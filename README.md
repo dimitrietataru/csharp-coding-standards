@@ -354,8 +354,60 @@ csharp_indent_labels = one_less_than_current
 
 </details>
 
-### Code Style | Formatting | New Lines
+### Code Style | Formatting | New Lines | New line options for braces
+| Description _________________________________________________________________________ | Value |
+| :------------------------------------------------------------------------------------ | :---: |
+| Place open brace on new line for types                                                |   🗹   |
+| Place open brace on new line for methods and local functions                          |   🗹   |
+| Place open brace on new line for properties, indexers, and events                     |   🗹   |
+| Place open brace on new line for property, indexer, and event accessors               |   🗹   |
+| Place open brace on new line for anonymous methods                                    |   🗹   |
+| Place open brace on new line for control blocks                                       |   🗹   |
+| Place open brace on new line for anonymous types                                      |   🗹   |
+| Place open brace on new line for object, collection, array, and with initializers     |   🗹   |
+| Place open brace on new line for lambda expression                                    |   🗹   |
 
-### Code Style | Formatting | Spacing
+<details>
+  <summary> .editorconfig </summary>
 
-### Code Style | Formatting | Wrapping
+``` EditorConfig
+csharp_new_line_before_open_brace = all
+```
+
+</details>
+
+### Code Style | Formatting | New Lines | New line options for keywords
+| Description _________________________________________________________________________ | Value |
+| :------------------------------------------------------------------------------------ | :---: |
+| Place _else_ on new line                                                              |   🗹   |
+| Place _catch_ on new line                                                             |   🗹   |
+| Place _finally_ on new line                                                           |   🗹   |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+```
+
+</details>
+
+### Code Style | Formatting | New Lines | New line options for expressions
+| Description _________________________________________________________________________ | Value |
+| :------------------------------------------------------------------------------------ | :---: |
+| Place members in object initializers on new line                                      |   🗹   |
+| Place members in anonymous types on new line                                          |   🗹   |
+| Place query expression clauses on new line                                            |   🗹   |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+csharp_new_line_before_members_in_object_initializers = true
+csharp_new_line_before_members_in_anonymous_types = true
+csharp_new_line_between_query_expression_clauses = true
+```
+
+</details>
