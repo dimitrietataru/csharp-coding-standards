@@ -1,28 +1,68 @@
-# csharp-coding-standards
-An opinionated C# .editorconfig
+# C# Coding Standards
+
+An opinionated C# .editorconfig  
+Compatible with Visual Studio 2022, and 2019*.
+
 
 ## Table of contents
 * [Visual Studio options](#visual-studio-options)
-  * General
-    * [this. preferences](#code-style--general--this-preferences)
-    * [Predefined type preferences](#code-style--general--predefined-type-preferences)
-    * [var preferences](#code-style--general--var-preferences)
-    * [Code block preferences](#code-style--general--code-block-preferences)
-    * [Parentheses preferences](#code-style--general--parentheses-preferences)
-    * [Expression preferences](#code-style--general--expression-preferences)
-    * [Expression-bodied members](#code-style--general--expression-bodied-members)
-    * [Pattern matching preferences](#code-style--general--pattern-matching-preferences)
-    * [Variable preferences](#code-style--general--variable-preferences)
-    * [null checking](#code-style--general--null-checking)
-    * [using preferences](#code-style--general--using-preferences)
-    * [Modifier preferences](#code-style--general--modifier-preferences)
-    * [Parameter preferences](#code-style--general--parameter-preferences)
-    * [New line preferences](#code-style--general--new-line-preferences)
+  * Advanced
+    * [Using directives](#advanced--using-directives)
+  * Code style
+    * General
+      * [this. preferences](#code-style--general--this-preferences)
+      * [Predefined type preferences](#code-style--general--predefined-type-preferences)
+      * [var preferences](#code-style--general--var-preferences)
+      * [Code block preferences](#code-style--general--code-block-preferences)
+      * [Parentheses preferences](#code-style--general--parentheses-preferences)
+      * [Expression preferences](#code-style--general--expression-preferences)
+      * [Expression-bodied members](#code-style--general--expression-bodied-members)
+      * [Pattern matching preferences](#code-style--general--pattern-matching-preferences)
+      * [Variable preferences](#code-style--general--variable-preferences)
+      * [null checking](#code-style--general--null-checking)
+      * [using preferences](#code-style--general--using-preferences)
+      * [Modifier preferences](#code-style--general--modifier-preferences)
+      * [Parameter preferences](#code-style--general--parameter-preferences)
+      * [New line preferences](#code-style--general--new-line-preferences)
+    * Formatting
+      * [General](#code-style--formatting--general)
+      * Indentation
+        * [General](code-style--formatting--indentation--general)
+        * [Label indentation](#code-style--formatting--indentation--label-indentation)
+      * New lines
+        * [New line options for braces](#code-style--formatting--new-lines--new-line-options-for-braces)
+        * [New line options for keywords](#code-style--formatting--new-lines--new-line-options-for-keywords)
+        * [New line options for expressions](#code-style--formatting--new-lines--new-line-options-for-expressions)
+      * Spacing
+        * [Set spacing for method declarations](#code-style--formatting--spacing--set-spacing-for-method-declarations)
+        * [Set spacing for method calls](#code-style--formatting--spacing--set-spacing-for-method-calls)
+        * [Set other spacing options](#code-style--formatting--spacing--set-other-spacing-options)
+        * [Set spacing for brackets](#code-style--formatting--spacing--set-spacing-for-brackets)
+        * [Set spacing for delimiters](#code-style--formatting--spacing--set-spacing-for-delimiters)
+        * [Set spacing for operators](#code-style--formatting--spacing--set-spacing-for-operators)
+      * [Wrapping](#code-style--formatting--wrapping)
+
 
 ## Visual Studio options
 
-### Code Style | General | _this._ preferences
+### Advanced | Using directives
+| Description _________________________________________________________________________ | Value |
+| :------------------------------------------------------------------------------------ | :---: |
+| Place _System_ directives first when sorting usings                                   |   ☐   |
+| Separate using directive groups                                                       |   ☐   |
 
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+dotnet_sort_system_directives_first = false
+dotnet_separate_import_directive_groups = false
+```
+
+</details>
+
+
+### Code Style | General | _this._ preferences
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
 | :-------------------------------------------------------------------- | :------------------------ | :-----------: |
 | Qualify field access with _this._                                     | Do not prefer _this_      | ⚠ Warning    |
@@ -42,6 +82,7 @@ dotnet_style_qualification_for_property = false:warning
 
 </details>
 
+
 ### Code Style | General | Predefined type preferences
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
 | :-------------------------------------------------------------------- | :------------------------ | :-----------: |
@@ -57,6 +98,7 @@ dotnet_style_predefined_type_for_member_access = true:warning
 ```
 
 </details>
+
 
 ### Code Style | General | _var_ preferences
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
@@ -75,6 +117,7 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 ```
 
 </details>
+
 
 ### Code Style | General | Code block preferences
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
@@ -98,6 +141,7 @@ dotnet_style_prefer_auto_properties = true:silent
 
 </details>
 
+
 ### Code Style | General | Parentheses preferences
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
 | :-------------------------------------------------------------------- | :------------------------ | :-----------: |
@@ -117,6 +161,7 @@ dotnet_style_parentheses_in_other_operators = never_if_unnecessary:warning
 ```
 
 </details>
+
 
 ### Code Style | General | Expression preferences
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
@@ -166,6 +211,7 @@ csharp_style_unused_value_expression_statement_preference = discard_variable:sug
 
 </details>
 
+
 ### Code Style | General | Expression-bodied members
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
 | :-------------------------------------------------------------------- | :------------------------ | :-----------: |
@@ -194,6 +240,7 @@ csharp_style_expression_bodied_local_functions = false:suggestion
 
 </details>
 
+
 ### Code Style | General | Pattern matching preferences
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
 | :-------------------------------------------------------------------- | :------------------------ | :-----------: |
@@ -214,6 +261,7 @@ csharp_style_prefer_not_pattern = true:suggestion
 
 </details>
 
+
 ### Code Style | General | Variable preferences
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
 | :-------------------------------------------------------------------- | :------------------------ | :-----------: |
@@ -229,6 +277,7 @@ csharp_style_deconstructed_variable_declaration = true:suggestion
 ```
 
 </details>
+
 
 ### Code Style | General | _null_ checking
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
@@ -254,6 +303,7 @@ csharp_style_prefer_null_check_over_type_check = true:suggestion
 
 </details>
 
+
 ### Code Style | General | _using_ preferences
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
 | :-------------------------------------------------------------------- | :------------------------ | :-----------: |
@@ -267,6 +317,7 @@ csharp_using_directive_placement = outside_namespace:error
 ```
 
 </details>
+
 
 ### Code Style | General | Modifier preferences
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
@@ -284,6 +335,7 @@ csharp_prefer_static_local_function = true:warning
 
 </details>
 
+
 ### Code Style | General | Parameter preferences
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
 | :-------------------------------------------------------------------- | :------------------------ | :-----------: |
@@ -297,6 +349,7 @@ dotnet_code_quality_unused_parameters = non_public:warning
 ```
 
 </details>
+
 
 ### Code Style | General | New line preferences
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
@@ -320,6 +373,7 @@ csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimenta
 
 </details>
 
+
 ### Code Style | Formatting | General
 | Description _________________________________________________________________________ | Value |
 | :------------------------------------------------------------------------------------ | :---: |
@@ -337,6 +391,7 @@ csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimenta
 ```
 
 </details>
+
 
 ### Code Style | Formatting | Indentation | General
 | Description _________________________________________________________________________ | Value |
@@ -360,6 +415,7 @@ csharp_indent_switch_labels = true
 
 </details>
 
+
 ### Code Style | Formatting | Indentation | Label Indentation
 | Description _________________________________________________________________________ | Value |
 | :------------------------------------------------------------------------------------ | :---: |
@@ -375,6 +431,7 @@ csharp_indent_labels = one_less_than_current
 ```
 
 </details>
+
 
 ### Code Style | Formatting | New Lines | New line options for braces
 | Description _________________________________________________________________________ | Value |
@@ -398,6 +455,7 @@ csharp_new_line_before_open_brace = all
 
 </details>
 
+
 ### Code Style | Formatting | New Lines | New line options for keywords
 | Description _________________________________________________________________________ | Value |
 | :------------------------------------------------------------------------------------ | :---: |
@@ -415,6 +473,7 @@ csharp_new_line_before_finally = true
 ```
 
 </details>
+
 
 ### Code Style | Formatting | New Lines | New line options for expressions
 | Description _________________________________________________________________________ | Value |
@@ -434,6 +493,7 @@ csharp_new_line_between_query_expression_clauses = true
 
 </details>
 
+
 ### Code Style | Formatting | Spacing | Set spacing for method declarations
 | Description _________________________________________________________________________ | Value |
 | :------------------------------------------------------------------------------------ | :---: |
@@ -452,6 +512,7 @@ csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
 
 </details>
 
+
 ### Code Style | Formatting | Spacing | Set spacing for method calls
 | Description _________________________________________________________________________ | Value |
 | :------------------------------------------------------------------------------------ | :---: |
@@ -469,6 +530,7 @@ csharp_space_between_method_call_empty_parameter_list_parentheses = false
 ```
 
 </details>
+
 
 ### Code Style | Formatting | Spacing | Set other spacing options
 | Description _________________________________________________________________________ | Value |
@@ -492,6 +554,7 @@ csharp_space_around_declaration_statements = false
 
 </details>
 
+
 ### Code Style | Formatting | Spacing | Set spacing for brackets
 | Description _________________________________________________________________________ | Value |
 | :------------------------------------------------------------------------------------ | :---: |
@@ -509,6 +572,7 @@ csharp_space_between_empty_square_brackets = false
 ```
 
 </details>
+
 
 ### Code Style | Formatting | Spacing | Set spacing for delimiters
 | Description _________________________________________________________________________ | Value |
@@ -538,6 +602,7 @@ csharp_space_after_semicolon_in_for_statement = true
 
 </details>
 
+
 ### Code Style | Formatting | Spacing | Set spacing for operators
 | Description _________________________________________________________________________ | Value |
 | :------------------------------------------------------------------------------------ | :---: |
@@ -554,6 +619,7 @@ csharp_space_around_binary_operators = before_and_after
 
 </details>
 
+
 ### Code Style | Formatting | Wrapping
 | Description _________________________________________________________________________ | Value |
 | :------------------------------------------------------------------------------------ | :---: |
@@ -566,22 +632,6 @@ csharp_space_around_binary_operators = before_and_after
 ``` EditorConfig
 csharp_preserve_single_line_blocks = true
 csharp_preserve_single_line_statements = false
-```
-
-</details>
-
-### Advanced | Using directives
-| Description _________________________________________________________________________ | Value |
-| :------------------------------------------------------------------------------------ | :---: |
-| Place _System_ directives first when sorting usings                                   |   ☐   |
-| Separate using directive groups                                                       |   ☐   |
-
-<details>
-  <summary> .editorconfig </summary>
-
-``` EditorConfig
-dotnet_sort_system_directives_first = false
-dotnet_separate_import_directive_groups = false
 ```
 
 </details>
