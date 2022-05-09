@@ -704,6 +704,9 @@ csharp_preserve_single_line_statements = false
 | [CA1070](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1070) | Do not declare event fields as virtual                                                                                                       |               |
 
 ### Microsoft.CodeAnalysis.NetAnalyzers | Documentation
+| Code                                                                                              | Description                                                                                                                                  | Severity      |
+| :-----------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------- | :-----------: |
+| [CA1000](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1200) | Avoid using cref tags with a prefix                                                                                                          |               |
 
 ### Microsoft.CodeAnalysis.NetAnalyzers | Globalization
 
