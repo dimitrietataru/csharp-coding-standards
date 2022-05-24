@@ -897,47 +897,96 @@ dotnet_diagnostic.CA1727.severity = warning
 ### Microsoft.CodeAnalysis.NetAnalyzers | Performance
 | Code                                                                                              | Description ___________________________________________________________________________                                                  | !! Severity !! |
 | :-----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------- | :------------: |
-| [CA1802](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1802) | Use literals where appropriate                                                                                                           | ______________ |
-| [CA1805](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1805) | Do not initialize unnecessarily                                                                                                          |                |
-| [CA1806](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1806) | Do not ignore method results                                                                                                             |                |
-| [CA1810](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1810) | Initialize reference type static fields inline                                                                                           |                |
-| [CA1812](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1812) | Avoid uninstantiated internal classes                                                                                                    |                |
-| [CA1813](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1813) | Avoid unsealed attributes                                                                                                                |                |
-| [CA1814](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1814) | Prefer jagged arrays over multidimensional                                                                                               |                |
-| [CA1815](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1815) | Override equals and operator equals on value types                                                                                       |                |
-| [CA1819](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1819) | Properties should not return arrays                                                                                                      |                |
-| [CA1820](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1820) | Test for empty strings using string length                                                                                               |                |
-| [CA1821](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1821) | Remove empty finalizers                                                                                                                  |                |
-| [CA1822](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1822) | Mark members as static                                                                                                                   |                |
-| [CA1823](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1823) | Avoid unused private fields                                                                                                              |                |
-| [CA1824](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1824) | Mark assemblies with _NeutralResourcesLanguageAttribute_                                                                                 |                |
-| [CA1825](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1825) | Avoid zero-length array allocations                                                                                                      |                |
-| [CA1826](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1826) | Use property instead of Linq Enumerable method                                                                                           |                |
-| [CA1827](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1827) | Do not use _Count_/_LongCount_ when _Any_ can be used                                                                                    |                |
-| [CA1828](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1828) | Do not use _CountAsync_/_LongCountAsync_ when _AnyAsync_ can be used                                                                     |                |
-| [CA1829](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1829) | Use _Length_/_Count_ property instead of _Enumerable.Count_ method                                                                       |                |
-| [CA1830](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1830) | Prefer strongly-typed _Append_ and _Insert_ method overloads on _StringBuilder_                                                          |                |
-| [CA1831](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1831) | Use _AsSpan_ instead of Range-based indexers for string when appropriate                                                                 |                |
-| [CA1832](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1832) | Use _AsSpan_ or _AsMemory_ instead of Range-based indexers for getting                 <br /> ReadOnlySpan or ReadOnlyMemory [..]        |                |
-| [CA1833](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1833) | Use _AsSpan_ or _AsMemory_ instead of Range-based indexers for getting                 <br /> Span or Memory [..]              |         |
-| [CA1834](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1834) | Use _StringBuilder.Append(char)_ for single character strings                                                                            |                |
-| [CA1835](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1835) | Prefer the memory-based overloads of _ReadAsync_/_WriteAsync_ methods [..]                                                               |                |
-| [CA1836](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1836) | Prefer _IsEmpty_ over _Count_ when available                                                                                             |                |
-| [CA1837](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1837) | Use _Environment.ProcessId_ instead of _Process.GetCurrentProcess().Id_                                                                  |                |
-| [CA1838](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1838) | Avoid StringBuilder parameters for P/Invokes                                                                                             |                |
-| [CA1839](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1839) | Use _Environment.ProcessPath_ [..]                                                                                                       |                |
-| [CA1840](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1840) | Use _Environment.CurrentManagedThreadId_ [..]                                                                                            |                |
-| [CA1841](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1841) | Prefer Dictionary Contains methods                                                                                                       |                |
-| [CA1842](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1842) | Do not use _WhenAll_ with a single task                                                                                                  |                |
-| [CA1843](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1843) | Do not use _WaitAll_ with a single task                                                                                                  |                |
-| [CA1844](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1844) | Provide memory-based overrides of async methods when subclassing _Stream_                                                                |                |
-| [CA1845](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1845) | Use span-based _string.Concat_                                                                                                           |                |
-| [CA1846](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1846) | Prefer _AsSpan_ over _Substring_                                                                                                         |                |
-| [CA1847](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1847) | Use _string.Contains(char)_ instead of _string.Contains(string)_ with single chars                                                       |                |
-| [CA1848](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1848) | Use the LoggerMessage delegates                                                                                                          |                |
-| [CA1849](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1849) | Call async methods when in an async method                                                                                               |                |
-| [CA1850](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1850) | Prefer static _HashData_ method over _ComputeHash_                                                                                       |                |
-| [CA1851](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1851) | Possible multiple enumerations of IEnumerable collection                                                                                 |                |
+| [CA1802](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1802) | Use literals where appropriate                                                                                                           | ⚠ Warning     |
+| [CA1805](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1805) | Do not initialize unnecessarily                                                                                                          | ⚠ Warning     |
+| [CA1806](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1806) | Do not ignore method results                                                                                                             | ⚠ Warning     |
+| [CA1810](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1810) | Initialize reference type static fields inline                                                                                           | ⚠ Warning     |
+| [CA1812](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1812) | Avoid uninstantiated internal classes                                                                                                    | ⚠ Warning     |
+| [CA1813](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1813) | Avoid unsealed attributes                                                                                                                | ⛔ Error       |
+| [CA1814](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1814) | Prefer jagged arrays over multidimensional                                                                                               | 🛈 Suggestion   |
+| [CA1815](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1815) | Override equals and operator equals on value types                                                                                       | ⚠ Warning     |
+| [CA1819](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1819) | Properties should not return arrays                                                                                                      | ⚠ Warning     |
+| [CA1820](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1820) | Test for empty strings using string length                                                                                               | ⚠ Warning     |
+| [CA1821](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1821) | Remove empty finalizers                                                                                                                  | ⚠ Warning     |
+| [CA1822](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1822) | Mark members as static                                                                                                                   | ⚠ Warning     |
+| [CA1823](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1823) | Avoid unused private fields                                                                                                              | ⚠ Warning     |
+| [CA1824](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1824) | Mark assemblies with _NeutralResourcesLanguageAttribute_                                                                                 | 🞅 None         |
+| [CA1825](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1825) | Avoid zero-length array allocations                                                                                                      | ⚠ Warning     |
+| [CA1826](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1826) | Use property instead of Linq Enumerable method                                                                                           | ⚠ Warning     |
+| [CA1827](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1827) | Do not use _Count_/_LongCount_ when _Any_ can be used                                                                                    | ⚠ Warning     |
+| [CA1828](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1828) | Do not use _CountAsync_/_LongCountAsync_ when _AnyAsync_ can be used                                                                     | ⚠ Warning     |
+| [CA1829](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1829) | Use _Length_/_Count_ property instead of _Enumerable.Count_ method                                                                       | ⚠ Warning     |
+| [CA1830](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1830) | Prefer strongly-typed _Append_ and _Insert_ method overloads on _StringBuilder_                                                          | ⚠ Warning     |
+| [CA1831](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1831) | Use _AsSpan_ instead of Range-based indexers for string when appropriate                                                                 | 🛈 Suggestion   |
+| [CA1832](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1832) | Use _AsSpan_ or _AsMemory_ instead of Range-based indexers for getting                 <br /> ReadOnlySpan or ReadOnlyMemory [..]        | 🛈 Suggestion   |
+| [CA1833](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1833) | Use _AsSpan_ or _AsMemory_ instead of Range-based indexers for getting                 <br /> Span or Memory [..]                        | 🛈 Suggestion   |
+| [CA1834](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1834) | Use _StringBuilder.Append(char)_ for single character strings                                                                            | ⚠ Warning     |
+| [CA1835](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1835) | Prefer the memory-based overloads of _ReadAsync_/_WriteAsync_ methods [..]                                                               | 🛈 Suggestion   |
+| [CA1836](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1836) | Prefer _IsEmpty_ over _Count_ when available                                                                                             | ⚠ Warning     |
+| [CA1837](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1837) | Use _Environment.ProcessId_ instead of _Process.GetCurrentProcess().Id_                                                                  | 🛈 Suggestion   |
+| [CA1838](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1838) | Avoid StringBuilder parameters for P/Invokes                                                                                             | 🛈 Suggestion   |
+| [CA1839](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1839) | Use _Environment.ProcessPath_ [..]                                                                                                       | 🛈 Suggestion   |
+| [CA1840](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1840) | Use _Environment.CurrentManagedThreadId_ [..]                                                                                            | 🛈 Suggestion   |
+| [CA1841](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1841) | Prefer Dictionary Contains methods                                                                                                       | ⚠ Warning     |
+| [CA1842](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1842) | Do not use _WhenAll_ with a single task                                                                                                  | ⛔ Error       |
+| [CA1843](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1843) | Do not use _WaitAll_ with a single task                                                                                                  | ⛔ Error       |
+| [CA1844](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1844) | Provide memory-based overrides of async methods when subclassing _Stream_                                                                | ⚠ Warning     |
+| [CA1845](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1845) | Use span-based _string.Concat_                                                                                                           | ⚠ Warning     |
+| [CA1846](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1846) | Prefer _AsSpan_ over _Substring_                                                                                                         | ⚠ Warning     |
+| [CA1847](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1847) | Use _string.Contains(char)_ instead of _string.Contains(string)_ with single chars                                                       | ⚠ Warning     |
+| [CA1848](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1848) | Use the LoggerMessage delegates                                                                                                          | 🛈 Suggestion   |
+| [CA1849](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1849) | Call async methods when in an async method                                                                                               | ⚠ Warning     |
+| [CA1850](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1850) | Prefer static _HashData_ method over _ComputeHash_                                                                                       | 🞅 None         |
+| [CA1851](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1851) | Possible multiple enumerations of IEnumerable collection                                                                                 | ⚠ Warning     |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+dotnet_diagnostic.CA1802.severity = warning
+dotnet_diagnostic.CA1805.severity = warning
+dotnet_diagnostic.CA1806.severity = warning
+dotnet_diagnostic.CA1810.severity = warning
+dotnet_diagnostic.CA1812.severity = warning
+dotnet_diagnostic.CA1813.severity = error
+dotnet_diagnostic.CA1814.severity = suggestion
+dotnet_diagnostic.CA1815.severity = warning
+dotnet_diagnostic.CA1819.severity = warning
+dotnet_diagnostic.CA1820.severity = warning
+dotnet_diagnostic.CA1821.severity = warning
+dotnet_diagnostic.CA1822.severity = warning
+dotnet_diagnostic.CA1823.severity = warning
+dotnet_diagnostic.CA1824.severity = none
+dotnet_diagnostic.CA1825.severity = warning
+dotnet_diagnostic.CA1826.severity = warning
+dotnet_diagnostic.CA1827.severity = warning
+dotnet_diagnostic.CA1828.severity = warning
+dotnet_diagnostic.CA1829.severity = warning
+dotnet_diagnostic.CA1830.severity = warning
+dotnet_diagnostic.CA1831.severity = suggestion
+dotnet_diagnostic.CA1832.severity = suggestion
+dotnet_diagnostic.CA1833.severity = suggestion
+dotnet_diagnostic.CA1834.severity = warning
+dotnet_diagnostic.CA1835.severity = suggestion
+dotnet_diagnostic.CA1836.severity = warning
+dotnet_diagnostic.CA1837.severity = suggestion
+dotnet_diagnostic.CA1838.severity = suggestion
+dotnet_diagnostic.CA1839.severity = suggestion
+dotnet_diagnostic.CA1840.severity = suggestion
+dotnet_diagnostic.CA1841.severity = warning
+dotnet_diagnostic.CA1842.severity = error
+dotnet_diagnostic.CA1843.severity = error
+dotnet_diagnostic.CA1844.severity = warning
+dotnet_diagnostic.CA1845.severity = warning
+dotnet_diagnostic.CA1846.severity = warning
+dotnet_diagnostic.CA1847.severity = warning
+dotnet_diagnostic.CA1848.severity = suggestion
+dotnet_diagnostic.CA1849.severity = warning
+dotnet_diagnostic.CA1850.severity = none
+dotnet_diagnostic.CA1851.severity = warning
+```
+
+</details>
 
 ### Microsoft.CodeAnalysis.NetAnalyzers | Reliability
 | Code                                                                                              | Description ___________________________________________________________________________                                                  | !! Severity !! |
