@@ -763,7 +763,16 @@ dotnet_diagnostic.CA1070.severity = suggestion
 ### Microsoft.CodeAnalysis.NetAnalyzers | Documentation
 | Code                                                                                              | Description ___________________________________________________________________________                                                  | !! Severity !! |
 | :-----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------- | :------------: |
-| [CA1000](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1200) | Avoid using cref tags with a prefix                                                                                                      | ______________ |
+| [CA1200](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1200) | Avoid using cref tags with a prefix                                                                                                      | 🞅 None         |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+dotnet_diagnostic.CA1200.severity = none
+```
+
+</details>
 
 ### Microsoft.CodeAnalysis.NetAnalyzers | Globalization
 | Code                                                                                              | Description ___________________________________________________________________________                                                  | !! Severity !! |

@@ -474,9 +474,7 @@ dotnet_diagnostic.CA1068.severity = warning
 dotnet_diagnostic.CA1069.severity = warning
 dotnet_diagnostic.CA1070.severity = suggestion
 
-## Microsoft.CodeAnalysis.NetAnalyzers | Documentation
-
-# CA1200: Avoid using cref tags with a prefix
+# Microsoft.CodeAnalysis.NetAnalyzers | Documentation
 dotnet_diagnostic.CA1200.severity = none
 
 ## Microsoft.CodeAnalysis.NetAnalyzers | Globalization
