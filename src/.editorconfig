@@ -568,3 +568,9 @@ dotnet_diagnostic.CA1069.severity = warning
 
 # CA1070: Do not declare event fields as virtual
 dotnet_diagnostic.CA1070.severity = suggestion
+
+## Microsoft.CodeAnalysis.NetAnalyzers | Documentation
+
+# CA1200: Avoid using cref tags with a prefix
+dotnet_diagnostic.CA1200.severity = none
+
