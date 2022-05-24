@@ -1128,43 +1128,91 @@ dotnet_diagnostic.CA2018.severity = warning
 ### Microsoft.CodeAnalysis.NetAnalyzers | Usage
 | Code                                                                                              | Description ___________________________________________________________________________                                                  | !! Severity !! |
 | :-----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------- | :------------: |
-| [CA1816](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1816) | Call GC.SuppressFinalize correctly                                                                                                       | ______________ |
-| [CA2200](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2200) | Rethrow to preserve stack details                                                                                                        |                |
-| [CA2201](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2201) | Do not raise reserved exception types                                                                                                    |                |
-| [CA2207](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2207) | Initialize value type static fields inline                                                                                               |                |
-| [CA2208](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2208) | Instantiate argument exceptions correctly                                                                                                |                |
-| [CA2211](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2211) | Non-constant fields should not be visible                                                                                                |                |
-| [CA2213](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2213) | Disposable fields should be disposed                                                                                                     |                |
-| [CA2214](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2214) | Do not call overridable methods in constructors                                                                                          |                |
-| [CA2215](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2215) | Dispose methods should call base class dispose                                                                                           |                |
-| [CA2216](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2216) | Disposable types should declare finalizer                                                                                                |                |
-| [CA2217](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2217) | Do not mark enums with FlagsAttribute                                                                                                    |                |
-| [CA2218](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2218) | Override GetHashCode on overriding Equals                                                                                                |                |
-| [CA2219](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2219) | Do not raise exceptions in exception clauses                                                                                             |                |
-| [CA2224](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2224) | Override Equals on overloading operator equals                                                                                           |                |
-| [CA2225](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2225) | Operator overloads have named alternates                                                                                                 |                |
-| [CA2226](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2226) | Operators should have symmetrical overloads                                                                                              |                |
-| [CA2227](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2227) | Collection properties should be read only                                                                                                |                |
-| [CA2229](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2229) | Implement serialization constructors                                                                                                     |                |
-| [CA2231](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2231) | Overload operator equals on overriding ValueType.Equals                                                                                  |                |
-| [CA2234](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2234) | Pass _System.Uri_ objects instead of strings                                                                                             |                |
-| [CA2235](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2235) | Mark all non-serializable fields                                                                                                         |                |
-| [CA2237](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2237) | Mark ISerializable types with SerializableAttribute                                                                                      |                |
-| [CA2241](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2241) | Provide correct arguments to formatting methods                                                                                          |                |
-| [CA2242](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2242) | Test for NaN correctly                                                                                                                   |                |
-| [CA2243](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2243) | Attribute string literals should parse correctly                                                                                         |                |
-| [CA2244](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2244) | Do not duplicate indexed element initializations                                                                                         |                |
-| [CA2245](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2245) | Do not assign a property to itself                                                                                                       |                |
-| [CA2246](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2246) | Do not assign a symbol and its member in the same statement                                                                              |                |
-| [CA2247](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2247) | Argument passed to TaskCompletionSource constructor should be                          <br /> TaskCreationOptions enum                   |                |
-| [CA2248](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2248) | Provide correct enum argument to Enum.HasFlag                                                                                            |                |
-| [CA2249](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2249) | Consider using String.Contains instead of String.IndexOf                                                                                 |                |
-| [CA2250](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2250) | Use _ThrowIfCancellationRequested_                                                                                                       |                |
-| [CA2251](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2251) | Use _String.Equals_ over _String.Compare_                                                                                                |                |
-| [CA2252](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2252) | Opt in to preview features before using them                                                                                             |                |
-| [CA2253](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2253) | Named placeholders should not be numeric values                                                                                          |                |
-| [CA2254](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2254) | Template should be a static expression                                                                                                   |                |
-| [CA2255](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2255) | The _ModuleInitializer_ attribute should not be used in libraries                                                                        |                |
-| [CA2256](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2256) | All members declared in parent interfaces must implement _DICI_-attributed interface                                                     |                |
-| [CA2257](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2257) | Members defined on an interface with the _DICIAttribute_ should be _static_                                                              |                |
-| [CA2258](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2258) | Providing a _DICI_ interface in Visual Basic is unsupported                                                                              |                |
+| [CA1816](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1816) | Call GC.SuppressFinalize correctly                                                                                                       | 🛈 Suggestion   |
+| [CA2200](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2200) | Rethrow to preserve stack details                                                                                                        | ⚠ Warning     |
+| [CA2201](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2201) | Do not raise reserved exception types                                                                                                    | ⚠ Warning     |
+| [CA2207](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2207) | Initialize value type static fields inline                                                                                               | ⚠ Warning     |
+| [CA2208](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2208) | Instantiate argument exceptions correctly                                                                                                | ⚠ Warning     |
+| [CA2211](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2211) | Non-constant fields should not be visible                                                                                                | ⚠ Warning     |
+| [CA2213](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2213) | Disposable fields should be disposed                                                                                                     | ⚠ Warning     |
+| [CA2214](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2214) | Do not call overridable methods in constructors                                                                                          | ⚠ Warning     |
+| [CA2215](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2215) | Dispose methods should call base class dispose                                                                                           | ⚠ Warning     |
+| [CA2216](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2216) | Disposable types should declare finalizer                                                                                                | ⚠ Warning     |
+| [CA2217](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2217) | Do not mark enums with FlagsAttribute                                                                                                    | ⛔ Error       |
+| [CA2218](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2218) | Override GetHashCode on overriding Equals                                                                                                | ⚠ Warning     |
+| [CA2219](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2219) | Do not raise exceptions in exception clauses                                                                                             | ⛔ Error       |
+| [CA2224](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2224) | Override Equals on overloading operator equals                                                                                           | 🞅 None         |
+| [CA2225](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2225) | Operator overloads have named alternates                                                                                                 | 🞅 None         |
+| [CA2226](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2226) | Operators should have symmetrical overloads                                                                                              | 🞅 None         |
+| [CA2227](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2227) | Collection properties should be read only                                                                                                | ⚠ Warning     |
+| [CA2229](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2229) | Implement serialization constructors                                                                                                     | 🞅 None         |
+| [CA2231](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2231) | Overload operator equals on overriding ValueType.Equals                                                                                  | ⚠ Warning     |
+| [CA2234](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2234) | Pass _System.Uri_ objects instead of strings                                                                                             | ⚠ Warning     |
+| [CA2235](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2235) | Mark all non-serializable fields                                                                                                         | ⚠ Warning     |
+| [CA2237](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2237) | Mark ISerializable types with SerializableAttribute                                                                                      | ⚠ Warning     |
+| [CA2241](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2241) | Provide correct arguments to formatting methods                                                                                          | ⛔ Error       |
+| [CA2242](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2242) | Test for NaN correctly                                                                                                                   | ⛔ Error       |
+| [CA2243](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2243) | Attribute string literals should parse correctly                                                                                         | ⛔ Error       |
+| [CA2244](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2244) | Do not duplicate indexed element initializations                                                                                         | ⛔ Error       |
+| [CA2245](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2245) | Do not assign a property to itself                                                                                                       | ⛔ Error       |
+| [CA2246](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2246) | Do not assign a symbol and its member in the same statement                                                                              | ⛔ Error       |
+| [CA2247](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2247) | Argument passed to TaskCompletionSource constructor should be                          <br /> TaskCreationOptions enum                   | ⚠ Warning     |
+| [CA2248](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2248) | Provide correct enum argument to Enum.HasFlag                                                                                            | ⛔ Error       |
+| [CA2249](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2249) | Consider using String.Contains instead of String.IndexOf                                                                                 | ⚠ Warning     |
+| [CA2250](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2250) | Use _ThrowIfCancellationRequested_                                                                                                       | ⚠ Warning     |
+| [CA2251](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2251) | Use _String.Equals_ over _String.Compare_                                                                                                | ⚠ Warning     |
+| [CA2252](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2252) | Opt in to preview features before using them                                                                                             | ⛔ Error       |
+| [CA2253](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2253) | Named placeholders should not be numeric values                                                                                          | ⚠ Warning     |
+| [CA2254](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2254) | Template should be a static expression                                                                                                   | ⚠ Warning     |
+| [CA2255](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2255) | The _ModuleInitializer_ attribute should not be used in libraries                                                                        | ⚠ Warning     |
+| [CA2256](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2256) | All members declared in parent interfaces must implement _DICI_-attributed interface                                                     | ⚠ Warning     |
+| [CA2257](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2257) | Members defined on an interface with the _DICIAttribute_ should be _static_                                                              | ⚠ Warning     |
+| [CA2258](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2258) | Providing a _DICI_ interface in Visual Basic is unsupported                                                                              | ⚠ Warning     |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+dotnet_diagnostic.CA1816.severity = suggestion 
+dotnet_diagnostic.CA2200.severity = warning
+dotnet_diagnostic.CA2201.severity = warning
+dotnet_diagnostic.CA2207.severity = warning 
+dotnet_diagnostic.CA2208.severity = warning
+dotnet_diagnostic.CA2211.severity = warning
+dotnet_diagnostic.CA2213.severity = warning 
+dotnet_diagnostic.CA2214.severity = warning 
+dotnet_diagnostic.CA2215.severity = warning
+dotnet_diagnostic.CA2216.severity = warning 
+dotnet_diagnostic.CA2217.severity = error 
+dotnet_diagnostic.CA2218.severity = warning
+dotnet_diagnostic.CA2219.severity = error
+dotnet_diagnostic.CA2224.severity = none
+dotnet_diagnostic.CA2225.severity = none
+dotnet_diagnostic.CA2226.severity = none
+dotnet_diagnostic.CA2227.severity = warning
+dotnet_diagnostic.CA2229.severity = none
+dotnet_diagnostic.CA2231.severity = warning
+dotnet_diagnostic.CA2234.severity = warning 
+dotnet_diagnostic.CA2235.severity = warning 
+dotnet_diagnostic.CA2237.severity = warning 
+dotnet_diagnostic.CA2241.severity = error
+dotnet_diagnostic.CA2242.severity = error
+dotnet_diagnostic.CA2243.severity = error 
+dotnet_diagnostic.CA2244.severity = error
+dotnet_diagnostic.CA2245.severity = error
+dotnet_diagnostic.CA2246.severity = error
+dotnet_diagnostic.CA2247.severity = warning
+dotnet_diagnostic.CA2248.severity = error
+dotnet_diagnostic.CA2249.severity = warning
+dotnet_diagnostic.CA2250.severity = warning
+dotnet_diagnostic.CA2251.severity = warning
+dotnet_diagnostic.CA2252.severity = error
+dotnet_diagnostic.CA2253.severity = warning
+dotnet_diagnostic.CA2254.severity = warning
+dotnet_diagnostic.CA2255.severity = warning
+dotnet_diagnostic.CA2256.severity = warning
+dotnet_diagnostic.CA2257.severity = warning
+dotnet_diagnostic.CA2258.severity = warning
+```
+
+</details>
