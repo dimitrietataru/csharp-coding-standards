@@ -827,13 +827,28 @@ dotnet_diagnostic.CA1419.severity = suggestion
 ### Microsoft.CodeAnalysis.NetAnalyzers | Maintainability
 | Code                                                                                              | Description ___________________________________________________________________________                                                  | !! Severity !! |
 | :-----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------- | :------------: |
-| [CA1501](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1501) | Avoid excessive inheritance                                                                                                              | ______________ |
-| [CA1502](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1502) | Avoid excessive complexity                                                                                                               |                |
-| [CA1505](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1505) | Avoid unmaintainable code                                                                                                                |                |
-| [CA1506](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1506) | Avoid excessive class coupling                                                                                                           |                |
-| [CA1507](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1507) | Use _nameof_ in place of string                                                                                                          |                |
-| [CA1508](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1508) | Avoid dead conditional code                                                                                                              |                |
-| [CA1509](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1509) | Invalid entry in code metrics configuration file                                                                                         |                |
+| [CA1501](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1501) | Avoid excessive inheritance                                                                                                              | ⚠ Warning     |
+| [CA1502](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1502) | Avoid excessive complexity                                                                                                               | ⚠ Warning     |
+| [CA1505](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1505) | Avoid unmaintainable code                                                                                                                | ⚠ Warning     |
+| [CA1506](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1506) | Avoid excessive class coupling                                                                                                           | ⚠ Warning     |
+| [CA1507](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1507) | Use _nameof_ in place of string                                                                                                          | ⚠ Warning     |
+| [CA1508](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1508) | Avoid dead conditional code                                                                                                              | ⚠ Warning     |
+| [CA1509](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1509) | Invalid entry in code metrics configuration file                                                                                         | ⛔ Error       |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+dotnet_diagnostic.CA1501.severity = warning
+dotnet_diagnostic.CA1502.severity = warning
+dotnet_diagnostic.CA1505.severity = warning
+dotnet_diagnostic.CA1506.severity = warning
+dotnet_diagnostic.CA1507.severity = warning
+dotnet_diagnostic.CA1508.severity = warning
+dotnet_diagnostic.CA1509.severity = error 
+```
+
+</details>
 
 ### Microsoft.CodeAnalysis.NetAnalyzers | Naming
 | Code                                                                                              | Description ___________________________________________________________________________                                                  | !! Severity !! |
