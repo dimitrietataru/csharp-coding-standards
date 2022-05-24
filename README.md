@@ -805,11 +805,24 @@ dotnet_diagnostic.CA2101.severity = suggestion
 ### Microsoft.CodeAnalysis.NetAnalyzers | Interoperability
 | Code                                                                                              | Description ___________________________________________________________________________                                                  | !! Severity !! |
 | :-----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------- | :------------: |
-| [CA1401](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1401) | P/Invokes should not be visible                                                                                                          | ______________ |
-| [CA1416](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1416) | Validate platform compatibility                                                                                                          |                |
-| [CA1417](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1417) | Do not use _OutAttribute_ on string parameters for P/Invokes                                                                             |                |
-| [CA1418](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1418) | Validate platform compatibility                                                                                                          |                |
-| [CA1419](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1419) | Provide a parameterless ctor for types derived from                                    <br /> _System.Runtime.InteropServices.SafeHandle_|                |
+| [CA1401](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1401) | P/Invokes should not be visible                                                                                                          | 🛈 Suggestion   |
+| [CA1416](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1416) | Validate platform compatibility                                                                                                          | ⚠ Warning     |
+| [CA1417](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1417) | Do not use _OutAttribute_ on string parameters for P/Invokes                                                                             | ⚠ Warning     |
+| [CA1418](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1418) | Validate platform compatibility                                                                                                          | ⚠ Warning     |
+| [CA1419](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1419) | Provide a parameterless ctor for types derived from                                    <br /> _System.Runtime.InteropServices.SafeHandle_| 🛈 Suggestion   |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+dotnet_diagnostic.CA1401.severity = suggestion
+dotnet_diagnostic.CA1416.severity = warning
+dotnet_diagnostic.CA1417.severity = warning
+dotnet_diagnostic.CA1418.severity = warning
+dotnet_diagnostic.CA1419.severity = suggestion
+```
+
+</details>
 
 ### Microsoft.CodeAnalysis.NetAnalyzers | Maintainability
 | Code                                                                                              | Description ___________________________________________________________________________                                                  | !! Severity !! |
