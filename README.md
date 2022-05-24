@@ -991,19 +991,40 @@ dotnet_diagnostic.CA1851.severity = warning
 ### Microsoft.CodeAnalysis.NetAnalyzers | Reliability
 | Code                                                                                              | Description ___________________________________________________________________________                                                  | !! Severity !! |
 | :-----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------- | :------------: |
-| [CA2000](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2000) | Dispose objects before losing scope                                                                                                      | ______________ |
-| [CA2002](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2002) | Do not lock on objects with weak identity                                                                                                |                |
-| [CA2007](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2007) | Do not directly await a Task                                                                                                             |                |
-| [CA2008](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2008) | Do not create tasks without passing a _TaskScheduler_                                                                                    |                |
-| [CA2009](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2009) | Do not call _ToImmutableCollection_ on an _ImmutableCollection_ value                                                                    |                |
-| [CA2011](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2011) | Do not assign property within its setter                                                                                                 |                |
-| [CA2012](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2012) | Use _ValueTasks_ correctly                                                                                                               |                |
-| [CA2013](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2013) | Do not use _ReferenceEquals_ with value types                                                                                            |                |
-| [CA2014](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2014) | Do not use _stackalloc_ in loops                                                                                                         |                |
-| [CA2015](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2015) | Do not define finalizers for types derived from _MemoryManager<T>_                                                                       |                |
-| [CA2016](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2016) | Forward the _CancellationToken_ parameter to methods that take one                                                                       |                |
-| [CA2017](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2017) | Parameter count mismatch                                                                                                                 |                |
-| [CA2018](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2018) | The count argument to _Buffer.BlockCopy_ should specify the number of bytes [..]                                                         |                |
+| [CA2000](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2000) | Dispose objects before losing scope                                                                                                      | 🛈 Suggestion   |
+| [CA2002](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2002) | Do not lock on objects with weak identity                                                                                                | ⛔ Error       |
+| [CA2007](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2007) | Do not directly await a Task                                                                                                             | 🛈 Suggestion   |
+| [CA2008](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2008) | Do not create tasks without passing a _TaskScheduler_                                                                                    | 🛈 Suggestion   |
+| [CA2009](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2009) | Do not call _ToImmutableCollection_ on an _ImmutableCollection_ value                                                                    | ⚠ Warning     |
+| [CA2011](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2011) | Do not assign property within its setter                                                                                                 | ⛔ Error       |
+| [CA2012](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2012) | Use _ValueTasks_ correctly                                                                                                               | 🛈 Suggestion   |
+| [CA2013](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2013) | Do not use _ReferenceEquals_ with value types                                                                                            | ⚠ Warning     |
+| [CA2014](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2014) | Do not use _stackalloc_ in loops                                                                                                         | ⚠ Warning     |
+| [CA2015](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2015) | Do not define finalizers for types derived from _MemoryManager<T>_                                                                       | ⚠ Warning     |
+| [CA2016](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2016) | Forward the _CancellationToken_ parameter to methods that take one                                                                       | ⚠ Warning     |
+| [CA2017](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2017) | Parameter count mismatch                                                                                                                 | ⚠ Warning     |
+| [CA2018](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2018) | The count argument to _Buffer.BlockCopy_ should specify the number of bytes [..]                                                         | ⚠ Warning     |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+dotnet_diagnostic.CA2000.severity = suggestion
+dotnet_diagnostic.CA2002.severity = error
+dotnet_diagnostic.CA2007.severity = suggestion
+dotnet_diagnostic.CA2008.severity = suggestion
+dotnet_diagnostic.CA2009.severity = warning
+dotnet_diagnostic.CA2011.severity = error
+dotnet_diagnostic.CA2012.severity = suggestion
+dotnet_diagnostic.CA2013.severity = warning
+dotnet_diagnostic.CA2014.severity = warning
+dotnet_diagnostic.CA2015.severity = warning
+dotnet_diagnostic.CA2016.severity = warning
+dotnet_diagnostic.CA2017.severity = warning
+dotnet_diagnostic.CA2018.severity = warning
+```
+
+</details>
 
 ### Microsoft.CodeAnalysis.NetAnalyzers | Security
 | Code                                                                                              | Description ___________________________________________________________________________                                                  | !! Severity !! |

@@ -564,45 +564,19 @@ dotnet_diagnostic.CA1849.severity = warning
 dotnet_diagnostic.CA1850.severity = none
 dotnet_diagnostic.CA1851.severity = warning
 
-## Microsoft.CodeAnalysis.NetAnalyzers | Reliability
-
-# CA2000: Dispose objects before losing scope
+# Microsoft.CodeAnalysis.NetAnalyzers | Reliability
 dotnet_diagnostic.CA2000.severity = suggestion
-
-# CA2002: Do not lock on objects with weak identity
-dotnet_diagnostic.CA2002.severity = warning
-
-# CA2007: Consider calling ConfigureAwait on the awaited task
+dotnet_diagnostic.CA2002.severity = error
 dotnet_diagnostic.CA2007.severity = suggestion
-
-# CA2008: Do not create tasks without passing a TaskScheduler
-dotnet_diagnostic.CA2008.severity = none
-
-# CA2009: Do not call ToImmutableCollection on an ImmutableCollection value
-dotnet_diagnostic.CA2009.severity = suggestion
-
-# CA2011: Avoid infinite recursion
+dotnet_diagnostic.CA2008.severity = suggestion
+dotnet_diagnostic.CA2009.severity = warning
 dotnet_diagnostic.CA2011.severity = error
-
-# CA2012: Use ValueTasks correctly
 dotnet_diagnostic.CA2012.severity = suggestion
-
-# CA2013: Do not use ReferenceEquals with value types
 dotnet_diagnostic.CA2013.severity = warning
-
-# CA2014: Do not use stackalloc in loops
 dotnet_diagnostic.CA2014.severity = warning
-
-# CA2015: Do not define finalizers for types derived from MemoryManager<T>
 dotnet_diagnostic.CA2015.severity = warning
-
-# CA2016: Forward the 'CancellationToken' parameter to methods
 dotnet_diagnostic.CA2016.severity = warning
-
-# CA2017: Parameter count mismatch
 dotnet_diagnostic.CA2017.severity = warning
-
-# CA2018: 'Buffer.BlockCopy' expects the number of bytes to be copied for the 'count' argument
 dotnet_diagnostic.CA2018.severity = warning
 
 ## Microsoft.CodeAnalysis.NetAnalyzers | Security
