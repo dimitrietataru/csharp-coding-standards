@@ -653,55 +653,112 @@ csharp_preserve_single_line_statements = false
 ### Microsoft.CodeAnalysis.NetAnalyzers | Design
 | Code                                                                                              | Description ___________________________________________________________________________                                                  | !! Severity !! |
 | :-----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------- | :------------: |
-| [CA1000](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1000) | Do not declare static members on generic types                                                                                           | ______________ |
-| [CA1001](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1001) | Types that own disposable fields should be disposable                                                                                    |                |
-| [CA1002](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1002) | Do not expose generic lists                                                                                                              |                |
-| [CA1003](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1003) | Use generic event handler instances                                                                                                      |                |
-| [CA1005](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1005) | Avoid excessive parameters on generic types                                                                                              |                |
-| [CA1008](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1008) | Enums should have zero value                                                                                                             |                |
-| [CA1010](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1010) | Collections should implement generic interface                                                                                           |                |
-| [CA1012](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1012) | Abstract types should not have public constructors                                                                                       |                |
-| [CA1014](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1014) | Mark assemblies with CLSCompliantAttribute                                                                                               |                |
-| [CA1016](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1016) | Mark assemblies with AssemblyVersionAttribute                                                                                            |                |
-| [CA1017](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1017) | Mark assemblies with ComVisibleAttribute                                                                                                 |                |
-| [CA1018](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1018) | Mark attributes with AttributeUsageAttribute                                                                                             |                |
-| [CA1019](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1019) | Define accessors for attribute arguments                                                                                                 |                |
-| [CA1021](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1021) | Avoid out parameters                                                                                                                     |                |
-| [CA1024](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1024) | Use properties where appropriate                                                                                                         |                |
-| [CA1027](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1027) | Mark enums with FlagsAttribute                                                                                                           |                |
-| [CA1028](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1028) | Enum storage should be Int32                                                                                                             |                |
-| [CA1030](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1030) | Use events where appropriate                                                                                                             |                |
-| [CA1031](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1031) | Do not catch general exception types                                                                                                     |                |
-| [CA1032](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1032) | Implement standard exception constructors                                                                                                |                |
-| [CA1033](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1033) | Interface methods should be callable by child types                                                                                      |                |
-| [CA1034](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1034) | Nested types should not be visible                                                                                                       |                |
-| [CA1036](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1036) | Override methods on comparable types                                                                                                     |                |
-| [CA1040](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1040) | Avoid empty interfaces                                                                                                                   |                |
-| [CA1041](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1041) | Provide ObsoleteAttribute message                                                                                                        |                |
-| [CA1043](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1043) | Use integral or string argument for indexers                                                                                             |                |
-| [CA1044](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1044) | Properties should not be write only                                                                                                      |                |
-| [CA1045](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1045) | Do not pass types by reference                                                                                                           |                |
-| [CA1046](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1046) | Do not overload operator equals on reference types                                                                                       |                |
-| [CA1047](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1047) | Do not declare protected members in sealed types                                                                                         |                |
-| [CA1050](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1050) | Declare types in namespaces                                                                                                              |                |
-| [CA1051](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1051) | Do not declare visible instance fields                                                                                                   |                |
-| [CA1052](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1052) | Static holder types should be Static or NotInheritable                                                                                   |                |
-| [CA1053](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1053) | Static holder types should not have default constructors                                                                                 |                |
-| [CA1054](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1054) | URI parameters should not be strings                                                                                                     |                |
-| [CA1055](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1055) | URI return values should not be strings                                                                                                  |                |
-| [CA1056](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1056) | URI properties should not be strings                                                                                                     |                |
-| [CA1058](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1058) | Types should not extend certain base types                                                                                               |                |
-| [CA1060](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1060) | Move P/Invokes to NativeMethods class                                                                                                    |                |
-| [CA1061](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1061) | Do not hide base class methods                                                                                                           |                |
-| [CA1062](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1062) | Validate arguments of public methods                                                                                                     |                |
-| [CA1063](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1063) | Implement IDisposable correctly                                                                                                          |                |
-| [CA1064](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1064) | Exceptions should be public                                                                                                              |                |
-| [CA1065](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1065) | Do not raise exceptions in unexpected locations                                                                                          |                |
-| [CA1066](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1066) | Implement IEquatable when overriding Equals                                                                                              |                |
-| [CA1067](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1067) | Override Equals when implementing IEquatable                                                                                             |                |
-| [CA1068](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1068) | CancellationToken parameters must come last                                                                                              |                |
-| [CA1069](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1069) | Enums should not have duplicate values                                                                                                   |                |
-| [CA1070](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1070) | Do not declare event fields as virtual                                                                                                   |                |
+| [CA1000](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1000) | Do not declare static members on generic types                                                                                           | ⚠ Warning     |
+| [CA1001](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1001) | Types that own disposable fields should be disposable                                                                                    | ⚠ Warning     |
+| [CA1002](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1002) | Do not expose generic lists                                                                                                              | ⚠ Warning     |
+| [CA1003](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1003) | Use generic event handler instances                                                                                                      | 🞅 None         |
+| [CA1005](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1005) | Avoid excessive parameters on generic types                                                                                              | ⚠ Warning     |
+| [CA1008](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1008) | Enums should have zero value                                                                                                             | ⚠ Warning     |
+| [CA1010](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1010) | Collections should implement generic interface                                                                                           | 🛈 Suggestion   |
+| [CA1012](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1012) | Abstract types should not have public constructors                                                                                       | ⚠ Warning     |
+| [CA1014](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1014) | Mark assemblies with CLSCompliantAttribute                                                                                               | 🞅 None         |
+| [CA1016](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1016) | Mark assemblies with AssemblyVersionAttribute                                                                                            | 🞅 None         |
+| [CA1017](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1017) | Mark assemblies with ComVisibleAttribute                                                                                                 | 🞅 None         |
+| [CA1018](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1018) | Mark attributes with AttributeUsageAttribute                                                                                             | ⚠ Warning     |
+| [CA1019](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1019) | Define accessors for attribute arguments                                                                                                 | 🛈 Suggestion   |
+| [CA1021](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1021) | Avoid out parameters                                                                                                                     | 🛈 Suggestion   |
+| [CA1024](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1024) | Use properties where appropriate                                                                                                         | 🛈 Suggestion   |
+| [CA1027](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1027) | Mark enums with FlagsAttribute                                                                                                           | 🛈 Suggestion   |
+| [CA1028](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1028) | Enum storage should be Int32                                                                                                             | ⚠ Warning     |
+| [CA1030](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1030) | Use events where appropriate                                                                                                             | 🞅 None         |
+| [CA1031](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1031) | Do not catch general exception types                                                                                                     | 🛈 Suggestion   |
+| [CA1032](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1032) | Implement standard exception constructors                                                                                                | ⚠ Warning     |
+| [CA1033](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1033) | Interface methods should be callable by child types                                                                                      | ⚠ Warning     |
+| [CA1034](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1034) | Nested types should not be visible                                                                                                       | ⚠ Warning     |
+| [CA1036](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1036) | Override methods on comparable types                                                                                                     | 🛈 Suggestion   |
+| [CA1040](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1040) | Avoid empty interfaces                                                                                                                   | 🞅 None         |
+| [CA1041](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1041) | Provide ObsoleteAttribute message                                                                                                        | ⛔ Error       |
+| [CA1043](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1043) | Use integral or string argument for indexers                                                                                             | ⚠ Warning     |
+| [CA1044](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1044) | Properties should not be write only                                                                                                      | 🞅 None         |
+| [CA1045](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1045) | Do not pass types by reference                                                                                                           | ⚠ Warning     |
+| [CA1046](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1046) | Do not overload operator equals on reference types                                                                                       | ⚠ Warning     |
+| [CA1047](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1047) | Do not declare protected members in sealed types                                                                                         | 🞅 None         |
+| [CA1050](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1050) | Declare types in namespaces                                                                                                              | ⚠ Warning     |
+| [CA1051](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1051) | Do not declare visible instance fields                                                                                                   | 🞅 None         |
+| [CA1052](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1052) | Static holder types should be Static or NotInheritable                                                                                   | ⚠ Warning     |
+| [CA1053](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1053) | Static holder types should not have default constructors                                                                                 | -              |
+| [CA1054](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1054) | URI parameters should not be strings                                                                                                     | ⚠ Warning     |
+| [CA1055](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1055) | URI return values should not be strings                                                                                                  | ⚠ Warning     |
+| [CA1056](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1056) | URI properties should not be strings                                                                                                     | ⚠ Warning     |
+| [CA1058](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1058) | Types should not extend certain base types                                                                                               | ⚠ Warning     |
+| [CA1060](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1060) | Move P/Invokes to NativeMethods class                                                                                                    | 🞅 None         |
+| [CA1061](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1061) | Do not hide base class methods                                                                                                           | ⚠ Warning     |
+| [CA1062](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1062) | Validate arguments of public methods                                                                                                     | 🞅 None         |
+| [CA1063](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1063) | Implement IDisposable correctly                                                                                                          | ⚠ Warning     |
+| [CA1064](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1064) | Exceptions should be public                                                                                                              | ⛔ Error       |
+| [CA1065](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1065) | Do not raise exceptions in unexpected locations                                                                                          | ⛔ Error       |
+| [CA1066](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1066) | Implement IEquatable when overriding Equals                                                                                              | ⚠ Warning     |
+| [CA1067](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1067) | Override Equals when implementing IEquatable                                                                                             | ⚠ Warning     |
+| [CA1068](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1068) | CancellationToken parameters must come last                                                                                              | ⚠ Warning     |
+| [CA1069](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1069) | Enums should not have duplicate values                                                                                                   | ⚠ Warning     |
+| [CA1070](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1070) | Do not declare event fields as virtual                                                                                                   | 🛈 Suggestion   |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+dotnet_diagnostic.CA1000.severity = warning
+dotnet_diagnostic.CA1001.severity = warning
+dotnet_diagnostic.CA1002.severity = warning
+dotnet_diagnostic.CA1003.severity = none
+dotnet_diagnostic.CA1005.severity = warning
+dotnet_diagnostic.CA1008.severity = warning
+dotnet_diagnostic.CA1010.severity = suggestion
+dotnet_diagnostic.CA1012.severity = warning
+dotnet_diagnostic.CA1014.severity = none
+dotnet_diagnostic.CA1016.severity = none
+dotnet_diagnostic.CA1017.severity = none
+dotnet_diagnostic.CA1018.severity = warning
+dotnet_diagnostic.CA1019.severity = suggestion
+dotnet_diagnostic.CA1021.severity = suggestion
+dotnet_diagnostic.CA1024.severity = suggestion
+dotnet_diagnostic.CA1027.severity = suggestion
+dotnet_diagnostic.CA1028.severity = warning
+dotnet_diagnostic.CA1030.severity = none
+dotnet_diagnostic.CA1031.severity = suggestion
+dotnet_diagnostic.CA1032.severity = warning
+dotnet_diagnostic.CA1033.severity = warning
+dotnet_diagnostic.CA1034.severity = warning
+dotnet_diagnostic.CA1036.severity = suggestion
+dotnet_diagnostic.CA1040.severity = none
+dotnet_diagnostic.CA1041.severity = error
+dotnet_diagnostic.CA1043.severity = warning
+dotnet_diagnostic.CA1044.severity = none
+dotnet_diagnostic.CA1045.severity = warning
+dotnet_diagnostic.CA1046.severity = warning
+dotnet_diagnostic.CA1047.severity = none
+dotnet_diagnostic.CA1050.severity = warning
+dotnet_diagnostic.CA1051.severity = error
+dotnet_diagnostic.CA1052.severity = warning
+#dotnet_diagnostic.CA1053.severity = warning
+dotnet_diagnostic.CA1054.severity = warning
+dotnet_diagnostic.CA1055.severity = warning
+dotnet_diagnostic.CA1056.severity = warning
+dotnet_diagnostic.CA1058.severity = warning
+dotnet_diagnostic.CA1060.severity = none
+dotnet_diagnostic.CA1061.severity = warning
+dotnet_diagnostic.CA1062.severity = none
+dotnet_diagnostic.CA1063.severity = warning
+dotnet_diagnostic.CA1064.severity = error
+dotnet_diagnostic.CA1065.severity = error
+dotnet_diagnostic.CA1066.severity = warning
+dotnet_diagnostic.CA1067.severity = warning
+dotnet_diagnostic.CA1068.severity = warning
+dotnet_diagnostic.CA1069.severity = warning
+dotnet_diagnostic.CA1070.severity = suggestion
+```
+
+</details>
 
 ### Microsoft.CodeAnalysis.NetAnalyzers | Documentation
 | Code                                                                                              | Description ___________________________________________________________________________                                                  | !! Severity !! |
