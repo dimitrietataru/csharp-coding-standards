@@ -853,22 +853,46 @@ dotnet_diagnostic.CA1509.severity = error
 ### Microsoft.CodeAnalysis.NetAnalyzers | Naming
 | Code                                                                                              | Description ___________________________________________________________________________                                                  | !! Severity !! |
 | :-----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------- | :------------: |
-| [CA1700](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1700) | Do not name enum values _Reserved_                                                                                                       | ______________ |
-| [CA1707](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1707) | Identifiers should not contain underscores                                                                                               |                |
-| [CA1708](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1708) | Identifiers should differ by more than case                                                                                              |                |
-| [CA1710](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1710) | Identifiers should have correct suffix                                                                                                   |                |
-| [CA1711](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1711) | Identifiers should not have incorrect suffix                                                                                             |                |
-| [CA1712](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1712) | Do not prefix enum values with type name                                                                                                 |                |
-| [CA1713](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1713) | Events should not have before or after prefix                                                                                            |                |
-| [CA1714](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1714) | Flags enums should have plural names                                                                                                     |                |
-| [CA1715](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1715) | Identifiers should have correct prefix                                                                                                   |                |
-| [CA1716](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1716) | Identifiers should not match keywords                                                                                                    |                |
-| [CA1717](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1717) | Only _FlagsAttribute_ enums should have plural names                                                                                     |                |
-| [CA1720](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1720) | Identifiers should not contain type names                                                                                                |                |
-| [CA1721](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1721) | Property names should not match get methods                                                                                              |                |
-| [CA1724](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1724) | Type names should not match namespaces                                                                                                   |                |
-| [CA1725](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1725) | Parameter names should match base declaration                                                                                            |                |
-| [CA1727](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1727) | Use PascalCase for named placeholders                                                                                                    |                |
+| [CA1700](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1700) | Do not name enum values _Reserved_                                                                                                       | 🛈 Suggestion   |
+| [CA1707](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1707) | Identifiers should not contain underscores                                                                                               | ⛔ Error       |
+| [CA1708](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1708) | Identifiers should differ by more than case                                                                                              | 🛈 Suggestion   |
+| [CA1710](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1710) | Identifiers should have correct suffix                                                                                                   | ⚠ Warning     |
+| [CA1711](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1711) | Identifiers should not have incorrect suffix                                                                                             | ⚠ Warning     |
+| [CA1712](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1712) | Do not prefix enum values with type name                                                                                                 | ⛔ Error       |
+| [CA1713](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1713) | Events should not have before or after prefix                                                                                            | ⚠ Warning     |
+| [CA1714](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1714) | Flags enums should have plural names                                                                                                     | ⚠ Warning     |
+| [CA1715](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1715) | Identifiers should have correct prefix                                                                                                   | ⚠ Warning     |
+| [CA1716](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1716) | Identifiers should not match keywords                                                                                                    | ⚠ Warning     |
+| [CA1717](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1717) | Only _FlagsAttribute_ enums should have plural names                                                                                     | 🛈 Suggestion   |
+| [CA1721](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1721) | Property names should not match get methods                                                                                              | ⚠ Warning     |
+| [CA1720](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1720) | Identifiers should not contain type names                                                                                                | ⚠ Warning     |
+| [CA1724](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1724) | Type names should not match namespaces                                                                                                   | ⚠ Warning     |
+| [CA1725](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1725) | Parameter names should match base declaration                                                                                            | ⚠ Warning     |
+| [CA1727](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1727) | Use PascalCase for named placeholders                                                                                                    | ⚠ Warning     |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+dotnet_diagnostic.CA1700.severity = suggestion
+dotnet_diagnostic.CA1707.severity = error
+dotnet_diagnostic.CA1708.severity = suggestion
+dotnet_diagnostic.CA1710.severity = warning
+dotnet_diagnostic.CA1711.severity = warning
+dotnet_diagnostic.CA1712.severity = error
+dotnet_diagnostic.CA1713.severity = warning
+dotnet_diagnostic.CA1714.severity = warning
+dotnet_diagnostic.CA1715.severity = warning
+dotnet_diagnostic.CA1716.severity = warning
+dotnet_diagnostic.CA1717.severity = suggestion
+dotnet_diagnostic.CA1720.severity = warning
+dotnet_diagnostic.CA1721.severity = warning
+dotnet_diagnostic.CA1724.severity = warning
+dotnet_diagnostic.CA1725.severity = warning
+dotnet_diagnostic.CA1727.severity = warning
+```
+
+</details>
 
 ### Microsoft.CodeAnalysis.NetAnalyzers | Performance
 | Code                                                                                              | Description ___________________________________________________________________________                                                  | !! Severity !! |
