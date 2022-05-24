@@ -777,14 +777,30 @@ dotnet_diagnostic.CA1200.severity = none
 ### Microsoft.CodeAnalysis.NetAnalyzers | Globalization
 | Code                                                                                              | Description ___________________________________________________________________________                                                  | !! Severity !! |
 | :-----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------- | :------------: |
-| [CA1303](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1303) | Do not pass literals as localized parameters                                                                                             | ______________ |
-| [CA1304](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1304) | Specify CultureInfo                                                                                                                      |                |
-| [CA1305](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1305) | Specify IFormatProvider                                                                                                                  |                |
-| [CA1307](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1307) | Specify StringComparison for clarity                                                                                                     |                |
-| [CA1308](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1308) | Normalize strings to uppercase                                                                                                           |                |
-| [CA1309](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1309) | Use ordinal StringComparison                                                                                                             |                |
-| [CA1310](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1310) | Specify StringComparison for correctness                                                                                                 |                |
-| [CA2101](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2101) | Specify marshalling for P/Invoke string arguments                                                                                        |                |
+| [CA1303](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1303) | Do not pass literals as localized parameters                                                                                             | ⚠ Warning     |
+| [CA1304](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1304) | Specify CultureInfo                                                                                                                      | ⚠ Warning     |
+| [CA1305](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1305) | Specify IFormatProvider                                                                                                                  | ⚠ Warning     |
+| [CA1307](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1307) | Specify StringComparison for clarity                                                                                                     | ⚠ Warning     |
+| [CA1308](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1308) | Normalize strings to uppercase                                                                                                           | 🛈 Suggestion   |
+| [CA1309](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1309) | Use ordinal StringComparison                                                                                                             | ⚠ Warning     |
+| [CA1310](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1310) | Specify StringComparison for correctness                                                                                                 | ⚠ Warning     |
+| [CA2101](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2101) | Specify marshalling for P/Invoke string arguments                                                                                        | 🛈 Suggestion   |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+dotnet_diagnostic.CA1303.severity = warning
+dotnet_diagnostic.CA1304.severity = warning
+dotnet_diagnostic.CA1305.severity = warning
+dotnet_diagnostic.CA1307.severity = warning
+dotnet_diagnostic.CA1308.severity = suggestion
+dotnet_diagnostic.CA1309.severity = warning
+dotnet_diagnostic.CA1310.severity = warning
+dotnet_diagnostic.CA2101.severity = suggestion
+```
+
+</details>
 
 ### Microsoft.CodeAnalysis.NetAnalyzers | Interoperability
 | Code                                                                                              | Description ___________________________________________________________________________                                                  | !! Severity !! |
