@@ -1029,101 +1029,204 @@ dotnet_diagnostic.CA2018.severity = warning
 ### Microsoft.CodeAnalysis.NetAnalyzers | Security
 | Code                                                                                              | Description ___________________________________________________________________________                                                  | !! Severity !! |
 | :-----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------- | :------------: |
-| [CA2100](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2100) | Review SQL queries for security vulnerabilities                                                                                          | ______________ |
-| [CA2109](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2109) | Review visible event handlers                                                                                                            |                |
-| [CA2119](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2119) | Seal methods that satisfy private interfaces                                                                                             |                |
-| [CA2153](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2153) | Avoid handling Corrupted State Exceptions                                                                                                |                |
-| [CA2300](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2300) | Do not use insecure deserializer BinaryFormatter                                                                                         |                |
-| [CA2301](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2301) | Do not call BinaryFormatter.Deserialize without first setting BinaryFormatter.Binder                                                     |                |
-| [CA2302](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2302) | Ensure BinaryFormatter.Binder is set before calling BinaryFormatter.Deserialize                                                          |                |
-| [CA2305](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2305) | Do not use insecure deserializer LosFormatter                                                                                            |                |
-| [CA2310](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2310) | Do not use insecure deserializer NetDataContractSerializer                                                                               |                |
-| [CA2311](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2311) | Do not deserialize without first setting NetDataContractSerializer.Binder                                                                |                |
-| [CA2312](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2312) | Ensure NetDataContractSerializer.Binder is set before deserializing                                                                      |                |
-| [CA2315](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2315) | Do not use insecure deserializer ObjectStateFormatter                                                                                    |                |
-| [CA2321](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2321) | Do not deserialize with JavaScriptSerializer using a SimpleTypeResolver                                                                  |                |
-| [CA2322](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2322) | Ensure JavaScriptSerializer is not initialized with SimpleTypeResolver [..]                                                              |                |
-| [CA2326](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2326) | Do not use TypeNameHandling values other than None                                                                                       |                |
-| [CA2327](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2327) | Do not use insecure JsonSerializerSettings                                                                                               |                |
-| [CA2328](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2328) | Ensure that JsonSerializerSettings are secure                                                                                            |                |
-| [CA2329](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2329) | Do not deserialize with JsonSerializer using an insecure configuration                                                                   |                |
-| [CA2330](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2330) | Ensure that JsonSerializer has a secure configuration when deserializing                                                                 |                |
-| [CA2350](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2350) | Ensure DataTable.ReadXml()'s input is trusted                                                                                            |                |
-| [CA2351](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2351) | Ensure DataSet.ReadXml()'s input is trusted                                                                                              |                |
-| [CA2352](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2352) | Unsafe DataSet or DataTable in serializable type can be vulnerable to RCEA                                                               |                |
-| [CA2353](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2353) | Unsafe DataSet or DataTable in serializable type                                                                                         |                |
-| [CA2354](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2354) | Unsafe DataSet or DataTable in deserialized object graph can be vulnerable to RCEA                                                       |                |
-| [CA2355](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2355) | Unsafe DataSet or DataTable in deserialized object graph                                                                                 |                |
-| [CA2356](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2356) | Unsafe DataSet or DataTable type in web deserialized object graph                                                                        |                |
-| [CA2361](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2361) | Ensure autogen class with DataSet.ReadXml() is not used with untrusted data                                                              |                |
-| [CA2362](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2362) | Unsafe DataSet or DataTable in autogen serializable type can be vulnerable to RCEA                                                       |                |
-| [CA3001](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3001) | Review code for SQL injection vulnerabilities                                                                                            |                |
-| [CA3002](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3002) | Review code for XSS vulnerabilities                                                                                                      |                |
-| [CA3003](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3003) | Review code for file path injection vulnerabilities                                                                                      |                |
-| [CA3004](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3004) | Review code for information disclosure vulnerabilities                                                                                   |                |
-| [CA3005](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3005) | Review code for LDAP injection vulnerabilities                                                                                           |                |
-| [CA3006](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3006) | Review code for process command injection vulnerabilities                                                                                |                |
-| [CA3007](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3007) | Review code for open redirect vulnerabilities                                                                                            |                |
-| [CA3008](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3008) | Review code for XPath injection vulnerabilities                                                                                          |                |
-| [CA3009](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3009) | Review code for XML injection vulnerabilities                                                                                            |                |
-| [CA3010](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3010) | Review code for XAML injection vulnerabilities                                                                                           |                |
-| [CA3011](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3011) | Review code for DLL injection vulnerabilities                                                                                            |                |
-| [CA3012](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3012) | Review code for regex injection vulnerabilities                                                                                          |                |
-| [CA3061](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3061) | Do not add schema by URL                                                                                                                 |                |
-| [CA3075](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3075) | Insecure DTD Processing                                                                                                                  |                |
-| [CA3076](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3076) | Insecure XSLT Script Execution                                                                                                           |                |
-| [CA3077](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3077) | Insecure Processing in API Design, XML Document and XML Text Reader                                                                      |                |
-| [CA3147](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3147) | Mark verb handlers with ValidateAntiForgeryToken                                                                                         |                |
-| [CA5350](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5350) | Do Not Use Weak Cryptographic Algorithms                                                                                                 |                |
-| [CA5351](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5351) | Do Not Use Broken Cryptographic Algorithms                                                                                               |                |
-| [CA5358](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5358) | Do Not Use Unsafe Cipher Modes                                                                                                           |                |
-| [CA5359](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5359) | Do not disable certificate validation                                                                                                    |                |
-| [CA5360](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5360) | Do not call dangerous methods in deserialization                                                                                         |                |
-| [CA5361](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5361) | Do not disable SChannel use of strong crypto                                                                                             |                |
-| [CA5362](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5362) | Potential reference cycle in deserialized object graph                                                                                   |                |
-| [CA5363](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5363) | Do not disable request validation                                                                                                        |                |
-| [CA5364](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5364) | Do not use deprecated security protocols                                                                                                 |                |
-| [CA5365](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5365) | Do Not Disable HTTP Header Checking                                                                                                      |                |
-| [CA5366](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5366) | Use XmlReader For DataSet Read XML                                                                                                       |                |
-| [CA5367](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5367) | Do not serialize types with pointer fields                                                                                               |                |
-| [CA5368](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5368) | Set ViewStateUserKey For Classes Derived From Page                                                                                       |                |
-| [CA5369](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5369) | Use XmlReader for Deserialize                                                                                                            |                |
-| [CA5370](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5370) | Use XmlReader for validating reader                                                                                                      |                |
-| [CA5371](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5371) | Use XmlReader for schema read                                                                                                            |                |
-| [CA5372](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5372) | Use XmlReader for XPathDocument                                                                                                          |                |
-| [CA5373](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5373) | Do not use obsolete key derivation function                                                                                              |                |
-| [CA5374](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5374) | Do not use XslTransform                                                                                                                  |                |
-| [CA5375](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5375) | Do not use account shared access signature                                                                                               |                |
-| [CA5376](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5376) | Use SharedAccessProtocol HttpsOnly                                                                                                       |                |
-| [CA5377](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5377) | Use container level access policy                                                                                                        |                |
-| [CA5378](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5378) | Do not disable ServicePointManagerSecurityProtocols                                                                                      |                |
-| [CA5379](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5379) | Ensure key derivation function algorithm is sufficiently strong                                                                          |                |
-| [CA5380](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5380) | Do not add certificates to root store                                                                                                    |                |
-| [CA5381](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5381) | Ensure certificates are not added to root store                                                                                          |                |
-| [CA5382](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5382) | Use secure cookies in ASP.NET Core                                                                                                       |                |
-| [CA5383](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5383) | Ensure use secure cookies in ASP.NET Core                                                                                                |                |
-| [CA5384](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5384) | Do not use digital signature algorithm (DSA)                                                                                             |                |
-| [CA5385](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5385) | Use Rivest–Shamir–Adleman (RSA) algorithm with sufficient key size                                                                       |                |
-| [CA5386](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5386) | Avoid hardcoding SecurityProtocolType value                                                                                              |                |
-| [CA5387](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5387) | Do not use weak key derivation function with insufficient iteration count                                                                |                |
-| [CA5388](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5388) | Ensure sufficient iteration count when using weak key derivation function                                                                |                |
-| [CA5389](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5389) | Do not add archive item's path to the target file system path                                                                            |                |
-| [CA5390](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5390) | Do not hard-code encryption key                                                                                                          |                |
-| [CA5391](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5391) | Use antiforgery tokens in ASP.NET Core MVC controllers                                                                                   |                |
-| [CA5392](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5392) | Use DefaultDllImportSearchPaths attribute for P/Invokes                                                                                  |                |
-| [CA5393](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5393) | Do not use unsafe DllImportSearchPath value                                                                                              |                |
-| [CA5394](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5394) | Do not use insecure randomness                                                                                                           |                |
-| [CA5395](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5395) | Miss HttpVerb attribute for action methods                                                                                               |                |
-| [CA5396](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5396) | Set HttpOnly to true for HttpCookie                                                                                                      |                |
-| [CA5397](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5397) | Do not use deprecated SslProtocols values                                                                                                |                |
-| [CA5398](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5398) | Avoid hardcoded SslProtocols values                                                                                                      |                |
-| [CA5399](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5399) | Enable HttpClient certificate revocation list check                                                                                      |                |
-| [CA5400](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5400) | Ensure HttpClient certificate revocation list check is not disabled                                                                      |                |
-| [CA5401](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5401) | Do not use CreateEncryptor with non-default IV                                                                                           |                |
-| [CA5402](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5402) | Use CreateEncryptor with the default IV                                                                                                  |                |
-| [CA5403](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5403) | Do not hard-code certificate                                                                                                             |                |
-| [CA5404](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5404) | Do not disable token validation checks                                                                                                   |                |
-| [CA5405](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5405) | Do not always skip token validation in delegates                                                                                         |                |
+| [CA2100](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2100) | Review SQL queries for security vulnerabilities                                                                                          | ⚠ Warning     |
+| [CA2109](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2109) | Review visible event handlers                                                                                                            | ⚠ Warning     |
+| [CA2119](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2119) | Seal methods that satisfy private interfaces                                                                                             | ⚠ Warning     |
+| [CA2153](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2153) | Avoid handling Corrupted State Exceptions                                                                                                | ⚠ Warning     |
+| [CA2300](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2300) | Do not use insecure deserializer BinaryFormatter                                                                                         | ⛔ Error       |
+| [CA2301](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2301) | Do not call BinaryFormatter.Deserialize without first setting BinaryFormatter.Binder                                                     | 🞅 None         |
+| [CA2302](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2302) | Ensure BinaryFormatter.Binder is set before calling BinaryFormatter.Deserialize                                                          | 🞅 None         |
+| [CA2305](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2305) | Do not use insecure deserializer LosFormatter                                                                                            | ⛔ Error       |
+| [CA2310](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2310) | Do not use insecure deserializer NetDataContractSerializer                                                                               | ⛔ Error       |
+| [CA2311](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2311) | Do not deserialize without first setting NetDataContractSerializer.Binder                                                                | 🞅 None         |
+| [CA2312](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2312) | Ensure NetDataContractSerializer.Binder is set before deserializing                                                                      | 🞅 None         |
+| [CA2315](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2315) | Do not use insecure deserializer ObjectStateFormatter                                                                                    | ⛔ Error       |
+| [CA2321](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2321) | Do not deserialize with JavaScriptSerializer using a SimpleTypeResolver                                                                  | ⚠ Warning     |
+| [CA2322](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2322) | Ensure JavaScriptSerializer is not initialized with SimpleTypeResolver [..]                                                              | ⚠ Warning     |
+| [CA2326](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2326) | Do not use TypeNameHandling values other than None                                                                                       | ⚠ Warning     |
+| [CA2327](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2327) | Do not use insecure JsonSerializerSettings                                                                                               | ⚠ Warning     |
+| [CA2328](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2328) | Ensure that JsonSerializerSettings are secure                                                                                            | ⚠ Warning     |
+| [CA2329](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2329) | Do not deserialize with JsonSerializer using an insecure configuration                                                                   | ⚠ Warning     |
+| [CA2330](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2330) | Ensure that JsonSerializer has a secure configuration when deserializing                                                                 | ⚠ Warning     |
+| [CA2350](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2350) | Ensure DataTable.ReadXml()'s input is trusted                                                                                            | ⚠ Warning     |
+| [CA2351](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2351) | Ensure DataSet.ReadXml()'s input is trusted                                                                                              | ⚠ Warning     |
+| [CA2352](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2352) | Unsafe DataSet or DataTable in serializable type can be vulnerable to RCEA                                                               | ⚠ Warning     |
+| [CA2353](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2353) | Unsafe DataSet or DataTable in serializable type                                                                                         | ⚠ Warning     |
+| [CA2354](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2354) | Unsafe DataSet or DataTable in deserialized object graph can be vulnerable to RCEA                                                       | ⚠ Warning     |
+| [CA2355](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2355) | Unsafe DataSet or DataTable in deserialized object graph                                                                                 | ⚠ Warning     |
+| [CA2356](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2356) | Unsafe DataSet or DataTable type in web deserialized object graph                                                                        | ⚠ Warning     |
+| [CA2361](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2361) | Ensure autogen class with DataSet.ReadXml() is not used with untrusted data                                                              | ⚠ Warning     |
+| [CA2362](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2362) | Unsafe DataSet or DataTable in autogen serializable type can be vulnerable to RCEA                                                       | ⚠ Warning     |
+| [CA3001](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3001) | Review code for SQL injection vulnerabilities                                                                                            | ⚠ Warning     |
+| [CA3002](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3002) | Review code for XSS vulnerabilities                                                                                                      | ⚠ Warning     |
+| [CA3003](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3003) | Review code for file path injection vulnerabilities                                                                                      | ⚠ Warning     |
+| [CA3004](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3004) | Review code for information disclosure vulnerabilities                                                                                   | ⚠ Warning     |
+| [CA3005](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3005) | Review code for LDAP injection vulnerabilities                                                                                           | ⚠ Warning     |
+| [CA3006](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3006) | Review code for process command injection vulnerabilities                                                                                | ⚠ Warning     |
+| [CA3007](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3007) | Review code for open redirect vulnerabilities                                                                                            | ⚠ Warning     |
+| [CA3008](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3008) | Review code for XPath injection vulnerabilities                                                                                          | ⚠ Warning     |
+| [CA3009](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3009) | Review code for XML injection vulnerabilities                                                                                            | ⚠ Warning     |
+| [CA3010](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3010) | Review code for XAML injection vulnerabilities                                                                                           | ⚠ Warning     |
+| [CA3011](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3011) | Review code for DLL injection vulnerabilities                                                                                            | ⚠ Warning     |
+| [CA3012](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3012) | Review code for regex injection vulnerabilities                                                                                          | ⚠ Warning     |
+| [CA3061](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3061) | Do not add schema by URL                                                                                                                 | ⚠ Warning     |
+| [CA3075](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3075) | Insecure DTD Processing                                                                                                                  | ⚠ Warning     |
+| [CA3076](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3076) | Insecure XSLT Script Execution                                                                                                           | ⚠ Warning     |
+| [CA3077](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3077) | Insecure Processing in API Design, XML Document and XML Text Reader                                                                      | ⚠ Warning     |
+| [CA3147](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3147) | Mark verb handlers with ValidateAntiForgeryToken                                                                                         | ⚠ Warning     |
+| [CA5350](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5350) | Do Not Use Weak Cryptographic Algorithms                                                                                                 | ⚠ Warning     |
+| [CA5351](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5351) | Do Not Use Broken Cryptographic Algorithms                                                                                               | ⚠ Warning     |
+| [CA5358](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5358) | Do Not Use Unsafe Cipher Modes                                                                                                           | ⚠ Warning     |
+| [CA5359](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5359) | Do not disable certificate validation                                                                                                    | ⚠ Warning     |
+| [CA5360](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5360) | Do not call dangerous methods in deserialization                                                                                         | ⚠ Warning     |
+| [CA5361](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5361) | Do not disable SChannel use of strong crypto                                                                                             | ⚠ Warning     |
+| [CA5362](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5362) | Potential reference cycle in deserialized object graph                                                                                   | 🛈 Suggestion   |
+| [CA5363](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5363) | Do not disable request validation                                                                                                        | ⚠ Warning     |
+| [CA5364](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5364) | Do not use deprecated security protocols                                                                                                 | ⚠ Warning     |
+| [CA5365](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5365) | Do Not Disable HTTP Header Checking                                                                                                      | ⚠ Warning     |
+| [CA5366](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5366) | Use XmlReader For DataSet Read XML                                                                                                       | ⚠ Warning     |
+| [CA5367](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5367) | Do not serialize types with pointer fields                                                                                               | ⛔ Error       |
+| [CA5368](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5368) | Set ViewStateUserKey For Classes Derived From Page                                                                                       | ⚠ Warning     |
+| [CA5369](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5369) | Use XmlReader for Deserialize                                                                                                            | ⚠ Warning     |
+| [CA5370](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5370) | Use XmlReader for validating reader                                                                                                      | ⚠ Warning     |
+| [CA5371](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5371) | Use XmlReader for schema read                                                                                                            | ⚠ Warning     |
+| [CA5372](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5372) | Use XmlReader for XPathDocument                                                                                                          | ⚠ Warning     |
+| [CA5373](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5373) | Do not use obsolete key derivation function                                                                                              | ⚠ Warning     |
+| [CA5374](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5374) | Do not use XslTransform                                                                                                                  | ⚠ Warning     |
+| [CA5375](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5375) | Do not use account shared access signature                                                                                               | ⚠ Warning     |
+| [CA5376](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5376) | Use SharedAccessProtocol HttpsOnly                                                                                                       | ⚠ Warning     |
+| [CA5377](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5377) | Use container level access policy                                                                                                        | ⚠ Warning     |
+| [CA5378](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5378) | Do not disable ServicePointManagerSecurityProtocols                                                                                      | ⚠ Warning     |
+| [CA5379](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5379) | Ensure key derivation function algorithm is sufficiently strong                                                                          | ⚠ Warning     |
+| [CA5380](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5380) | Do not add certificates to root store                                                                                                    | ⚠ Warning     |
+| [CA5381](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5381) | Ensure certificates are not added to root store                                                                                          | ⚠ Warning     |
+| [CA5382](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5382) | Use secure cookies in ASP.NET Core                                                                                                       | ⚠ Warning     |
+| [CA5383](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5383) | Ensure use secure cookies in ASP.NET Core                                                                                                | ⚠ Warning     |
+| [CA5384](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5384) | Do not use digital signature algorithm (DSA)                                                                                             | ⚠ Warning     |
+| [CA5385](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5385) | Use Rivest–Shamir–Adleman (RSA) algorithm with sufficient key size                                                                       | ⚠ Warning     |
+| [CA5386](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5386) | Avoid hardcoding SecurityProtocolType value                                                                                              | ⚠ Warning     |
+| [CA5387](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5387) | Do not use weak key derivation function with insufficient iteration count                                                                | ⚠ Warning     |
+| [CA5388](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5388) | Ensure sufficient iteration count when using weak key derivation function                                                                | ⚠ Warning     |
+| [CA5389](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5389) | Do not add archive item's path to the target file system path                                                                            | ⚠ Warning     |
+| [CA5390](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5390) | Do not hard-code encryption key                                                                                                          | ⚠ Warning     |
+| [CA5391](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5391) | Use antiforgery tokens in ASP.NET Core MVC controllers                                                                                   | ⚠ Warning     |
+| [CA5392](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5392) | Use DefaultDllImportSearchPaths attribute for P/Invokes                                                                                  | 🞅 None         |
+| [CA5393](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5393) | Do not use unsafe DllImportSearchPath value                                                                                              | 🞅 None         |
+| [CA5394](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5394) | Do not use insecure randomness                                                                                                           | ⚠ Warning     |
+| [CA5395](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5395) | Miss HttpVerb attribute for action methods                                                                                               | ⛔ Error       |
+| [CA5396](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5396) | Set HttpOnly to true for HttpCookie                                                                                                      | ⚠ Warning     |
+| [CA5397](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5397) | Do not use deprecated SslProtocols values                                                                                                | ⚠ Warning     |
+| [CA5398](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5398) | Avoid hardcoded SslProtocols values                                                                                                      | ⛔ Error       |
+| [CA5399](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5399) | Enable HttpClient certificate revocation list check                                                                                      | ⚠ Warning     |
+| [CA5400](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5400) | Ensure HttpClient certificate revocation list check is not disabled                                                                      | ⚠ Warning     |
+| [CA5401](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5401) | Do not use CreateEncryptor with non-default IV                                                                                           | ⚠ Warning     |
+| [CA5402](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5402) | Use CreateEncryptor with the default IV                                                                                                  | ⚠ Warning     |
+| [CA5403](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5403) | Do not hard-code certificate                                                                                                             | ⛔ Error       |
+| [CA5404](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5404) | Do not disable token validation checks                                                                                                   | ⚠ Warning     |
+| [CA5405](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5405) | Do not always skip token validation in delegates                                                                                         | ⚠ Warning     |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+dotnet_diagnostic.CA2100.severity = warning
+dotnet_diagnostic.CA2109.severity = warning
+dotnet_diagnostic.CA2119.severity = warning
+dotnet_diagnostic.CA2153.severity = warning
+dotnet_diagnostic.CA2300.severity = error
+dotnet_diagnostic.CA2301.severity = none
+dotnet_diagnostic.CA2302.severity = none
+dotnet_diagnostic.CA2305.severity = error
+dotnet_diagnostic.CA2310.severity = error
+dotnet_diagnostic.CA2311.severity = none
+dotnet_diagnostic.CA2312.severity = none
+dotnet_diagnostic.CA2315.severity = error
+dotnet_diagnostic.CA2321.severity = warning
+dotnet_diagnostic.CA2322.severity = warning
+dotnet_diagnostic.CA2326.severity = warning
+dotnet_diagnostic.CA2327.severity = warning
+dotnet_diagnostic.CA2328.severity = warning
+dotnet_diagnostic.CA2329.severity = warning
+dotnet_diagnostic.CA2330.severity = warning
+dotnet_diagnostic.CA2350.severity = warning
+dotnet_diagnostic.CA2351.severity = warning
+dotnet_diagnostic.CA2352.severity = warning
+dotnet_diagnostic.CA2353.severity = warning
+dotnet_diagnostic.CA2354.severity = warning
+dotnet_diagnostic.CA2355.severity = warning
+dotnet_diagnostic.CA2356.severity = warning
+dotnet_diagnostic.CA2361.severity = warning
+dotnet_diagnostic.CA2362.severity = warning
+dotnet_diagnostic.CA3001.severity = warning
+dotnet_diagnostic.CA3002.severity = warning
+dotnet_diagnostic.CA3003.severity = warning
+dotnet_diagnostic.CA3004.severity = warning
+dotnet_diagnostic.CA3005.severity = warning
+dotnet_diagnostic.CA3006.severity = warning
+dotnet_diagnostic.CA3007.severity = warning
+dotnet_diagnostic.CA3008.severity = warning
+dotnet_diagnostic.CA3009.severity = warning
+dotnet_diagnostic.CA3010.severity = warning
+dotnet_diagnostic.CA3011.severity = warning
+dotnet_diagnostic.CA3012.severity = warning
+dotnet_diagnostic.CA3061.severity = warning
+dotnet_diagnostic.CA3075.severity = warning
+dotnet_diagnostic.CA3076.severity = warning
+dotnet_diagnostic.CA3077.severity = warning
+dotnet_diagnostic.CA3147.severity = warning
+dotnet_diagnostic.CA5350.severity = warning
+dotnet_diagnostic.CA5351.severity = warning
+dotnet_diagnostic.CA5358.severity = warning
+dotnet_diagnostic.CA5359.severity = warning
+dotnet_diagnostic.CA5360.severity = warning
+dotnet_diagnostic.CA5361.severity = warning
+dotnet_diagnostic.CA5362.severity = suggestion 
+dotnet_diagnostic.CA5363.severity = warning
+dotnet_diagnostic.CA5364.severity = warning
+dotnet_diagnostic.CA5365.severity = warning
+dotnet_diagnostic.CA5366.severity = warning
+dotnet_diagnostic.CA5367.severity = error 
+dotnet_diagnostic.CA5368.severity = warning
+dotnet_diagnostic.CA5369.severity = warning
+dotnet_diagnostic.CA5370.severity = warning
+dotnet_diagnostic.CA5371.severity = warning
+dotnet_diagnostic.CA5372.severity = warning
+dotnet_diagnostic.CA5373.severity = warning
+dotnet_diagnostic.CA5374.severity = warning
+dotnet_diagnostic.CA5375.severity = warning
+dotnet_diagnostic.CA5376.severity = warning
+dotnet_diagnostic.CA5377.severity = warning
+dotnet_diagnostic.CA5378.severity = warning
+dotnet_diagnostic.CA5379.severity = warning
+dotnet_diagnostic.CA5380.severity = warning
+dotnet_diagnostic.CA5381.severity = warning
+dotnet_diagnostic.CA5382.severity = warning
+dotnet_diagnostic.CA5383.severity = warning
+dotnet_diagnostic.CA5384.severity = warning
+dotnet_diagnostic.CA5385.severity = warning
+dotnet_diagnostic.CA5386.severity = warning
+dotnet_diagnostic.CA5387.severity = warning
+dotnet_diagnostic.CA5388.severity = warning
+dotnet_diagnostic.CA5389.severity = warning
+dotnet_diagnostic.CA5390.severity = warning
+dotnet_diagnostic.CA5391.severity = warning
+dotnet_diagnostic.CA5392.severity = none
+dotnet_diagnostic.CA5393.severity = none
+dotnet_diagnostic.CA5394.severity = warning
+dotnet_diagnostic.CA5395.severity = error
+dotnet_diagnostic.CA5396.severity = warning
+dotnet_diagnostic.CA5397.severity = warning
+dotnet_diagnostic.CA5398.severity = error
+dotnet_diagnostic.CA5399.severity = warning
+dotnet_diagnostic.CA5400.severity = warning
+dotnet_diagnostic.CA5401.severity = warning
+dotnet_diagnostic.CA5402.severity = warning
+dotnet_diagnostic.CA5403.severity = error
+dotnet_diagnostic.CA5404.severity = warning
+dotnet_diagnostic.CA5405.severity = warning
+```
+
+</details>
 
 ### Microsoft.CodeAnalysis.NetAnalyzers | Usage
 | Code                                                                                              | Description ___________________________________________________________________________                                                  | !! Severity !! |
