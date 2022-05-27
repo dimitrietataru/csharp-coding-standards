@@ -717,3 +717,22 @@ dotnet_diagnostic.CA2255.severity = warning
 dotnet_diagnostic.CA2256.severity = warning
 dotnet_diagnostic.CA2257.severity = warning
 dotnet_diagnostic.CA2258.severity = warning
+
+# Exceptions
+
+[**[Dd][Tt][Oo]{S,s,}/**.cs]
+dotnet_diagnostic.CA1002.severity = none
+dotnet_diagnostic.CA2227.severity = none
+
+[**[Mm][Oo][Dd][Ee][Ll]{S,s,}/**.cs]
+dotnet_diagnostic.CA1002.severity = none
+dotnet_diagnostic.CA1819.severity = none
+dotnet_diagnostic.CA2227.severity = none
+
+[**[Ee][Nn][Tt][Ii][Tt][YiIi]{E,e,}{S,s,}/**.cs]
+dotnet_diagnostic.CA1002.severity = none
+dotnet_diagnostic.CA1819.severity = none
+dotnet_diagnostic.CA2227.severity = none
+
+[**Program.cs]
+dotnet_diagnostic.CA1812.severity = none
