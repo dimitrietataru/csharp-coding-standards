@@ -735,5 +735,6 @@ dotnet_diagnostic.CA1002.severity = none
 dotnet_diagnostic.CA1819.severity = none
 dotnet_diagnostic.CA2227.severity = none
 
-[**Program.cs]
+# Exception | E201
+[[Pp]rogram.cs]
 dotnet_diagnostic.CA1812.severity = none
