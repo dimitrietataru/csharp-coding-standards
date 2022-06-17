@@ -1,6 +1,6 @@
 namespace CSharp.CodingStandards.Sample.App.RuleExceptions.E201.Project;
 
-internal class Program
+internal static class Program
 {
     public static void Main(object[] _)
     {
