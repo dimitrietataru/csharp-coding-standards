@@ -738,3 +738,11 @@ dotnet_diagnostic.CA2227.severity = none
 # Exception | E201
 [[Pp]rogram.cs]
 dotnet_diagnostic.CA1812.severity = none
+
+# Exception | E301
+[[Ff][Aa][Kk][Ee]{R,r,}**.cs]
+dotnet_diagnostic.IDE0051.severity = none
+
+# Overlapping SonarAnalyzer rules | S1144 & IDE0051 | Unused private types or members should be removed
+[*.cs]
+dotnet_diagnostic.S1144.severity = none
