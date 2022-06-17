@@ -719,17 +719,28 @@ dotnet_diagnostic.CA2257.severity = warning
 dotnet_diagnostic.CA2258.severity = warning
 
 # Exception | E001
+[**[Dd][Tt][Oo]{S,s,}/**.cs]
+dotnet_diagnostic.CA1002.severity = none
+dotnet_diagnostic.CA2227.severity = none
 [[Dd][Tt][Oo]{S,s,}**.cs]
 dotnet_diagnostic.CA1002.severity = none
 dotnet_diagnostic.CA2227.severity = none
 
 # Exception | E002
+[**[Mm][Oo][Dd][Ee][Ll]{S,s,}/**.cs]
+dotnet_diagnostic.CA1002.severity = none
+dotnet_diagnostic.CA1819.severity = none
+dotnet_diagnostic.CA2227.severity = none
 [[Mm][Oo][Dd][Ee][Ll]{S,s,}**.cs]
 dotnet_diagnostic.CA1002.severity = none
 dotnet_diagnostic.CA1819.severity = none
 dotnet_diagnostic.CA2227.severity = none
 
 # Exception | E003
+[**[Ee][Nn][Tt][Ii][Tt][YiIi]{E,e,}{S,s,}/**.cs]
+dotnet_diagnostic.CA1002.severity = none
+dotnet_diagnostic.CA1819.severity = none
+dotnet_diagnostic.CA2227.severity = none
 [[Ee][Nn][Tt][Ii][Tt][YiIi]{E,e,}{S,s,}**.cs]
 dotnet_diagnostic.CA1002.severity = none
 dotnet_diagnostic.CA1819.severity = none
@@ -737,6 +748,8 @@ dotnet_diagnostic.CA2227.severity = none
 
 # Exception | E101
 [*[Pp]rofile.cs]
+dotnet_diagnostic.IDE0058.severity = silent
+[*[Aa]uto[Mm]apper[Pp]rofile.cs]
 dotnet_diagnostic.IDE0058.severity = silent
 
 # Exception | E102
