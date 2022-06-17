@@ -743,6 +743,10 @@ dotnet_diagnostic.IDE0058.severity = silent
 [*[Tt]est{s,}.cs]
 dotnet_diagnostic.IDE0058.severity = silent
 
+# Exception | E103
+[*[Cc]onfiguration.cs]
+dotnet_diagnostic.IDE0058.severity = silent
+
 # Exception | E201
 [[Pp]rogram.cs]
 dotnet_diagnostic.CA1812.severity = none
