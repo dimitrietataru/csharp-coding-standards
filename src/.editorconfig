@@ -739,6 +739,10 @@ dotnet_diagnostic.CA2227.severity = none
 [*[Pp]rofile.cs]
 dotnet_diagnostic.IDE0058.severity = silent
 
+# Exception | E102
+[*[Tt]est{s,}.cs]
+dotnet_diagnostic.IDE0058.severity = silent
+
 # Exception | E201
 [[Pp]rogram.cs]
 dotnet_diagnostic.CA1812.severity = none
