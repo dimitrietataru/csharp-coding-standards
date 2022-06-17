@@ -729,7 +729,8 @@ dotnet_diagnostic.CA1002.severity = none
 dotnet_diagnostic.CA1819.severity = none
 dotnet_diagnostic.CA2227.severity = none
 
-[**[Ee][Nn][Tt][Ii][Tt][YiIi]{E,e,}{S,s,}/**.cs]
+# Exception | E003
+[[Ee][Nn][Tt][Ii][Tt][YiIi]{E,e,}{S,s,}**.cs]
 dotnet_diagnostic.CA1002.severity = none
 dotnet_diagnostic.CA1819.severity = none
 dotnet_diagnostic.CA2227.severity = none
