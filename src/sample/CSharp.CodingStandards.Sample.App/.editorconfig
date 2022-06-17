@@ -723,7 +723,8 @@ dotnet_diagnostic.CA2258.severity = warning
 dotnet_diagnostic.CA1002.severity = none
 dotnet_diagnostic.CA2227.severity = none
 
-[**[Mm][Oo][Dd][Ee][Ll]{S,s,}/**.cs]
+# Exception | E002
+[[Mm][Oo][Dd][Ee][Ll]{S,s,}**.cs]
 dotnet_diagnostic.CA1002.severity = none
 dotnet_diagnostic.CA1819.severity = none
 dotnet_diagnostic.CA2227.severity = none
