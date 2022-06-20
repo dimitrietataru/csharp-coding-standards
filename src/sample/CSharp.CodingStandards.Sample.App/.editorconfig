@@ -748,7 +748,9 @@ dotnet_diagnostic.IDE0058.severity = silent
 dotnet_diagnostic.IDE0058.severity = silent
 
 # Exception | E103
-[*[Cc]onfiguration.cs]
+[**[Cc]onfiguration.cs]
+dotnet_diagnostic.IDE0058.severity = silent
+[**[Cc]onfigurations**.cs]
 dotnet_diagnostic.IDE0058.severity = silent
 
 # Exception | E201
