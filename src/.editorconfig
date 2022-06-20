@@ -719,18 +719,18 @@ dotnet_diagnostic.CA2257.severity = warning
 dotnet_diagnostic.CA2258.severity = warning
 
 # Exception | E001
-[**[Dd][Tt][Oo]{S,s,}**.cs]
+[**[Dd][Tt][Oo]{s,}**.cs]
 dotnet_diagnostic.CA1002.severity = none
 dotnet_diagnostic.CA2227.severity = none
 
 # Exception | E002
-[**[Mm][Oo][Dd][Ee][Ll]{S,s,}**.cs]
+[**[Mm]odel{s,}**.cs]
 dotnet_diagnostic.CA1002.severity = none
 dotnet_diagnostic.CA1819.severity = none
 dotnet_diagnostic.CA2227.severity = none
 
 # Exception | E003
-[**[Ee][Nn][Tt][Ii][Tt]{[Yy],[Ii]}{E,e,}{S,s,}**.cs]
+[**[Ee]ntit{y,i}{e,}{s,}**.cs]
 dotnet_diagnostic.CA1002.severity = none
 dotnet_diagnostic.CA1819.severity = none
 dotnet_diagnostic.CA2227.severity = none
@@ -738,19 +738,15 @@ dotnet_diagnostic.CA2227.severity = none
 # Exception | E101
 [**[Pp]rofile.cs]
 dotnet_diagnostic.IDE0058.severity = silent
-[**[Aa]uto[Mm]apper[Pp]rofile.cs]
-dotnet_diagnostic.IDE0058.severity = silent
 [**[Aa]uto[Mm]apper**.cs]
 dotnet_diagnostic.IDE0058.severity = silent
 
 # Exception | E102
-[*[Tt]est{s,}.cs]
+[**[Tt]est{s,}**.cs]
 dotnet_diagnostic.IDE0058.severity = silent
 
 # Exception | E103
-[**[Cc]onfiguration.cs]
-dotnet_diagnostic.IDE0058.severity = silent
-[**[Cc]onfigurations**.cs]
+[**[Cc]onfiguration{s,}**.cs]
 dotnet_diagnostic.IDE0058.severity = silent
 
 # Exception | E201
@@ -758,11 +754,11 @@ dotnet_diagnostic.IDE0058.severity = silent
 dotnet_diagnostic.CA1812.severity = none
 
 # Exception | E301
-[**[Ff][Aa][Kk][Ee]{R,r,}**.cs]
+[**[Ff]ake{r,}**.cs]
 dotnet_diagnostic.IDE0051.severity = none
 
 # Exception | E501
-[**[Tt][Ee][Ss][Tt]{S,s,}**.cs]
+[**[Tt]est{s,}**.cs]
 dotnet_naming_rule.method_async_should_be_ends_with_async.severity = none
 
 # Overlapping SonarAnalyzer rules | S1144 & IDE0051 | Unused private types or members should be removed
