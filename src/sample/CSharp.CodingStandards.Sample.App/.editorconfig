@@ -761,6 +761,10 @@ dotnet_diagnostic.CA1812.severity = none
 [**[Ff][Aa][Kk][Ee]{R,r,}**.cs]
 dotnet_diagnostic.IDE0051.severity = none
 
+# Exception | E501
+[**[Tt][Ee][Ss][Tt]{S,s,}**.cs]
+dotnet_naming_rule.method_async_should_be_ends_with_async.severity = none
+
 # Overlapping SonarAnalyzer rules | S1144 & IDE0051 | Unused private types or members should be removed
 [*.cs]
 dotnet_diagnostic.S1144.severity = none
