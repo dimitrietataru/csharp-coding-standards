@@ -754,7 +754,7 @@ dotnet_diagnostic.IDE0058.severity = silent
 dotnet_diagnostic.IDE0058.severity = silent
 
 # Exception | E201
-[[Pp]rogram.cs]
+[**[Pp]rogram.cs]
 dotnet_diagnostic.CA1812.severity = none
 
 # Exception | E301
