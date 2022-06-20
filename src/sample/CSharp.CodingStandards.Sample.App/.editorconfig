@@ -736,9 +736,11 @@ dotnet_diagnostic.CA1819.severity = none
 dotnet_diagnostic.CA2227.severity = none
 
 # Exception | E101
-[*[Pp]rofile.cs]
+[**[Pp]rofile.cs]
 dotnet_diagnostic.IDE0058.severity = silent
-[*[Aa]uto[Mm]apper[Pp]rofile.cs]
+[**[Aa]uto[Mm]apper[Pp]rofile.cs]
+dotnet_diagnostic.IDE0058.severity = silent
+[**[Aa]uto[Mm]apper**.cs]
 dotnet_diagnostic.IDE0058.severity = silent
 
 # Exception | E102
