@@ -272,6 +272,11 @@ dotnet_naming_rule.const_should_be_pascal_case.severity = warning
 dotnet_naming_rule.const_should_be_pascal_case.symbols = const
 dotnet_naming_rule.const_should_be_pascal_case.style = pascal_case
 
+# Code Style | Naming | Rules | Visible static field should be PascalCase
+dotnet_naming_rule.visible_static_field_should_be_pascal_case.severity = warning
+dotnet_naming_rule.visible_static_field_should_be_pascal_case.symbols = visible_static_field
+dotnet_naming_rule.visible_static_field_should_be_pascal_case.style = pascal_case
+
 # Code Style | Naming | Rules | Field should be camelCase
 dotnet_naming_rule.field_should_be_camel_case.severity = warning
 dotnet_naming_rule.field_should_be_camel_case.symbols = field
@@ -346,6 +351,11 @@ dotnet_naming_symbols.event.required_modifiers =
 dotnet_naming_symbols.delegate.applicable_kinds = delegate
 dotnet_naming_symbols.delegate.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
 dotnet_naming_symbols.delegate.required_modifiers = 
+
+# Code Style | Naming | Specifications | Static field | Public/Internal
+dotnet_naming_symbols.visible_static_field.applicable_kinds = field
+dotnet_naming_symbols.visible_static_field.applicable_accessibilities = public, internal
+dotnet_naming_symbols.visible_static_field.required_modifiers = static
 
 # Code Style | Naming | Specifications | Field
 dotnet_naming_symbols.field.applicable_kinds = field
