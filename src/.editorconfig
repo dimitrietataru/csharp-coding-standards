@@ -783,6 +783,10 @@ dotnet_diagnostic.IDE0051.severity = none
 [**[Tt]est{s,}**.cs]
 dotnet_naming_rule.method_async_should_be_ends_with_async.severity = none
 
-# Overlapping SonarAnalyzer rules | S1144 & IDE0051 | Unused private types or members should be removed
+# Overlapping SonarAnalyzer rules | S1144 and IDE0051 | Unused private types or members should be removed
 [*.cs]
 dotnet_diagnostic.S1144.severity = none
+
+# Overlapping SonarAnalyzer rules | S1905 and IDE0004 | Redundant casts should not be used
+[*.cs]
+dotnet_diagnostic.S1905.severity = none
