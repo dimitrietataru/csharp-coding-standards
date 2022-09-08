@@ -771,6 +771,18 @@ dotnet_diagnostic.IDE0058.severity = silent
 [**[Cc]onfiguration{s,}**.cs]
 dotnet_diagnostic.IDE0058.severity = silent
 
+# Exception | E104?
+[**[Cc]lassMap**.cs]
+dotnet_diagnostic.IDE0058.severity = silent
+
+# Exception | E105?
+[**[Pp]rogram**.cs]
+dotnet_diagnostic.IDE0058.severity = silent
+
+# Exception | E106?
+[**[Ss]tartup**.cs]
+dotnet_diagnostic.IDE0058.severity = silent
+
 # Exception | E201
 [**[Pp]rogram.cs]
 dotnet_diagnostic.CA1812.severity = none
