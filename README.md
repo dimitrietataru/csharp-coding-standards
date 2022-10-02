@@ -122,8 +122,8 @@ dotnet_style_predefined_type_for_member_access = true:warning
   <summary> .editorconfig </summary>
 
 ``` EditorConfig
-csharp_style_var_elsewhere = true:suggestion
 csharp_style_var_for_built_in_types = false:suggestion
+csharp_style_var_elsewhere = true:suggestion
 csharp_style_var_when_type_is_apparent = true:suggestion
 ```
 
@@ -138,6 +138,8 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 | Prefer auto properties                                                | Yes                       | 🞅 Refactoring |
 | Prefer simple _using_ statement                                       | Yes                       | 🛈 Suggestion  |
 | Prefer _System.HashCode_ in 'GetHashCode'                             | Yes                       | 🛈 Suggestion  |
+| Prefer method group conversion                                        | Yes                       | 🛈 Suggestion  |
+| Prefer top-level statements                                           | Yes                       | 🛈 Suggestion  |
 
 <details>
   <summary> .editorconfig </summary>
@@ -148,6 +150,8 @@ csharp_style_namespace_declarations = file_scoped:suggestion
 csharp_prefer_simple_using_statement = true:suggestion
 dotnet_style_prefer_auto_properties = true:silent
 # Missing: Prefer _System.HashCode_ in 'GetHashCode'
+csharp_style_prefer_method_group_conversion = true:suggestion
+csharp_style_prefer_top_level_statements = true:suggestion
 ```
 
 </details>
@@ -193,8 +197,8 @@ dotnet_style_parentheses_in_other_operators = never_if_unnecessary:warning
 | Prefer index operator                                                 | Yes                       | 🛈 Suggestion  |
 | Prefer range operator                                                 | Yes                       | 🛈 Suggestion  |
 | Prefer tuple swap                                                     | Yes                       | 🛈 Suggestion  |
-| Avoid unused value assignments                                        | Discard                   | 🛈 Suggestion  |
-| Avoid expression statements that implicitly ignore value              | Discard                   | 🛈 Suggestion  |
+| Avoid unused value assignments                                        | Discard                   | 🞅 Refactoring |
+| Avoid expression statements that implicitly ignore value              | Discard                   | 🞅 Refactoring |
 
 <details>
   <summary> .editorconfig </summary>
@@ -216,8 +220,8 @@ csharp_style_implicit_object_creation_when_type_is_apparent = true:suggestion
 csharp_style_prefer_index_operator = true:suggestion
 csharp_style_prefer_range_operator = true:suggestion
 csharp_style_prefer_tuple_swap = true:suggestion
-csharp_style_unused_value_assignment_preference = discard_variable:suggestion
-csharp_style_unused_value_expression_statement_preference = discard_variable:suggestion
+csharp_style_unused_value_assignment_preference = discard_variable:silent
+csharp_style_unused_value_expression_statement_preference = discard_variable:silent
 ```
 
 </details>
@@ -232,7 +236,7 @@ csharp_style_unused_value_expression_statement_preference = discard_variable:sug
 | Use expression body for properties                                    | When possible             | 🛈 Suggestion  |
 | Use expression body for indexers                                      | When possible             | 🛈 Suggestion  |
 | Use expression body for accessors                                     | When possible             | 🛈 Suggestion  |
-| Use expression body for lambdas                                       | When possible             | 🛈 Suggestion  |
+| Use expression body for lambdas                                       | When possible             | 🞅 Refactoring |
 | Use expression body for local functions                               | Never                     | 🛈 Suggestion  |
 
 <details>
@@ -245,7 +249,7 @@ csharp_style_expression_bodied_operators = false:silent
 csharp_style_expression_bodied_properties = true:suggestion
 csharp_style_expression_bodied_indexers = true:suggestion
 csharp_style_expression_bodied_accessors = true:suggestion
-csharp_style_expression_bodied_lambdas = true:suggestion
+csharp_style_expression_bodied_lambdas = true:silent
 csharp_style_expression_bodied_local_functions = false:suggestion
 ```
 
@@ -258,7 +262,7 @@ csharp_style_expression_bodied_local_functions = false:suggestion
 | Prefer pattern matching                                               | Yes                       | 🛈 Suggestion  |
 | Prefer pattern matching over _is_ with _cast_ check                   | Yes                       | ⚠ Warning    |
 | Prefer pattern matching over _as_ with _null_ check                   | Yes                       | ⚠ Warning    |
-| Prefer pattern matching over mixed type check                         | Yes                       | 🛈 Suggestion  |
+| Prefer pattern matching over mixed type check                         | Yes                       | ⚠ Warning    |
 
 <details>
   <summary> .editorconfig </summary>
@@ -267,7 +271,7 @@ csharp_style_expression_bodied_local_functions = false:suggestion
 csharp_style_prefer_pattern_matching = true:suggestion
 csharp_style_pattern_matching_over_is_with_cast_check = true:warning
 csharp_style_pattern_matching_over_as_with_null_check = true:warning
-csharp_style_prefer_not_pattern = true:suggestion
+csharp_style_prefer_not_pattern = true:warning
 ```
 
 </details>
