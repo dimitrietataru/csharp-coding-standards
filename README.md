@@ -1353,3 +1353,39 @@ dotnet_diagnostic.CA2260.severity = warning
 ```
 
 </details>
+
+## Code style rules
+
+### Language rules | *this* preferences
+
+### Language rules | Modifier preferences
+
+### Language rules | Parentheses preferences
+
+### Language rules | Expression-level preferences
+
+### Language rules | Namespace declaration preferences
+
+### Language rules | Null-checking preferences
+
+### Language rules | *var* preferences
+
+### Language rules | Expression-bodied preferences
+
+### Language rules | Pattern matching preferences
+
+### Language rules | Code block preferences
+
+### Language rules | *using* preferences
+
+### Language rules | File header preferences
+
+### Language rules | Namespace naming preferences
+
+### Unnecessary code rules
+
+### Miscellanous rules
+
+### Formatting rules
+
+### Naming rules
