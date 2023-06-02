@@ -634,6 +634,8 @@ dotnet_diagnostic.CA2015.severity = warning
 dotnet_diagnostic.CA2016.severity = warning
 dotnet_diagnostic.CA2017.severity = warning
 dotnet_diagnostic.CA2018.severity = warning
+dotnet_diagnostic.CA2019.severity = suggestion
+dotnet_diagnostic.CA2020.severity = suggestion
 
 # Microsoft.CodeAnalysis.NetAnalyzers | Security
 dotnet_diagnostic.CA2100.severity = warning
