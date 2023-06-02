@@ -835,6 +835,9 @@ dotnet_diagnostic.CA1416.severity = warning
 dotnet_diagnostic.CA1417.severity = warning
 dotnet_diagnostic.CA1418.severity = warning
 dotnet_diagnostic.CA1419.severity = suggestion
+dotnet_diagnostic.CA1420.severity = warning
+dotnet_diagnostic.CA1421.severity = suggestion
+dotnet_diagnostic.CA1422.severity = warning
 ```
 
 </details>
