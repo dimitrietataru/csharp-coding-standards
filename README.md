@@ -338,6 +338,7 @@ csharp_using_directive_placement = outside_namespace:error
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
 | :-------------------------------------------------------------------- | :------------------------ | :-----------: |
 | Prefer readonly fields                                                | Yes                       | ⚠ Warning    |
+| Prefer readonly struct                                                | Yes                       | 🛈 Suggestion  |
 | Prefer static local functions                                         | Yes                       | ⚠ Warning    |
 
 <details>
@@ -345,6 +346,7 @@ csharp_using_directive_placement = outside_namespace:error
 
 ``` EditorConfig
 dotnet_style_readonly_field = true:warning
+csharp_style_prefer_readonly_struct = true:suggestion
 csharp_prefer_static_local_function = true:warning
 ```
 
@@ -374,6 +376,8 @@ dotnet_code_quality_unused_parameters = non_public:warning
 | Allow blank lines between consecutive braces                          | No                        | ⚠ Warning    |
 | Allow statement immediately after block                               | No                        | ⚠ Warning    |
 | Allow blank line after colon in constructor initializer               | No                        | ⚠ Warning    |
+| Allow blank line after token in conditional expression                | No                        | ⚠ Warning    |
+| Allow blank line after token in arrow expression clause               | No                        | 🛈 Suggestion  |
 
 <details>
   <summary> .editorconfig </summary>
@@ -384,6 +388,8 @@ csharp_style_allow_embedded_statements_on_same_line_experimental = false:warning
 csharp_style_allow_blank_lines_between_consecutive_braces_experimental = false:warning
 dotnet_style_allow_statement_immediately_after_block_experimental = false:warning
 csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimental = false:warning
+csharp_style_allow_blank_line_after_token_in_conditional_expression_experimental = false:warning
+csharp_style_allow_blank_line_after_token_in_arrow_expression_clause_experimental = false:suggestion
 ```
 
 </details>

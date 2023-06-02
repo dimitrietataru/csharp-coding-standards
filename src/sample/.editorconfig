@@ -110,6 +110,7 @@ csharp_using_directive_placement = outside_namespace:error
 
 # Code Style | General | Modifier preferences
 dotnet_style_readonly_field = true:warning
+csharp_style_prefer_readonly_struct = true:suggestion
 csharp_prefer_static_local_function = true:warning
 
 # Code Style | General | Parameter preferences
@@ -121,6 +122,8 @@ csharp_style_allow_embedded_statements_on_same_line_experimental = false:warning
 csharp_style_allow_blank_lines_between_consecutive_braces_experimental = false:warning
 dotnet_style_allow_statement_immediately_after_block_experimental = false:warning
 csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimental = false:warning
+csharp_style_allow_blank_line_after_token_in_conditional_expression_experimental = false:warning
+csharp_style_allow_blank_line_after_token_in_arrow_expression_clause_experimental = false:suggestion
 
 # Code Style | Formatting | General
 
@@ -203,6 +206,21 @@ dotnet_naming_rule.generic_parameter_should_be_begins_with_t.style = begins_with
 #dotnet_naming_rule.field_private_should_be_begins_with_underscore.severity = warning
 #dotnet_naming_rule.field_private_should_be_begins_with_underscore.symbols = field_private
 #dotnet_naming_rule.field_private_should_be_begins_with_underscore.style = begins_with_underscore
+
+# Code Style | Naming | Rules | Const field should be UPPER_SNAKE_CASE
+#dotnet_naming_rule.const_should_be_upper_snake_case.severity = warning
+#dotnet_naming_rule.const_should_be_upper_snake_case.symbols = const_field
+#dotnet_naming_rule.const_should_be_upper_snake_case.style = upper_snake_case
+
+# Code Style | Naming | Rules | Const local should be UPPER_SNAKE_CASE
+#dotnet_naming_rule.const_local_should_be_pascal_case.severity = warning
+#dotnet_naming_rule.const_local_should_be_pascal_case.symbols = const_local
+#dotnet_naming_rule.const_local_should_be_pascal_case.style = upper_snake_case
+
+# Code Style | Naming | Rules | Const should be UPPER_SNAKE_CASE
+#dotnet_naming_rule.const_should_be_pascal_case.severity = warning
+#dotnet_naming_rule.const_should_be_pascal_case.symbols = const
+#dotnet_naming_rule.const_should_be_pascal_case.style = upper_snake_case
 
 # Code Style | Naming | Rules | Async Method should end in Async
 dotnet_naming_rule.method_async_should_be_ends_with_async.severity = warning
@@ -410,6 +428,24 @@ dotnet_naming_style.camel_case.required_prefix =
 dotnet_naming_style.camel_case.required_suffix = 
 dotnet_naming_style.camel_case.word_separator = 
 dotnet_naming_style.camel_case.capitalization = camel_case
+
+# Code Style | Naming | Styles | Upper Case
+#dotnet_naming_style.upper_case.required_prefix = 
+#dotnet_naming_style.upper_case.required_suffix = 
+#dotnet_naming_style.upper_case.word_separator = 
+#dotnet_naming_style.upper_case.capitalization = all_upper
+
+# Code Style | Naming | Styles | Snake Case
+#dotnet_naming_style.snake_case.required_prefix = 
+#dotnet_naming_style.snake_case.required_suffix = 
+#dotnet_naming_style.snake_case.word_separator = _
+#dotnet_naming_style.snake_case.capitalization = all_lower
+
+# Code Style | Naming | Styles | Upper Snake Case
+dotnet_naming_style.upper_snake_case.required_prefix = 
+dotnet_naming_style.upper_snake_case.required_suffix = 
+dotnet_naming_style.upper_snake_case.word_separator = _
+dotnet_naming_style.upper_snake_case.capitalization = all_upper
 
 # Code Style | Naming | Styles | Begins with I
 dotnet_naming_style.begins_with_i.required_prefix = I
