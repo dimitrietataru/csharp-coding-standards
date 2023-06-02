@@ -794,6 +794,7 @@ dotnet_diagnostic.CA1200.severity = none
 | [CA1308](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1308) | Normalize strings to uppercase                                                                                                           | 🛈 Suggestion   |
 | [CA1309](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1309) | Use ordinal StringComparison                                                                                                             | ⚠ Warning     |
 | [CA1310](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1310) | Specify StringComparison for correctness                                                                                                 | ⚠ Warning     |
+| [CA1311](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1311) | Specify a culture or use an invariant version                                                                                            | ⚠ Warning     |
 | [CA2101](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2101) | Specify marshalling for P/Invoke string arguments                                                                                        | 🛈 Suggestion   |
 
 <details>
@@ -807,19 +808,23 @@ dotnet_diagnostic.CA1307.severity = warning
 dotnet_diagnostic.CA1308.severity = suggestion
 dotnet_diagnostic.CA1309.severity = warning
 dotnet_diagnostic.CA1310.severity = warning
+dotnet_diagnostic.CA1311.severity = warning
 dotnet_diagnostic.CA2101.severity = suggestion
 ```
 
 </details>
 
 ### Microsoft.CodeAnalysis.NetAnalyzers | Interoperability
-| Code                                                                                              | Description ___________________________________________________________________________                                                  | !! Severity !! |
-| :-----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------- | :------------: |
-| [CA1401](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1401) | P/Invokes should not be visible                                                                                                          | 🛈 Suggestion   |
-| [CA1416](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1416) | Validate platform compatibility                                                                                                          | ⚠ Warning     |
-| [CA1417](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1417) | Do not use _OutAttribute_ on string parameters for P/Invokes                                                                             | ⚠ Warning     |
-| [CA1418](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1418) | Validate platform compatibility                                                                                                          | ⚠ Warning     |
-| [CA1419](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1419) | Provide a parameterless ctor for types derived from                                    <br /> _System.Runtime.InteropServices.SafeHandle_| 🛈 Suggestion   |
+| Code                                                                                               | Description ___________________________________________________________________________                                                  | !! Severity !! |
+| :------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------- | :------------: |
+| [CA1401](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1401)  | P/Invokes should not be visible                                                                                                          | 🛈 Suggestion   |
+| [CA1416](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1416)  | Validate platform compatibility                                                                                                          | ⚠ Warning     |
+| [CA1417](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1417)  | Do not use _OutAttribute_ on string parameters for P/Invokes                                                                             | ⚠ Warning     |
+| [CA1418](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1418)  | Validate platform compatibility                                                                                                          | ⚠ Warning     |
+| [CA1419](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1419)  | Provide a parameterless ctor for types derived from                                    <br /> _System.Runtime.InteropServices.SafeHandle_| 🛈 Suggestion   |
+| [CA1420](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1420) | Property, type, or attribute requires runtime marshalling                                                                                | ⚠ Warning     |
+| [CA1421](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1421) | Method uses runtime marshalling when *DisableRuntimeMarshalling* is applied                                                              | 🛈 Suggestion   |
+| [CA1422](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1422) | Validate platform compatibility - Obsoleted APIs                                                                                         | ⚠ Warning     |
 
 <details>
   <summary> .editorconfig </summary>

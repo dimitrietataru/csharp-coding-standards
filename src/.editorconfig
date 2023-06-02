@@ -533,6 +533,7 @@ dotnet_diagnostic.CA1307.severity = warning
 dotnet_diagnostic.CA1308.severity = suggestion
 dotnet_diagnostic.CA1309.severity = warning
 dotnet_diagnostic.CA1310.severity = warning
+dotnet_diagnostic.CA1311.severity = warning
 dotnet_diagnostic.CA2101.severity = suggestion
 
 # Microsoft.CodeAnalysis.NetAnalyzers | Interoperability
