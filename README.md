@@ -97,8 +97,8 @@ dotnet_style_qualification_for_property = false:warning
 ### Code Style | General | Predefined type preferences
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
 | :-------------------------------------------------------------------- | :------------------------ | :-----------: |
-| For locals, parameters, and members                                   | Prefer predefined type    | ⚠ Warning    |
-| For member access expressions                                         | Prefer predefined type    | ⚠ Warning    |
+| For locals, parameters, and members (IDE0049)                         | Prefer predefined type    | ⚠ Warning    |
+| For member access expressions (IDE0049)                               | Prefer predefined type    | ⚠ Warning    |
 
 <details>
   <summary> .editorconfig </summary>
@@ -115,7 +115,7 @@ dotnet_style_predefined_type_for_member_access = true:warning
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
 | :-------------------------------------------------------------------- | :------------------------ | :-----------: |
 | For built-in types                                                    | Prefer explicit type      | 🛈 Suggestion  |
-| When variable type is apparent                                        | Prefer _var_              | 🛈 Suggestion  |
+| When variable type is apparent                                        | Prefer _var_              | ⚠ Warning    |
 | Elsewhere                                                             | Prefer _var_              | 🛈 Suggestion  |
 
 <details>
@@ -124,7 +124,7 @@ dotnet_style_predefined_type_for_member_access = true:warning
 ``` EditorConfig
 csharp_style_var_for_built_in_types = false:suggestion
 csharp_style_var_elsewhere = true:suggestion
-csharp_style_var_when_type_is_apparent = true:suggestion
+csharp_style_var_when_type_is_apparent = true:warning
 ```
 
 </details>
@@ -133,7 +133,7 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 ### Code Style | General | Code block preferences
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
 | :-------------------------------------------------------------------- | :------------------------ | :-----------: |
-| Prefer braces                                                         | Yes                       | ⚠ Warning    |
+| Prefer braces (IDE0011)                                               | Yes                       | ⚠ Warning    |
 | Namespace declarations                                                | File scoped               | 🛈 Suggestion  |
 | Prefer auto properties                                                | Yes                       | 🞅 Refactoring |
 | Prefer simple _using_ statement                                       | Yes                       | 🛈 Suggestion  |
@@ -193,7 +193,7 @@ dotnet_style_parentheses_in_other_operators = never_if_unnecessary:warning
 | Prefer inferred anonymous type member names                           | Yes                       | 🞅 Refactoring |
 | Prefer local function over anonymous function                         | Yes                       | ⚠ Warning    |
 | Prefer compound assignments                                           | Yes                       | ⚠ Warning    |
-| Prefer implicit object creation when type is aparent                  | Yes                       | 🛈 Suggestion  |
+| Prefer implicit object creation when type is aparent (IDE0090)        | Yes                       | 🛈 Suggestion  |
 | Prefer index operator                                                 | Yes                       | 🛈 Suggestion  |
 | Prefer range operator                                                 | Yes                       | 🛈 Suggestion  |
 | Prefer tuple swap                                                     | Yes                       | 🛈 Suggestion  |
@@ -371,13 +371,13 @@ dotnet_code_quality_unused_parameters = non_public:warning
 ### Code Style | General | New line preferences
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
 | :-------------------------------------------------------------------- | :------------------------ | :-----------: |
-| Allow multiple blank lines                                            | No                        | ⚠ Warning    |
-| Allow embeded statements on same line                                 | No                        | ⚠ Warning    |
-| Allow blank lines between consecutive braces                          | No                        | ⚠ Warning    |
-| Allow statement immediately after block                               | No                        | ⚠ Warning    |
-| Allow blank line after colon in constructor initializer               | No                        | ⚠ Warning    |
-| Allow blank line after token in conditional expression                | No                        | ⚠ Warning    |
-| Allow blank line after token in arrow expression clause               | Yes                       | 🛈 Suggestion  |
+| Allow multiple blank lines (IDE2000)                                  | No                        | ⚠ Warning    |
+| Allow embeded statements on same line (IDE2001)                       | No                        | ⚠ Warning    |
+| Allow blank lines between consecutive braces (IDE2002)                | No                        | ⚠ Warning    |
+| Allow statement immediately after block (IDE2003)                     | No                        | ⚠ Warning    |
+| Allow blank line after colon in constructor initializer (IDE2004)     | No                        | ⛔ Error      |
+| Allow blank line after token in conditional expression (IDE2005)      | No                        | ⛔ Error      |
+| Allow blank line after token in arrow expression clause (IDE2006)     | Yes                       | 🛈 Suggestion  |
 
 <details>
   <summary> .editorconfig </summary>
@@ -387,8 +387,8 @@ dotnet_style_allow_multiple_blank_lines_experimental = false:warning
 csharp_style_allow_embedded_statements_on_same_line_experimental = false:warning
 csharp_style_allow_blank_lines_between_consecutive_braces_experimental = false:warning
 dotnet_style_allow_statement_immediately_after_block_experimental = false:warning
-csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimental = false:warning
-csharp_style_allow_blank_line_after_token_in_conditional_expression_experimental = false:warning
+csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimental = false:error
+csharp_style_allow_blank_line_after_token_in_conditional_expression_experimental = false:error
 csharp_style_allow_blank_line_after_token_in_arrow_expression_clause_experimental = true:suggestion
 ```
 
@@ -695,8 +695,8 @@ csharp_preserve_single_line_statements = false
 | [CA1047](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1047) | Do not declare protected members in sealed types                                                                                         | 🞅 None         |
 | [CA1050](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1050) | Declare types in namespaces                                                                                                              | ⚠ Warning     |
 | [CA1051](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1051) | Do not declare visible instance fields                                                                                                   | 🞅 None         |
-| [CA1052](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1052) | Static holder types should be Static or NotInheritable                                                                                   | ⚠ Warning     |
-| [CA1053](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1053) | Static holder types should not have default constructors                                                                                 | -              |
+| [CA1052](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1052) | Static holder types should be Static or NotInheritable                                                                                   | ⛔ Error       |
+| [CA1053](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1053) | Static holder types should not have default constructors                                                                                 | -              |CA
 | [CA1054](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1054) | URI parameters should not be strings                                                                                                     | ⚠ Warning     |
 | [CA1055](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1055) | URI return values should not be strings                                                                                                  | ⚠ Warning     |
 | [CA1056](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1056) | URI properties should not be strings                                                                                                     | ⚠ Warning     |
@@ -749,7 +749,7 @@ dotnet_diagnostic.CA1046.severity = warning
 dotnet_diagnostic.CA1047.severity = none
 dotnet_diagnostic.CA1050.severity = warning
 dotnet_diagnostic.CA1051.severity = error
-dotnet_diagnostic.CA1052.severity = warning
+dotnet_diagnostic.CA1052.severity = error
 #dotnet_diagnostic.CA1053.severity = warning
 dotnet_diagnostic.CA1054.severity = warning
 dotnet_diagnostic.CA1055.severity = warning
