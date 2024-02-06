@@ -140,6 +140,7 @@ csharp_style_var_when_type_is_apparent = true:warning
 | Prefer _System.HashCode_ in 'GetHashCode'                             | Yes                       | 🛈 Suggestion  |
 | Prefer method group conversion                                        | Yes                       | 🛈 Suggestion  |
 | Prefer top-level statements                                           | Yes                       | 🛈 Suggestion  |
+| Prefer primary constructors                                           | No                        | ⚠ Warning    |
 
 <details>
   <summary> .editorconfig </summary>
@@ -152,6 +153,7 @@ dotnet_style_prefer_auto_properties = true:silent
 # Missing: Prefer _System.HashCode_ in 'GetHashCode'
 csharp_style_prefer_method_group_conversion = true:suggestion
 csharp_style_prefer_top_level_statements = true:suggestion
+csharp_style_prefer_primary_constructors = false:warning
 ```
 
 </details>
@@ -183,6 +185,7 @@ dotnet_style_parentheses_in_other_operators = never_if_unnecessary:warning
 | :-------------------------------------------------------------------- | :------------------------ | :-----------: |
 | Prefer object initializer                                             | Yes                       | 🛈 Suggestion  |
 | Prefer collection initializer                                         | Yes                       | 🛈 Suggestion  |
+| Prefer collection expression                                          | Yes                       | 🛈 Suggestion  |
 | Prefer simplified boolean expressions                                 | Yes                       | ⚠ Warning    |
 | Prefer switch expression                                              | Yes                       | 🛈 Suggestion  |
 | Prefer conditional expression over _if_ with assignments              | Yes                       | 🞅 Refactoring |
@@ -193,11 +196,15 @@ dotnet_style_parentheses_in_other_operators = never_if_unnecessary:warning
 | Prefer inferred anonymous type member names                           | Yes                       | 🞅 Refactoring |
 | Prefer local function over anonymous function                         | Yes                       | ⚠ Warning    |
 | Prefer compound assignments                                           | Yes                       | ⚠ Warning    |
-| Prefer implicit object creation when type is aparent (IDE0090)        | Yes                       | 🛈 Suggestion  |
+| Prefer simplified interpolation                             (IDE0071) | Yes                       | ⚠ Warning    |
+| Prefer implicit object creation when type is aparent        (IDE0090) | Yes                       | 🛈 Suggestion  |
+| Prefer namespace and folder match structure                 (IDE0130) | Yes                       | 🛈 Suggestion  |
+| Prefer UTF-8 string literals                                (IDE0230) | Yes                       | 🛈 Suggestion  |
 | Prefer index operator                                                 | Yes                       | 🛈 Suggestion  |
 | Prefer range operator                                                 | Yes                       | 🛈 Suggestion  |
 | Prefer tuple swap                                                     | Yes                       | 🛈 Suggestion  |
 | Avoid unused value assignments                                        | Discard                   | 🞅 Refactoring |
+| Avoid expression statements that implicitly ignore value              | Discard                   | 🞅 Refactoring |
 | Avoid expression statements that implicitly ignore value              | Discard                   | 🞅 Refactoring |
 
 <details>
@@ -206,6 +213,7 @@ dotnet_style_parentheses_in_other_operators = never_if_unnecessary:warning
 ``` EditorConfig
 dotnet_style_object_initializer = true:suggestion
 dotnet_style_collection_initializer = true:suggestion
+dotnet_style_prefer_collection_expression = true:suggestion
 dotnet_style_prefer_simplified_boolean_expressions = true:warning
 csharp_style_prefer_switch_expression = true:suggestion
 dotnet_style_prefer_conditional_expression_over_assignment = true:silent
@@ -214,9 +222,12 @@ dotnet_style_explicit_tuple_names = true:suggestion
 csharp_prefer_simple_default_expression = true:warning
 dotnet_style_prefer_inferred_tuple_names = false:suggestion
 dotnet_style_prefer_inferred_anonymous_type_member_names = false:suggestion
-csharp_style_pattern_local_over_anonymous_function = true:warning
+csharp_style_prefer_local_over_anonymous_function = true:warning
 dotnet_style_prefer_compound_assignment = true:warning
+dotnet_style_prefer_simplified_interpolation = true:warning
 csharp_style_implicit_object_creation_when_type_is_apparent = true:suggestion
+dotnet_style_namespace_match_folder = true:suggestion
+csharp_style_prefer_utf8_string_literals = true:suggestion
 csharp_style_prefer_index_operator = true:suggestion
 csharp_style_prefer_range_operator = true:suggestion
 csharp_style_prefer_tuple_swap = true:suggestion
