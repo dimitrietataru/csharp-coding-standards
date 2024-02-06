@@ -1402,5 +1402,6 @@ dotnet_diagnostic.CA2260.severity = warning
 ### Miscellanous rules
 
 ### Formatting rules
+dotnet_diagnostic.IDE0055.severity = warning
 
 ### Naming rules

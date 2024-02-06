@@ -785,6 +785,9 @@ dotnet_diagnostic.CA2258.severity = warning
 dotnet_diagnostic.CA2259.severity = warning
 dotnet_diagnostic.CA2260.severity = warning
 
+# Code Style | Formatting
+dotnet_diagnostic.IDE0055.severity = warning
+
 # Microsoft.CodeAnalysis Exceptions
 ## CA1002: Do not expose generic lists
 [**[Ee]ntit{y,i}{e,}{s,}**.cs]
@@ -793,6 +796,13 @@ dotnet_diagnostic.CA1002.severity = none
 dotnet_diagnostic.CA1002.severity = none
 [**[Dd][Tt][Oo]{S,s,}**.cs]
 dotnet_diagnostic.CA1002.severity = none
+## CA1056: URI properties should not be strings
+[**[Ee]ntit{y,i}{e,}{s,}**.cs]
+dotnet_diagnostic.CA1056.severity = none
+[**[Mm]odel{s,}**.cs]
+dotnet_diagnostic.CA1056.severity = none
+[**[Dd][Tt][Oo]{S,s,}**.cs]
+dotnet_diagnostic.CA1056.severity = none
 ## CA1724: Type names should not match namespaces
 [**[Dd]ependency[Ii]njection**.cs]
 dotnet_diagnostic.CA1724.severity = none
