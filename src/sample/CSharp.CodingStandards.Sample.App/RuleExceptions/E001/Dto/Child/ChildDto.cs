@@ -4,5 +4,5 @@ namespace CSharp.CodingStandards.Sample.App.RuleExceptions.E001.Dto;
 ////#pragma warning disable CA2227 // Collection properties should be read only
 public sealed class ChildDto
 {
-    public List<object> Items { get; set; } = new List<object>();
+    public List<object> Items { get; set; } = [];
 }
