@@ -778,91 +778,69 @@ dotnet_diagnostic.CA2258.severity = warning
 dotnet_diagnostic.CA2259.severity = warning
 dotnet_diagnostic.CA2260.severity = warning
 
-# Exception | E001
-[**[Dd][Tt][Oo]{s,}**.cs]
-dotnet_diagnostic.CA1002.severity = none
-dotnet_diagnostic.CA1819.severity = none
-dotnet_diagnostic.CA2227.severity = none
-
-# Exception | E002
-[**[Mm]odel{s,}**.cs]
-dotnet_diagnostic.CA1002.severity = none
-dotnet_diagnostic.CA1819.severity = none
-dotnet_diagnostic.CA2227.severity = none
-
-# Exception | E003
+# Microsoft.CodeAnalysis Exceptions
+## CA1002: Do not expose generic lists
 [**[Ee]ntit{y,i}{e,}{s,}**.cs]
 dotnet_diagnostic.CA1002.severity = none
-dotnet_diagnostic.CA1819.severity = none
-dotnet_diagnostic.CA2227.severity = none
-
-# Exception | E101
-[**[Pp]rofile.cs]
-dotnet_diagnostic.IDE0058.severity = silent
-[**[Aa]uto[Mm]apper**.cs]
-dotnet_diagnostic.IDE0058.severity = silent
-
-# Exception | E011
-[**[Dd][Tt][Oo]{s,}**.cs]
-dotnet_diagnostic.CA1056.severity = none
-
-# Exception | E012
 [**[Mm]odel{s,}**.cs]
-dotnet_diagnostic.CA1056.severity = none
-
-# Exception | E013
+dotnet_diagnostic.CA1002.severity = none
+[**[Dd][Tt][Oo]{S,s,}**.cs]
+dotnet_diagnostic.CA1002.severity = none
+## CA1724: Type names should not match namespaces
+[**[Dd]ependency[Ii]njection**.cs]
+dotnet_diagnostic.CA1724.severity = none
+## CA1812: Avoid uninstantiated internal classes
+[**[Ss]ervice{s,}**.cs]
+dotnet_diagnostic.CA1812.severity = none
+[**[Re]epositor{y,i}{e,}{s,}**.cs]
+dotnet_diagnostic.CA1812.severity = none
 [**[Ee]ntit{y,i}{e,}{s,}**.cs]
-dotnet_diagnostic.CA1056.severity = none
-
-# Exception | E102
-[**[Tt]est{s,}**.cs]
-dotnet_diagnostic.IDE0058.severity = silent
-
-# Exception | E103
-[**[Cc]onfiguration{s,}**.cs]
-dotnet_diagnostic.IDE0058.severity = silent
-
-# Exception | E104?
-[**[Cc]lassMap**.cs]
-dotnet_diagnostic.IDE0058.severity = silent
-
-# Exception | E105?
-[**[Pp]rogram**.cs]
-dotnet_diagnostic.IDE0058.severity = silent
-
-# Exception | E106?
-[**[Ss]tartup**.cs]
-dotnet_diagnostic.IDE0058.severity = silent
-
-# Exception | E201
+dotnet_diagnostic.CA1812.severity = none
+[**[Dd]b[Cc]ontext{s,}**.cs]
+dotnet_diagnostic.CA1812.severity = none
 [**[Pp]rogram.cs]
 dotnet_diagnostic.CA1812.severity = none
+## CA1819: Properties should not return arrays
+[**[Ee]ntit{y,i}{e,}{s,}**.cs]
+dotnet_diagnostic.CA1819.severity = none
+[**[Mm]odel{s,}**.cs]
+dotnet_diagnostic.CA1819.severity = none
+[**[Dd][Tt][Oo]{S,s,}**.cs]
+dotnet_diagnostic.CA1819.severity = none
+## CA2227: Collection properties should be read only
+[**[Ee]ntit{y,i}{e,}{s,}**.cs]
+dotnet_diagnostic.CA2227.severity = none
+[**[Mm]odel{s,}**.cs]
+dotnet_diagnostic.CA2227.severity = none
+[**[Dd][Tt][Oo]{S,s,}**.cs]
+dotnet_diagnostic.CA2227.severity = none
 
-# Exception | E301
+
+# IDE.CodeAnalysis Exceptions
+## IDE0058: Remove unnecessary expression value
+[*.cs]
+dotnet_diagnostic.IDE0058.severity = silent
+[**[Pp]rogram**.cs]
+dotnet_diagnostic.IDE0058.severity = none
+[**[Ss]tartup**.cs]
+dotnet_diagnostic.IDE0058.severity = none
+[**[Pp]rofile.cs]
+dotnet_diagnostic.IDE0058.severity = none
+[**[Aa]uto[Mm]apper**.cs]
+dotnet_diagnostic.IDE0058.severity = none
+[**[Tt]est{s,}**.cs]
+dotnet_diagnostic.IDE0058.severity = none
+[**[Cc]onfiguration{s,}**.cs]
+dotnet_diagnostic.IDE0058.severity = none
+[**[Cc]lassMap**.cs]
+dotnet_diagnostic.IDE0058.severity = none
+## Remove unused private member
 [**[Ff]ake{r,}**.cs]
 dotnet_diagnostic.IDE0051.severity = none
 
-# Exception | E501
-[**[Tt]est{s,}**.cs]
-dotnet_naming_rule.method_async_should_be_ends_with_async.severity = none
 
-# Exception | TODO: Add exception code
-[**[Pp]rogram**.cs]
-csharp_style_unused_value_expression_statement_preference = discard_variable:none
-
-# Exception | TODO: Add exception code
-[**[Ss]tartup**.cs]
-csharp_style_unused_value_expression_statement_preference = discard_variable:none
-
-# Overlapping SonarAnalyzer rules | S1144 and IDE0051 | Unused private types or members should be removed
-[*.cs]
-dotnet_diagnostic.S1144.severity = none
-
-# Overlapping SonarAnalyzer rules | S1905 and IDE0004 | Redundant casts should not be used
-[*.cs]
-dotnet_diagnostic.S1905.severity = none
-
-# Missing XML comment for publicly visible type or member
+# Compiler Messages Exceptions
+## CS1591: Missing XML comment for publicly visible type or member
 [*.cs]
 dotnet_diagnostic.CS1591.severity = silent
 [**[Cc]ontroller{s,}**.cs]
@@ -871,11 +849,21 @@ dotnet_diagnostic.CS1591.severity = warning
 dotnet_diagnostic.CS1591.severity = warning
 [**[Ee]ntit{y,i}{e,}{s,}**.cs]
 dotnet_diagnostic.CS1591.severity = warning
-[**[Dd][Tt][Oo]{s,}**.cs]
+[**[Dd][Tt][Oo]{S,s,}**.cs]
 dotnet_diagnostic.CS1591.severity = warning
 [**[Ee]num{s,}**.cs]
 dotnet_diagnostic.CS1591.severity = warning
 
-# Remove unnecessary expression value
-[*.cs]
-dotnet_diagnostic.IDE0058.severity = silent
+
+# Exceptions
+[**[Pp]rogram**.cs]
+csharp_style_unused_value_expression_statement_preference = discard_variable:none
+[**[Ss]tartup**.cs]
+csharp_style_unused_value_expression_statement_preference = discard_variable:none
+
+
+# Naming Exceptions
+[**[Cc]ontroller{s,}**.cs]
+dotnet_naming_rule.method_async_should_be_ends_with_async.severity = none
+[**[Tt]est{s,}**.cs]
+dotnet_naming_rule.method_async_should_be_ends_with_async.severity = none
