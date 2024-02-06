@@ -74,12 +74,12 @@ dotnet_separate_import_directive_groups = false
 
 
 ### Code Style | General | _this._ preferences
-| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
-| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
-| Qualify field access with _this._                                     | Do not prefer _this_      | ⚠ Warning    |
-| Qualify property access with _this._                                  | Do not prefer _this_      | ⚠ Warning    |
-| Qualify method access with _this._                                    | Do not prefer _this_      | ⚠ Warning    |
-| Qualify event access with _this._                                     | Do not prefer _this_      | ⚠ Warning    |
+| Description _______________________________________________ | Code    | Preference ____________ | !! Severity !! |
+| :---------------------------------------------------------- | :-----: | :---------------------- | :-----------: |
+| Qualify field access with _this._                           | IDE0003 | Do not prefer _this_    | ⚠ Warning    |
+| Qualify property access with _this._                        | IDE0003 | Do not prefer _this_    | ⚠ Warning    |
+| Qualify method access with _this._                          | IDE0003 | Do not prefer _this_    | ⚠ Warning    |
+| Qualify event access with _this._                           | IDE0003 | Do not prefer _this_    | ⚠ Warning    |
 
 <details>
   <summary> .editorconfig </summary>
@@ -95,10 +95,10 @@ dotnet_style_qualification_for_property = false:warning
 
 
 ### Code Style | General | Predefined type preferences
-| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
-| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
-| For locals, parameters, and members (IDE0049)                         | Prefer predefined type    | ⚠ Warning    |
-| For member access expressions (IDE0049)                               | Prefer predefined type    | ⚠ Warning    |
+| Description _______________________________________________ | Code    | Preference ____________ | !! Severity !! |
+| :---------------------------------------------------------- | :-----: | :---------------------- | :-----------: |
+| For locals, parameters, and members                         | IDE0049 | Prefer predefined type  | ⚠ Warning    |
+| For member access expressions                               | IDE0049 | Prefer predefined type  | ⚠ Warning    |
 
 <details>
   <summary> .editorconfig </summary>
@@ -268,21 +268,23 @@ csharp_style_expression_bodied_local_functions = false:suggestion
 
 
 ### Code Style | General | Pattern matching preferences
-| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
-| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
-| Prefer pattern matching                                               | Yes                       | 🛈 Suggestion  |
-| Prefer pattern matching over _is_ with _cast_ check                   | Yes                       | ⚠ Warning    |
-| Prefer pattern matching over _as_ with _null_ check                   | Yes                       | ⚠ Warning    |
-| Prefer pattern matching over mixed type check                         | Yes                       | ⚠ Warning    |
+| Description _______________________________________________ | Code    | Preference ____________ | !! Severity !! |
+| :---------------------------------------------------------- | :-----: | :---------------------- | :-----------: |
+| Prefer pattern matching                                     | IDE0078 | Yes                     | 🛈 Suggestion  |
+| Prefer pattern matching over _as_ with _null_ check         | IDE0019 | Yes                     | ⚠ Warning    |
+| Prefer pattern matching over _is_ with _cast_ check         | IDE0020 | Yes                     | ⚠ Warning    |
+| Prefer pattern matching over mixed type check               | IDE0083 | Yes                     | ⚠ Warning    |
+| Prefer extended property pattern                            | IDE0170 | Yes                     | ⚠ Warning    |
 
 <details>
   <summary> .editorconfig </summary>
 
 ``` EditorConfig
 csharp_style_prefer_pattern_matching = true:suggestion
-csharp_style_pattern_matching_over_is_with_cast_check = true:warning
 csharp_style_pattern_matching_over_as_with_null_check = true:warning
+csharp_style_pattern_matching_over_is_with_cast_check = true:warning
 csharp_style_prefer_not_pattern = true:warning
+sharp_style_prefer_extended_property_pattern = true: warning
 ```
 
 </details>
@@ -348,17 +350,19 @@ csharp_using_directive_placement = outside_namespace:error
 ### Code Style | General | Modifier preferences
 | Description _________________________________________________________ | Preference ______________ | !! Severity !! |
 | :-------------------------------------------------------------------- | :------------------------ | :-----------: |
-| Prefer readonly fields                                                | Yes                       | ⚠ Warning    |
-| Prefer readonly struct                                                | Yes                       | 🛈 Suggestion  |
-| Prefer static local functions                                         | Yes                       | ⚠ Warning    |
+| Require accesibility modifiers                              (IDE0040) | Yes                       | ⚠ Warning    |
+| Prefer readonly fields                                      (IDE0044) | Yes                       | ⚠ Warning    |
+| Prefer static local functions                               (IDE0062) | Yes                       | ⚠ Warning    |
+| Prefer readonly struct                                      (IDE0250) | Yes                       | 🛈 Suggestion  |
 
 <details>
   <summary> .editorconfig </summary>
 
 ``` EditorConfig
+dotnet_style_require_accessibility_modifiers = true:warning
 dotnet_style_readonly_field = true:warning
-csharp_style_prefer_readonly_struct = true:suggestion
 csharp_prefer_static_local_function = true:warning
+csharp_style_prefer_readonly_struct = true:suggestion
 ```
 
 </details>
