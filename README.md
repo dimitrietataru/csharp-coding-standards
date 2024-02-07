@@ -1443,4 +1443,11 @@ dotnet_diagnostic.CA2261.severity = warning
 ### Language rules | *var* preferences
 
 ### Formatting rules
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
 dotnet_diagnostic.IDE0055.severity = warning
+```
+
+</details>
