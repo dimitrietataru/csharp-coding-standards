@@ -986,6 +986,21 @@ dotnet_diagnostic.CA1727.severity = warning
 | [CA1853](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1853) | Unnecessary call to *Dictionary.ContainsKey(key)*                                                                                        | ⚠ Warning     |
 | [CA1854](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1854) | Prefer the *IDictionary.TryGetValue(TKey, out TValue)* method                                                                            | 🛈 Suggestion   |
 | [CA1855](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1855) | Use *Span[T].Clear()* instead of *Span[T].Fill()*                                                                                        | 🛈 Suggestion   |
+| [CA1856](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1856) | Incorrect usage of _ConstantExpected_ attribute                                                                                          | ⛔ Error       |
+| [CA1857](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1857) | The parameter expects a constant for optimal performance                                                                                 | ⚠ Warning     |
+| [CA1858](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1858) | Use _StartsWith_ instead of _IndexOf_                                                                                                    | ⚠ Warning     |
+| [CA1859](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1859) | Use concrete types when possible for improved performance                                                                                | 🛈 Suggestion   |
+| [CA1860](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1860) | Avoid using _Enumerable.Any()_ extension method                                                                                          | ⚠ Warning     |
+| [CA1861](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1861) | Avoid constant arrays as arguments                                                                                                       | ⚠ Warning     |
+| [CA1862](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1862) | Use the _StringComparison_ method overloads for case-insensitive comparisons                                                             | ⚠ Warning     |
+| [CA1863](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1863) | Use _CompositeFormat_                                                                                                                    | 🛈 Suggestion   |
+| [CA1864](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1864) | Prefer the _IDictionary.TryAdd(TKey, TValue)_ method                                                                                     | ⚠ Warning     |
+| [CA1865](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1865) | Use _string.Method(char)_ instead of _string.Method(string)_ for string with one char                                                    | ⚠ Warning     |
+| [CA1866](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1866) | Use _string.Method(char)_ instead of _string.Method(string)_ for string with one char                                                    | ⚠ Warning     |
+| [CA1867](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1867) | Use _string.Method(char)_ instead of _string.Method(string)_ for string with one char                                                    | 🛈 Suggestion   |
+| [CA1868](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1868) | Unnecessary call to _Contains_ for sets                                                                                                  | ⚠ Warning     |
+| [CA1869](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1869) | Cache and reuse _JsonSerializerOptions_ instances                                                                                        | ⚠ Warning     |
+| [CA1870](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1870) | Use a cached _SearchValues_ instance                                                                                                     | ⚠ Warning     |
 
 <details>
   <summary> .editorconfig </summary>
@@ -1036,6 +1051,21 @@ dotnet_diagnostic.CA1852.severity = warning
 dotnet_diagnostic.CA1853.severity = warning
 dotnet_diagnostic.CA1854.severity = suggestion
 dotnet_diagnostic.CA1855.severity = suggestion
+dotnet_diagnostic.CA1856.severity = error
+dotnet_diagnostic.CA1857.severity = warning
+dotnet_diagnostic.CA1858.severity = warning
+dotnet_diagnostic.CA1859.severity = suggestion
+dotnet_diagnostic.CA1860.severity = warning
+dotnet_diagnostic.CA1861.severity = warning
+dotnet_diagnostic.CA1862.severity = warning
+dotnet_diagnostic.CA1863.severity = suggestion
+dotnet_diagnostic.CA1864.severity = warning
+dotnet_diagnostic.CA1865.severity = warning
+dotnet_diagnostic.CA1866.severity = warning
+dotnet_diagnostic.CA1867.severity = suggestion
+dotnet_diagnostic.CA1868.severity = warning
+dotnet_diagnostic.CA1869.severity = warning
+dotnet_diagnostic.CA1870.severity = warning
 ```
 
 </details>
