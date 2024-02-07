@@ -14,7 +14,7 @@ indent_size = 4
 indent_style = space
 tab_width = 4
 
-[*.cs]
+[*.{cs,vb}]
 indent_size = 4
 indent_style = space
 tab_width = 4
@@ -855,34 +855,32 @@ dotnet_diagnostic.CA2227.severity = none
 [**[Dd][Tt][Oo]{S,s,}**.cs]
 dotnet_diagnostic.CA2227.severity = none
 
-
 # IDE.CodeAnalysis Exceptions
 ## IDE0058: Remove unnecessary expression value
-[*.cs]
-dotnet_diagnostic.IDE0058.severity = silent
+[*.{cs,vb}]
+csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
 [**[Pp]rogram**.cs]
-dotnet_diagnostic.IDE0058.severity = none
+csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
 [**[Ss]tartup**.cs]
-dotnet_diagnostic.IDE0058.severity = none
+csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
 [**[Pp]rofile.cs]
-dotnet_diagnostic.IDE0058.severity = none
+csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
 [**[Aa]uto[Mm]apper**.cs]
-dotnet_diagnostic.IDE0058.severity = none
+csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
 [**[Tt]est{s,}**.cs]
-dotnet_diagnostic.IDE0058.severity = none
+csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
 [**[Cc]onfiguration{s,}**.cs]
-dotnet_diagnostic.IDE0058.severity = none
+csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
 [**[Cc]lassMap**.cs]
-dotnet_diagnostic.IDE0058.severity = none
-## Remove unused private member
+csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
+## IDE0051: Remove unused private member
 [**[Ff]ake{r,}**.cs]
 dotnet_diagnostic.IDE0051.severity = none
 
-
 # Compiler Messages Exceptions
 ## CS1591: Missing XML comment for publicly visible type or member
-[*.cs]
-dotnet_diagnostic.CS1591.severity = silent
+[*.{cs,vb}]
+dotnet_diagnostic.CS1591.severity = none
 [**[Cc]ontroller{s,}**.cs]
 dotnet_diagnostic.CS1591.severity = warning
 [**[Mm]odel{s,}**.cs]
@@ -893,14 +891,6 @@ dotnet_diagnostic.CS1591.severity = warning
 dotnet_diagnostic.CS1591.severity = warning
 [**[Ee]num{s,}**.cs]
 dotnet_diagnostic.CS1591.severity = warning
-
-
-# Exceptions
-[**[Pp]rogram**.cs]
-csharp_style_unused_value_expression_statement_preference = discard_variable:none
-[**[Ss]tartup**.cs]
-csharp_style_unused_value_expression_statement_preference = discard_variable:silent
-
 
 # Naming Exceptions
 [**[Cc]ontroller{s,}**.cs]
