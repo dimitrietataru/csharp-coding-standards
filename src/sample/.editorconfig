@@ -562,7 +562,11 @@ dotnet_diagnostic.CA1505.severity = warning
 dotnet_diagnostic.CA1506.severity = warning
 dotnet_diagnostic.CA1507.severity = warning
 dotnet_diagnostic.CA1508.severity = warning
-dotnet_diagnostic.CA1509.severity = error 
+dotnet_diagnostic.CA1509.severity = error
+dotnet_diagnostic.CA1510.severity = warning
+dotnet_diagnostic.CA1511.severity = warning
+dotnet_diagnostic.CA1512.severity = warning
+dotnet_diagnostic.CA1513.severity = warning
 
 # Microsoft.CodeAnalysis.NetAnalyzers | Naming
 dotnet_diagnostic.CA1700.severity = suggestion

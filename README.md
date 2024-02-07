@@ -870,6 +870,10 @@ dotnet_diagnostic.CA1422.severity = warning
 | [CA1507](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1507) | Use _nameof_ in place of string                                                                                                          | ⚠ Warning     |
 | [CA1508](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1508) | Avoid dead conditional code                                                                                                              | ⚠ Warning     |
 | [CA1509](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1509) | Invalid entry in code metrics configuration file                                                                                         | ⛔ Error       |
+| [CA1510](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1510) | Use _ArgumentNullException_ throw helper                                                                                                 | ⚠ Warning     |
+| [CA1511](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1511) | Use _ArgumentException_ throw helper                                                                                                     | ⚠ Warning     |
+| [CA1512](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1512) | Use _ArgumentOutOfRangeException_ throw helper                                                                                           | ⚠ Warning     |
+| [CA1513](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1513) | Use _ObjectDisposedException_ throw helper                                                                                               | ⚠ Warning     |
 
 <details>
   <summary> .editorconfig </summary>
@@ -881,7 +885,11 @@ dotnet_diagnostic.CA1505.severity = warning
 dotnet_diagnostic.CA1506.severity = warning
 dotnet_diagnostic.CA1507.severity = warning
 dotnet_diagnostic.CA1508.severity = warning
-dotnet_diagnostic.CA1509.severity = error 
+dotnet_diagnostic.CA1509.severity = error
+dotnet_diagnostic.CA1510.severity = warning
+dotnet_diagnostic.CA1511.severity = warning
+dotnet_diagnostic.CA1512.severity = warning
+dotnet_diagnostic.CA1513.severity = warning
 ```
 
 </details>
