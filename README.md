@@ -1075,7 +1075,7 @@ dotnet_diagnostic.CA1870.severity = warning
 | :------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------- | :------------: |
 | [CA2000](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2000)  | Dispose objects before losing scope                                                                                                      | 🛈 Suggestion   |
 | [CA2002](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2002)  | Do not lock on objects with weak identity                                                                                                | ⛔ Error       |
-| [CA2007](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2007)  | Do not directly await a Task                                                                                                             | 🛈 Suggestion   |
+| [CA2007](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2007)  | Do not directly await a Task                                                                                                             | 🞅 None         |
 | [CA2008](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2008)  | Do not create tasks without passing a _TaskScheduler_                                                                                    | 🛈 Suggestion   |
 | [CA2009](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2009)  | Do not call _ToImmutableCollection_ on an _ImmutableCollection_ value                                                                    | ⚠ Warning     |
 | [CA2011](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2011)  | Do not assign property within its setter                                                                                                 | ⛔ Error       |
@@ -1096,7 +1096,7 @@ dotnet_diagnostic.CA1870.severity = warning
 ``` EditorConfig
 dotnet_diagnostic.CA2000.severity = suggestion
 dotnet_diagnostic.CA2002.severity = error
-dotnet_diagnostic.CA2007.severity = suggestion
+dotnet_diagnostic.CA2007.severity = none
 dotnet_diagnostic.CA2008.severity = suggestion
 dotnet_diagnostic.CA2009.severity = warning
 dotnet_diagnostic.CA2011.severity = error
