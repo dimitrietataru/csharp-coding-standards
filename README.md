@@ -112,45 +112,45 @@ dotnet_style_predefined_type_for_member_access = true:warning
 
 
 ### Code Style | General | _var_ preferences
-| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
-| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
-| For built-in types                                                    | Prefer explicit type      | 🛈 Suggestion  |
-| When variable type is apparent                                        | Prefer _var_              | ⚠ Warning    |
-| Elsewhere                                                             | Prefer _var_              | 🛈 Suggestion  |
+| Description _______________________________________________ | Code    | Preference ____________ | !! Severity !! |
+| :---------------------------------------------------------- | :-----: | :---------------------- | :-----------: |
+| For built-in types                                          | IDE0008 | Prefer explicit type    | 🛈 Suggestion  |
+| When variable type is apparent                              | IDE0007 | Prefer _var_            | ⚠ Warning    |
+| Elsewhere                                                   | IDE0007 | Prefer _var_            | 🛈 Suggestion  |
 
 <details>
   <summary> .editorconfig </summary>
 
 ``` EditorConfig
 csharp_style_var_for_built_in_types = false:suggestion
-csharp_style_var_elsewhere = true:suggestion
 csharp_style_var_when_type_is_apparent = true:warning
+csharp_style_var_elsewhere = true:suggestion
 ```
 
 </details>
 
 
 ### Code Style | General | Code block preferences
-| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
-| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
-| Prefer braces (IDE0011)                                               | Yes                       | ⚠ Warning    |
-| Namespace declarations                                                | File scoped               | 🛈 Suggestion  |
-| Prefer auto properties                                                | Yes                       | 🞅 Refactoring |
-| Prefer simple _using_ statement                                       | Yes                       | 🛈 Suggestion  |
-| Prefer _System.HashCode_ in 'GetHashCode'                             | Yes                       | 🛈 Suggestion  |
-| Prefer method group conversion                                        | Yes                       | 🛈 Suggestion  |
-| Prefer top-level statements                                           | Yes                       | 🛈 Suggestion  |
-| Prefer primary constructors                                           | No                        | ⚠ Warning    |
+| Description _______________________________________________ | Code    | Preference ____________ | !! Severity !! |
+| :---------------------------------------------------------- | :-----: | :---------------------- | :-----------: |
+| Prefer braces                                               | IDE0011 | Yes                     | ⚠ Warning    |
+| Prefer auto properties                                      | IDE0032 | Yes                     | 🞅 Refactoring |
+| Prefer simple _using_ statement                             | IDE0063 | Yes                     | 🛈 Suggestion  |
+| Prefer _System.HashCode_ in 'GetHashCode'                   | IDE0070 | Yes                     | 🛈 Suggestion  |
+| Namespace declarations                                      | IDE0161 | File scoped             | 🛈 Suggestion  |
+| Prefer method group conversion                              | IDE0200 | Yes                     | 🛈 Suggestion  |
+| Prefer top-level statements                                 | IDE0210 | Yes                     | 🛈 Suggestion  |
+| Prefer primary constructors                                 | IDE0290 | No                      | ⚠ Warning    |
 
 <details>
   <summary> .editorconfig </summary>
 
 ``` EditorConfig
 csharp_prefer_braces = true:warning
-csharp_style_namespace_declarations = file_scoped:suggestion
-csharp_prefer_simple_using_statement = true:suggestion
 dotnet_style_prefer_auto_properties = true:silent
+csharp_prefer_simple_using_statement = true:suggestion
 # Missing: Prefer _System.HashCode_ in 'GetHashCode'
+csharp_style_namespace_declarations = file_scoped:suggestion
 csharp_style_prefer_method_group_conversion = true:suggestion
 csharp_style_prefer_top_level_statements = true:suggestion
 csharp_style_prefer_primary_constructors = false:warning
@@ -160,12 +160,12 @@ csharp_style_prefer_primary_constructors = false:warning
 
 
 ### Code Style | General | Parentheses preferences
-| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
-| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
-| In arithmetic operators: _*_ _/_ _%_ _+_ _-_ _<<_ _>>_ _&_ _^_        | Always for clarity        | 🛈 Suggestion  |
-| In other binary operators: _&&_ _??_ _and_ _or_                       | Always for clarity        | 🛈 Suggestion  |
-| In relational operators: _<_ _>_ _<=_ _>=_ _is_ _as_ _==_ _!=_        | Always for clarity        | 🛈 Suggestion  |
-| In other operators                                                    | Never if unnecessary      | ⚠ Warning    |
+| Description _______________________________________________    | Code    | Preference ____________ | !! Severity !! |
+| :----------------------------------------------------------    | :-----: | :---------------------- | :-----------: |
+| In arithmetic operators: _*_ _/_ _%_ _+_ _-_ _<<_ _>>_ _&_ _^_ | IDE0048 | Always for clarity      | 🛈 Suggestion  |
+| In other binary operators: _&&_ _??_ _and_ _or_                | IDE0048 | Always for clarity      | 🛈 Suggestion  |
+| In relational operators: _<_ _>_ _<=_ _>=_ _is_ _as_ _==_ _!=_ | IDE0048 | Always for clarity      | 🛈 Suggestion  |
+| In other operators                                             | IDE0047 | Never if unnecessary    | ⚠ Warning    |
 
 <details>
   <summary> .editorconfig </summary>
@@ -181,31 +181,31 @@ dotnet_style_parentheses_in_other_operators = never_if_unnecessary:warning
 
 
 ### Code Style | General | Expression preferences
-| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
-| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
-| Prefer object initializer                                             | Yes                       | 🛈 Suggestion  |
-| Prefer collection initializer                                         | Yes                       | 🛈 Suggestion  |
-| Prefer collection expression                                          | Yes                       | 🛈 Suggestion  |
-| Prefer simplified boolean expressions                                 | Yes                       | ⚠ Warning    |
-| Prefer switch expression                                              | Yes                       | 🛈 Suggestion  |
-| Prefer conditional expression over _if_ with assignments              | Yes                       | 🞅 Refactoring |
-| Prefer conditional expression over _if_ with returns                  | No                        | 🞅 Refactoring |
-| Prefer explicit tuple name                                            | Yes                       | 🛈 Suggestion  |
-| Prefer simple 'default' expression                                    | Yes                       | ⚠ Warning    |
-| Prefer inferred tuple element names                                   | No                        | 🛈 Suggestion  |
-| Prefer inferred anonymous type member names                           | Yes                       | 🞅 Refactoring |
-| Prefer local function over anonymous function                         | Yes                       | ⚠ Warning    |
-| Prefer compound assignments                                           | Yes                       | ⚠ Warning    |
-| Prefer simplified interpolation                             (IDE0071) | Yes                       | ⚠ Warning    |
-| Prefer implicit object creation when type is aparent        (IDE0090) | Yes                       | 🛈 Suggestion  |
-| Prefer namespace and folder match structure                 (IDE0130) | Yes                       | 🛈 Suggestion  |
-| Prefer UTF-8 string literals                                (IDE0230) | Yes                       | 🛈 Suggestion  |
-| Prefer index operator                                                 | Yes                       | 🛈 Suggestion  |
-| Prefer range operator                                                 | Yes                       | 🛈 Suggestion  |
-| Prefer tuple swap                                                     | Yes                       | 🛈 Suggestion  |
-| Avoid unused value assignments                                        | Discard                   | 🞅 Refactoring |
-| Avoid expression statements that implicitly ignore value              | Discard                   | 🞅 Refactoring |
-| Avoid expression statements that implicitly ignore value              | Discard                   | 🞅 Refactoring |
+| Description _______________________________________________ | Code    | Preference ____________ | !! Severity !! |
+| :---------------------------------------------------------- | :-----: | :---------------------- | :-----------: |
+| Prefer object initializer                                   | IDE0017 | Yes                     | 🛈 Suggestion  |
+| Prefer collection initializer                               | IDE0028 | Yes                     | 🛈 Suggestion  |
+| Prefer explicit tuple name                                  | IDE0033 | Yes                     | 🛈 Suggestion  |
+| Prefer simple 'default' expression                          | IDE0034 | Yes                     | ⚠ Warning    |
+| Prefer inferred tuple element names                         | IDE0037 | No                      | 🛈 Suggestion  |
+| Prefer inferred anonymous type member names                 | IDE0037 | Yes                     | 🞅 Refactoring |
+| Prefer local function over anonymous function               | IDE0039 | Yes                     | ⚠ Warning    |
+| Prefer conditional expression over _if_ with assignments    | IDE0045 | Yes                     | 🞅 Refactoring |
+| Prefer conditional expression over _if_ with returns        | IDE0046 | No                      | 🞅 Refactoring |
+| Prefer compound assignments                                 | IDE0054 | Yes                     | ⚠ Warning    |
+| Prefer index operator                                       | IDE0056 | Yes                     | 🛈 Suggestion  |
+| Prefer range operator                                       | IDE0057 | Yes                     | 🛈 Suggestion  |
+| Avoid expression statements that implicitly ignore value    | IDE0058 | Discard                 | 🞅 Refactoring |
+| Avoid unused value assignments                              | IDE0059 | Discard                 | 🞅 Refactoring |
+| Prefer switch expression                                    | IDE0066 | Yes                     | 🛈 Suggestion  |
+| Prefer simplified interpolation                             | IDE0071 | Yes                     | ⚠ Warning    |
+| Prefer simplified boolean expressions                       | IDE0075 | Yes                     | ⚠ Warning    |
+| Prefer implicit object creation when type is aparent        | IDE0090 | Yes                     | 🛈 Suggestion  |
+| Prefer namespace and folder match structure                 | IDE0130 | Yes                     | 🛈 Suggestion  |
+| Prefer tuple swap                                           | IDE0180 | Yes                     | 🛈 Suggestion  |
+| Prefer UTF-8 string literals                                | IDE0230 | Yes                     | 🛈 Suggestion  |
+| Prefer collection expression                                | IDE0300 | Yes                     | 🛈 Suggestion  |
+| Operator placement when wrapping                            |         | Beginning of line       | |
 
 <details>
   <summary> .editorconfig </summary>
@@ -213,49 +213,50 @@ dotnet_style_parentheses_in_other_operators = never_if_unnecessary:warning
 ``` EditorConfig
 dotnet_style_object_initializer = true:suggestion
 dotnet_style_collection_initializer = true:suggestion
-dotnet_style_prefer_collection_expression = true:suggestion
-dotnet_style_prefer_simplified_boolean_expressions = true:warning
-csharp_style_prefer_switch_expression = true:suggestion
-dotnet_style_prefer_conditional_expression_over_assignment = true:silent
-dotnet_style_prefer_conditional_expression_over_return = false:silent
 dotnet_style_explicit_tuple_names = true:suggestion
 csharp_prefer_simple_default_expression = true:warning
 dotnet_style_prefer_inferred_tuple_names = false:suggestion
 dotnet_style_prefer_inferred_anonymous_type_member_names = false:suggestion
 csharp_style_prefer_local_over_anonymous_function = true:warning
+dotnet_style_prefer_conditional_expression_over_assignment = true:silent
+dotnet_style_prefer_conditional_expression_over_return = false:silent
 dotnet_style_prefer_compound_assignment = true:warning
-dotnet_style_prefer_simplified_interpolation = true:warning
-csharp_style_implicit_object_creation_when_type_is_apparent = true:suggestion
-dotnet_style_namespace_match_folder = true:suggestion
-csharp_style_prefer_utf8_string_literals = true:suggestion
 csharp_style_prefer_index_operator = true:suggestion
 csharp_style_prefer_range_operator = true:suggestion
-csharp_style_prefer_tuple_swap = true:suggestion
-csharp_style_unused_value_assignment_preference = discard_variable:silent
 csharp_style_unused_value_expression_statement_preference = discard_variable:silent
+csharp_style_unused_value_assignment_preference = discard_variable:silent
+csharp_style_prefer_switch_expression = true:suggestion
+dotnet_style_prefer_simplified_interpolation = true:warning
+dotnet_style_prefer_simplified_boolean_expressions = true:warning
+csharp_style_implicit_object_creation_when_type_is_apparent = true:suggestion
+dotnet_style_namespace_match_folder = true:suggestion
+csharp_style_prefer_tuple_swap = true:suggestion
+csharp_style_prefer_utf8_string_literals = true:suggestion
+dotnet_style_prefer_collection_expression = true:suggestion
+dotnet_style_operator_placement_when_wrapping = beginning_of_line
 ```
 
 </details>
 
 
 ### Code Style | General | Expression-bodied members
-| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
-| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
-| Use expression body for methods                                       | Never                     | 🞅 Refactoring |
-| Use expression body for constructors                                  | Never                     | 🞅 Refactoring |
-| Use expression body for operators                                     | Never                     | 🞅 Refactoring |
-| Use expression body for properties                                    | When possible             | 🛈 Suggestion  |
-| Use expression body for indexers                                      | When possible             | 🛈 Suggestion  |
-| Use expression body for accessors                                     | When possible             | 🛈 Suggestion  |
-| Use expression body for lambdas                                       | When possible             | 🞅 Refactoring |
-| Use expression body for local functions                               | Never                     | 🛈 Suggestion  |
+| Description _______________________________________________ | Code    | Preference ____________ | !! Severity !! |
+| :---------------------------------------------------------- | :-----: | :---------------------- | :-----------: |
+| Use expression body for constructors                        | IDE0021 | Never                   | 🞅 Refactoring |
+| Use expression body for methods                             | IDE0022 | Never                   | 🞅 Refactoring |
+| Use expression body for operators                           | IDE0024 | Never                   | 🞅 Refactoring |
+| Use expression body for properties                          | IDE0025 | When possible           | 🛈 Suggestion  |
+| Use expression body for indexers                            | IDE0026 | When possible           | 🛈 Suggestion  |
+| Use expression body for accessors                           | IDE0027 | When possible           | 🛈 Suggestion  |
+| Use expression body for lambdas                             | IDE0053 | When possible           | 🞅 Refactoring |
+| Use expression body for local functions                     | IDE0061 | Never                   | 🛈 Suggestion  |
 
 <details>
   <summary> .editorconfig </summary>
 
 ``` EditorConfig
-csharp_style_expression_bodied_methods = false:silent
 csharp_style_expression_bodied_constructors = false:silent
+csharp_style_expression_bodied_methods = false:silent
 csharp_style_expression_bodied_operators = false:silent
 csharp_style_expression_bodied_properties = true:suggestion
 csharp_style_expression_bodied_indexers = true:suggestion
@@ -284,17 +285,17 @@ csharp_style_prefer_pattern_matching = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:warning
 csharp_style_pattern_matching_over_is_with_cast_check = true:warning
 csharp_style_prefer_not_pattern = true:warning
-sharp_style_prefer_extended_property_pattern = true: warning
+csharp_style_prefer_extended_property_pattern = true:warning
 ```
 
 </details>
 
 
 ### Code Style | General | Variable preferences
-| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
-| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
-| Prefer inlined variable declaration                                   | Yes                       | ⚠ Warning    |
-| Prefer deconstructed variable declaration                             | Yes                       | 🛈 Suggestion  |
+| Description _______________________________________________ | Code    | Preference ____________ | !! Severity !! |
+| :---------------------------------------------------------- | :-----: | :---------------------- | :-----------: |
+| Prefer inlined variable declaration                         | IDE0018 | Yes                     | ⚠ Warning    |
+| Prefer deconstructed variable declaration                   | IDE0042 | Yes                     | 🛈 Suggestion  |
 
 <details>
   <summary> .editorconfig </summary>
@@ -308,34 +309,34 @@ csharp_style_deconstructed_variable_declaration = true:suggestion
 
 
 ### Code Style | General | _null_ checking
-| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
-| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
-| Prefer throw-expression                                               | Yes                       | 🛈 Suggestion  |
-| Prefer conditional delegate call                                      | Yes                       | 🛈 Suggestion  |
-| Prefer coalesce expression                                            | Yes                       | ⚠ Warning    |
-| Prefer null propagation                                               | Yes                       | ⚠ Warning    |
-| Prefer _is null_ for reference equality checks                        | Yes                       | ⚠ Warning    |
-| Prefer _null_ check over type check                                   | Yes                       | 🛈 Suggestion  |
+| Description _______________________________________________ | Code    | Preference ____________ | !! Severity !! |
+| :---------------------------------------------------------- | :-----: | :---------------------- | :-----------: |
+| Prefer throw-expression                                     | IDE0016 | Yes                     | 🛈 Suggestion  |
+| Prefer coalesce expression                                  | IDE0029 | Yes                     | ⚠ Warning    |
+| Prefer null propagation                                     | IDE0031 | Yes                     | ⚠ Warning    |
+| Prefer _is null_ for reference equality checks              | IDE0041 | Yes                     | ⚠ Warning    |
+| Prefer _null_ check over type check                         | IDE0150 | Yes                     | 🛈 Suggestion  |
+| Prefer conditional delegate call                            | IDE1005 | Yes                     | 🛈 Suggestion  |
 
 <details>
   <summary> .editorconfig </summary>
 
 ``` EditorConfig
 csharp_style_throw_expression = true:suggestion
-csharp_style_conditional_delegate_call = true:suggestion
 dotnet_style_coalesce_expression = true:warning
 dotnet_style_null_propagation = true:warning
 dotnet_style_prefer_is_null_check_over_reference_equality_method = true:warning
 csharp_style_prefer_null_check_over_type_check = true:suggestion
+csharp_style_conditional_delegate_call = true:suggestion
 ```
 
 </details>
 
 
 ### Code Style | General | _using_ preferences
-| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
-| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
-| Preferred _using_ directive placement                                 | Outside namespace         | ⛔ Error      |
+| Description _______________________________________________ | Code    | Preference ____________ | !! Severity !! |
+| :---------------------------------------------------------- | :-----: | :---------------------- | :-----------: |
+| Preferred _using_ directive placement                       | IDE0065 | Outside namespace       | ⛔ Error      |
 
 <details>
   <summary> .editorconfig </summary>
@@ -348,12 +349,13 @@ csharp_using_directive_placement = outside_namespace:error
 
 
 ### Code Style | General | Modifier preferences
-| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
-| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
-| Require accesibility modifiers                              (IDE0040) | Yes                       | ⚠ Warning    |
-| Prefer readonly fields                                      (IDE0044) | Yes                       | ⚠ Warning    |
-| Prefer static local functions                               (IDE0062) | Yes                       | ⚠ Warning    |
-| Prefer readonly struct                                      (IDE0250) | Yes                       | 🛈 Suggestion  |
+| Description _______________________________________________ | Code    | Preference ____________ | !! Severity !! |
+| :---------------------------------------------------------- | :-----: | :---------------------- | :-----------: |
+| Require accesibility modifiers                              | IDE0040 | Yes                     | ⚠ Warning    |
+| Prefer readonly fields                                      | IDE0044 | Yes                     | ⚠ Warning    |
+| Prefer static local functions                               | IDE0062 | Yes                     | ⚠ Warning    |
+| Prefer readonly struct                                      | IDE0250 | Yes                     | 🛈 Suggestion  |
+| Prefer readonly struct member                               | IDE0251 | Yes                     | 🛈 Suggestion  |
 
 <details>
   <summary> .editorconfig </summary>
@@ -363,15 +365,16 @@ dotnet_style_require_accessibility_modifiers = true:warning
 dotnet_style_readonly_field = true:warning
 csharp_prefer_static_local_function = true:warning
 csharp_style_prefer_readonly_struct = true:suggestion
+csharp_style_prefer_readonly_struct_member = true:suggestion
 ```
 
 </details>
 
 
 ### Code Style | General | Parameter preferences
-| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
-| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
-| Avoid unused parameters                                               | Non-public methods        | ⚠ Warning    |
+| Description _______________________________________________ | Code    | Preference ____________ | !! Severity !! |
+| :---------------------------------------------------------- | :-----: | :---------------------- | :-----------: |
+| Avoid unused parameters                                     | IDE0060 | Non-public methods      | ⚠ Warning    |
 
 <details>
   <summary> .editorconfig </summary>
@@ -384,15 +387,15 @@ dotnet_code_quality_unused_parameters = non_public:warning
 
 
 ### Code Style | General | New line preferences
-| Description _________________________________________________________ | Preference ______________ | !! Severity !! |
-| :-------------------------------------------------------------------- | :------------------------ | :-----------: |
-| Allow multiple blank lines (IDE2000)                                  | No                        | ⚠ Warning    |
-| Allow embeded statements on same line (IDE2001)                       | No                        | ⚠ Warning    |
-| Allow blank lines between consecutive braces (IDE2002)                | No                        | ⚠ Warning    |
-| Allow statement immediately after block (IDE2003)                     | No                        | ⚠ Warning    |
-| Allow blank line after colon in constructor initializer (IDE2004)     | No                        | ⛔ Error      |
-| Allow blank line after token in conditional expression (IDE2005)      | No                        | ⛔ Error      |
-| Allow blank line after token in arrow expression clause (IDE2006)     | Yes                       | 🛈 Suggestion  |
+| Description _______________________________________________ | Code    | Preference ____________ | !! Severity !! |
+| :---------------------------------------------------------- | :-----: | :---------------------- | :-----------: |
+| Allow multiple blank lines                                  | IDE2000 | No                      | ⚠ Warning    |
+| Allow embeded statements on same line                       | IDE2001 | No                      | ⚠ Warning    |
+| Allow blank lines between consecutive braces                | IDE2002 | No                      | ⚠ Warning    |
+| Allow statement immediately after block                     | IDE2003 | No                      | ⚠ Warning    |
+| Allow blank line after colon in constructor initializer     | IDE2004 | No                      | ⛔ Error      |
+| Allow blank line after token in conditional expression      | IDE2005 | No                      | ⛔ Error      |
+| Allow blank line after token in arrow expression clause     | IDE2006 | Yes                     | 🛈 Suggestion  |
 
 <details>
   <summary> .editorconfig </summary>
@@ -1371,37 +1374,31 @@ dotnet_diagnostic.CA2260.severity = warning
 
 ## Code style rules
 
-### Language rules | *this* preferences
-
-### Language rules | Modifier preferences
-
-### Language rules | Parentheses preferences
-
-### Language rules | Expression-level preferences
-
-### Language rules | Namespace declaration preferences
-
-### Language rules | Null-checking preferences
-
-### Language rules | *var* preferences
-
-### Language rules | Expression-bodied preferences
-
-### Language rules | Pattern matching preferences
+### Language rules | *using* directive preferences
 
 ### Language rules | Code block preferences
 
-### Language rules | *using* preferences
+### Language rules | Expression-bodied preferences
 
-### Language rules | File header preferences
+### Language rules | Expression-level preferences
 
-### Language rules | Namespace naming preferences
+### Language rules | Field preferences
 
-### Unnecessary code rules
+### Language rules | Modifier preferences
 
-### Miscellanous rules
+### Language rules | New line preferences
+
+### Language rules | Null-checking preferences
+
+### Language rules | Parameter preferences
+
+### Language rules | Parentheses preferences
+
+### Language rules | Pattern matching preferences
+
+### Language rules | *this* preferences
+
+### Language rules | *var* preferences
 
 ### Formatting rules
 dotnet_diagnostic.IDE0055.severity = warning
-
-### Naming rules
