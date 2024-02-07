@@ -806,6 +806,7 @@ dotnet_diagnostic.CA2257.severity = warning
 dotnet_diagnostic.CA2258.severity = warning
 dotnet_diagnostic.CA2259.severity = warning
 dotnet_diagnostic.CA2260.severity = warning
+dotnet_diagnostic.CA2261.severity = warning
 
 # Code Style | Formatting
 dotnet_diagnostic.IDE0055.severity = warning

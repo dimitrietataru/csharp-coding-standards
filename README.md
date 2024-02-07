@@ -1361,6 +1361,7 @@ dotnet_diagnostic.CA5405.severity = warning
 | [CA2258](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2258)  | Providing a _DICI_ interface in Visual Basic is unsupported                                                                              | ⚠ Warning     |
 | [CA2259](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2259) | Ensure *ThreadStatic* is only used with static fields                                                                                    | ⚠ Warning     |
 | [CA2260](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2260) | Implement generic math interfaces correctly                                                                                              | ⚠ Warning     |
+| [CA2261](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2261) | Do not use _ConfigureAwaitOptions.SuppressThrowing_ with _Task<TResult>_                                                                 | ⚠ Warning     |
 
 <details>
   <summary> .editorconfig </summary>
@@ -1408,6 +1409,7 @@ dotnet_diagnostic.CA2257.severity = warning
 dotnet_diagnostic.CA2258.severity = warning
 dotnet_diagnostic.CA2259.severity = warning
 dotnet_diagnostic.CA2260.severity = warning
+dotnet_diagnostic.CA2261.severity = warning
 ```
 
 </details>
