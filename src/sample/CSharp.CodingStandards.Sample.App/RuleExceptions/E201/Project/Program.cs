@@ -1,5 +1,6 @@
 namespace CSharp.CodingStandards.Sample.App.RuleExceptions.E201.Project;
 
+#pragma warning disable CS7022 // The entry point of the program is global code; ignoring 'Program.Main(object[])' entry point.
 internal static class Program
 {
     public static void Main(object[] _)
