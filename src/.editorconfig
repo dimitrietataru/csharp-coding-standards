@@ -197,6 +197,9 @@ csharp_space_around_binary_operators = before_and_after
 csharp_preserve_single_line_blocks = true
 csharp_preserve_single_line_statements = false
 
+# Code Style | Formatting
+dotnet_diagnostic.IDE0055.severity = warning
+
 # Advanced | Using directives
 dotnet_sort_system_directives_first = false
 dotnet_separate_import_directive_groups = false
@@ -808,70 +811,67 @@ dotnet_diagnostic.CA2259.severity = warning
 dotnet_diagnostic.CA2260.severity = warning
 dotnet_diagnostic.CA2261.severity = warning
 
-# Code Style | Formatting
-dotnet_diagnostic.IDE0055.severity = warning
-
 # Microsoft.CodeAnalysis Exceptions
 ## CA1002: Do not expose generic lists
+[**[Dd][Tt][Oo]{S,s,}**.cs]
+dotnet_diagnostic.CA1002.severity = none
 [**[Ee]ntit{y,i}{e,}{s,}**.cs]
 dotnet_diagnostic.CA1002.severity = none
 [**[Mm]odel{s,}**.cs]
-dotnet_diagnostic.CA1002.severity = none
-[**[Dd][Tt][Oo]{S,s,}**.cs]
 dotnet_diagnostic.CA1002.severity = none
 ## CA1056: URI properties should not be strings
+[**[Dd][Tt][Oo]{S,s,}**.cs]
+dotnet_diagnostic.CA1056.severity = none
 [**[Ee]ntit{y,i}{e,}{s,}**.cs]
 dotnet_diagnostic.CA1056.severity = none
 [**[Mm]odel{s,}**.cs]
-dotnet_diagnostic.CA1056.severity = none
-[**[Dd][Tt][Oo]{S,s,}**.cs]
 dotnet_diagnostic.CA1056.severity = none
 ## CA1724: Type names should not match namespaces
 [**[Dd]ependency[Ii]njection**.cs]
 dotnet_diagnostic.CA1724.severity = none
 ## CA1812: Avoid uninstantiated internal classes
-[**[Ss]ervice{s,}**.cs]
-dotnet_diagnostic.CA1812.severity = none
-[**[Re]epositor{y,i}{e,}{s,}**.cs]
+[**[Dd]b[Cc]ontext{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
 [**[Ee]ntit{y,i}{e,}{s,}**.cs]
-dotnet_diagnostic.CA1812.severity = none
-[**[Dd]b[Cc]ontext{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
 [**[Pp]rogram.cs]
 dotnet_diagnostic.CA1812.severity = none
+[**[Re]epositor{y,i}{e,}{s,}**.cs]
+dotnet_diagnostic.CA1812.severity = none
+[**[Ss]ervice{s,}**.cs]
+dotnet_diagnostic.CA1812.severity = none
 ## CA1819: Properties should not return arrays
+[**[Dd][Tt][Oo]{S,s,}**.cs]
+dotnet_diagnostic.CA1819.severity = none
 [**[Ee]ntit{y,i}{e,}{s,}**.cs]
 dotnet_diagnostic.CA1819.severity = none
 [**[Mm]odel{s,}**.cs]
-dotnet_diagnostic.CA1819.severity = none
-[**[Dd][Tt][Oo]{S,s,}**.cs]
 dotnet_diagnostic.CA1819.severity = none
 ## CA2227: Collection properties should be read only
+[**[Dd][Tt][Oo]{S,s,}**.cs]
+dotnet_diagnostic.CA2227.severity = none
 [**[Ee]ntit{y,i}{e,}{s,}**.cs]
 dotnet_diagnostic.CA2227.severity = none
 [**[Mm]odel{s,}**.cs]
-dotnet_diagnostic.CA2227.severity = none
-[**[Dd][Tt][Oo]{S,s,}**.cs]
 dotnet_diagnostic.CA2227.severity = none
 
 # IDE.CodeAnalysis Exceptions
 ## IDE0058: Remove unnecessary expression value
 [*.{cs,vb}]
 csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
+[**[Aa]uto[Mm]apper**.cs]
+csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
+[**[Cc]lassMap**.cs]
+csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
+[**[Cc]onfiguration{s,}**.cs]
+csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
+[**[Pp]rofile.cs]
+csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
 [**[Pp]rogram**.cs]
 csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
 [**[Ss]tartup**.cs]
 csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
-[**[Pp]rofile.cs]
-csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
-[**[Aa]uto[Mm]apper**.cs]
-csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
 [**[Tt]est{s,}**.cs]
-csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
-[**[Cc]onfiguration{s,}**.cs]
-csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
-[**[Cc]lassMap**.cs]
 csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
 ## IDE0051: Remove unused private member
 [**[Ff]ake{r,}**.cs]
@@ -883,13 +883,13 @@ dotnet_diagnostic.IDE0051.severity = none
 dotnet_diagnostic.CS1591.severity = none
 [**[Cc]ontroller{s,}**.cs]
 dotnet_diagnostic.CS1591.severity = warning
-[**[Mm]odel{s,}**.cs]
+[**[Dd][Tt][Oo]{S,s,}**.cs]
 dotnet_diagnostic.CS1591.severity = warning
 [**[Ee]ntit{y,i}{e,}{s,}**.cs]
 dotnet_diagnostic.CS1591.severity = warning
-[**[Dd][Tt][Oo]{S,s,}**.cs]
-dotnet_diagnostic.CS1591.severity = warning
 [**[Ee]num{s,}**.cs]
+dotnet_diagnostic.CS1591.severity = warning
+[**[Mm]odel{s,}**.cs]
 dotnet_diagnostic.CS1591.severity = warning
 
 # Naming Exceptions
