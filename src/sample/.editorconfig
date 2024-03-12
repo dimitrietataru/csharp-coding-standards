@@ -19,7 +19,7 @@ indent_size = 4
 indent_style = space
 tab_width = 4
 
-[*.{csproj,xml,json}]
+[*.{csproj,json,props,xml,yml}]
 indent_size = 2
 indent_style = space
 tab_width = 2
@@ -817,8 +817,15 @@ dotnet_diagnostic.CA2261.severity = warning
 dotnet_diagnostic.CA1002.severity = none
 [**[Ee]ntit{y,i}{e,}{s,}**.cs]
 dotnet_diagnostic.CA1002.severity = none
+[**[Ff]ake{r,}**.cs]
+dotnet_diagnostic.CA1002.severity = none
 [**[Mm]odel{s,}**.cs]
 dotnet_diagnostic.CA1002.severity = none
+## CA1005: Avoid excessive parameters on generic types
+[**[Tt]est{s,}**.cs]
+dotnet_diagnostic.CA1005.severity = none
+[**[Xx][Uu]nit**.cs]
+dotnet_diagnostic.CA1005.severity = none
 ## CA1056: URI properties should not be strings
 [**[Dd][Tt][Oo]{S,s,}**.cs]
 dotnet_diagnostic.CA1056.severity = none
@@ -826,6 +833,9 @@ dotnet_diagnostic.CA1056.severity = none
 dotnet_diagnostic.CA1056.severity = none
 [**[Mm]odel{s,}**.cs]
 dotnet_diagnostic.CA1056.severity = none
+## CA1707: Identifiers should not contain underscores
+####[**[Tt]est{s,}**.cs]
+####dotnet_diagnostic.CA1707.severity = none
 ## CA1724: Type names should not match namespaces
 [**[Dd]ependency[Ii]njection**.cs]
 dotnet_diagnostic.CA1724.severity = none
@@ -839,6 +849,8 @@ dotnet_diagnostic.CA1812.severity = none
 [**[Re]epositor{y,i}{e,}{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
 [**[Ss]ervice{s,}**.cs]
+dotnet_diagnostic.CA1812.severity = none
+[**[Tt]est{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
 ## CA1819: Properties should not return arrays
 [**[Dd][Tt][Oo]{S,s,}**.cs]
@@ -856,6 +868,9 @@ dotnet_diagnostic.CA2227.severity = none
 dotnet_diagnostic.CA2227.severity = none
 
 # IDE.CodeAnalysis Exceptions
+## IDE0051: Remove unused private member
+[**[Ff]ake{r,}**.cs]
+dotnet_diagnostic.IDE0051.severity = none
 ## IDE0058: Remove unnecessary expression value
 [*.{cs,vb}]
 csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
@@ -873,9 +888,6 @@ csharp_style_unused_value_expression_statement_preference = unused_local_variabl
 csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
 [**[Tt]est{s,}**.cs]
 csharp_style_unused_value_expression_statement_preference = unused_local_variable:none
-## IDE0051: Remove unused private member
-[**[Ff]ake{r,}**.cs]
-dotnet_diagnostic.IDE0051.severity = none
 
 # Compiler Messages Exceptions
 ## CS1591: Missing XML comment for publicly visible type or member
