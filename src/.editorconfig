@@ -844,13 +844,15 @@ dotnet_diagnostic.CA1724.severity = none
 dotnet_diagnostic.CA1812.severity = none
 [**[Ee]ntit{y,i}{e,}{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
-[**[Pp]rogram.cs]
-dotnet_diagnostic.CA1812.severity = none
 [**[Re]epositor{y,i}{e,}{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
 [**[Ss]ervice{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
 [**[Tt]est{s,}**.cs]
+dotnet_diagnostic.CA1812.severity = none
+[**[Ee]xception[Hh]andler.cs]
+dotnet_diagnostic.CA1812.severity = none
+[**[Pp]rogram.cs]
 dotnet_diagnostic.CA1812.severity = none
 ## CA1819: Properties should not return arrays
 [**[Dd][Tt][Oo]{S,s,}**.cs]
@@ -909,3 +911,10 @@ dotnet_diagnostic.CS1591.severity = warning
 dotnet_naming_rule.method_async_should_be_ends_with_async.severity = none
 [**[Tt]est{s,}**.cs]
 dotnet_naming_rule.method_async_should_be_ends_with_async.severity = none
+
+# EF Migrations
+[**[Mm]igration{s,}**.cs]
+csharp_style_namespace_declarations = file_scoped:none
+dotnet_style_prefer_collection_expression = true:none
+dotnet_diagnostic.CA1814.severity = none
+dotnet_diagnostic.CA1861.severity = none
