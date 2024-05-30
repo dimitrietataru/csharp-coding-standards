@@ -327,32 +327,32 @@ dotnet_naming_rule.variable_should_be_camel_case.style = camel_case
 # Code Style | Naming | Specifications | Interface
 dotnet_naming_symbols.interface.applicable_kinds = interface
 dotnet_naming_symbols.interface.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
-dotnet_naming_symbols.interface.required_modifiers = 
+dotnet_naming_symbols.interface.required_modifiers =
 
 # Code Style | Naming | Specifications | Class
 dotnet_naming_symbols.class.applicable_kinds = class
 dotnet_naming_symbols.class.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
-dotnet_naming_symbols.class.required_modifiers = 
+dotnet_naming_symbols.class.required_modifiers =
 
 # Code Style | Naming | Specifications | Struct
 dotnet_naming_symbols.struct.applicable_kinds = struct
 dotnet_naming_symbols.struct.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
-dotnet_naming_symbols.struct.required_modifiers = 
+dotnet_naming_symbols.struct.required_modifiers =
 
 # Code Style | Naming | Specifications | Enum
 dotnet_naming_symbols.enum.applicable_kinds = enum
 dotnet_naming_symbols.enum.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
-dotnet_naming_symbols.enum.required_modifiers = 
+dotnet_naming_symbols.enum.required_modifiers =
 
 # Code Style | Naming | Specifications | Type (Interface, Class, Struct, Enum)
 dotnet_naming_symbols.type.applicable_kinds = interface, class, struct, enum
 dotnet_naming_symbols.type.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
-dotnet_naming_symbols.type.required_modifiers = 
+dotnet_naming_symbols.type.required_modifiers =
 
 # Code Style | Naming | Specifications | Method
 dotnet_naming_symbols.method.applicable_kinds = method
 dotnet_naming_symbols.method.applicable_accessibilities = *
-dotnet_naming_symbols.method.required_modifiers = 
+dotnet_naming_symbols.method.required_modifiers =
 
 # Code Style | Naming | Specifications | Method | Async
 dotnet_naming_symbols.method_async.applicable_kinds = method
@@ -362,7 +362,7 @@ dotnet_naming_symbols.method_async.required_modifiers = async
 # Code Style | Naming | Specifications | Local Function
 dotnet_naming_symbols.local_function.applicable_kinds = local_function
 dotnet_naming_symbols.local_function.applicable_accessibilities = local
-dotnet_naming_symbols.local_function.required_modifiers = 
+dotnet_naming_symbols.local_function.required_modifiers =
 
 # Code Style | Naming | Specifications | Local Function | Async
 dotnet_naming_symbols.local_function_async.applicable_kinds = local_function
@@ -372,17 +372,17 @@ dotnet_naming_symbols.local_function_async.required_modifiers = async
 # Code Style | Naming | Specifications | Property
 dotnet_naming_symbols.property.applicable_kinds = property
 dotnet_naming_symbols.property.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
-dotnet_naming_symbols.property.required_modifiers = 
+dotnet_naming_symbols.property.required_modifiers =
 
 # Code Style | Naming | Specifications | Event
 dotnet_naming_symbols.event.applicable_kinds = event
 dotnet_naming_symbols.event.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
-dotnet_naming_symbols.event.required_modifiers = 
+dotnet_naming_symbols.event.required_modifiers =
 
 # Code Style | Naming | Specifications | Delegate
 dotnet_naming_symbols.delegate.applicable_kinds = delegate
 dotnet_naming_symbols.delegate.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
-dotnet_naming_symbols.delegate.required_modifiers = 
+dotnet_naming_symbols.delegate.required_modifiers =
 
 # Code Style | Naming | Specifications | Static field | Public/Internal
 dotnet_naming_symbols.visible_static_field.applicable_kinds = field
@@ -392,22 +392,22 @@ dotnet_naming_symbols.visible_static_field.required_modifiers = static
 # Code Style | Naming | Specifications | Field
 dotnet_naming_symbols.field.applicable_kinds = field
 dotnet_naming_symbols.field.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
-dotnet_naming_symbols.field.required_modifiers = 
+dotnet_naming_symbols.field.required_modifiers =
 
 # Code Style | Naming | Specifications | Field | Private
 dotnet_naming_symbols.field_private.applicable_kinds = field
 dotnet_naming_symbols.field_private.applicable_accessibilities = private, private_protected
-dotnet_naming_symbols.field_private.required_modifiers = 
+dotnet_naming_symbols.field_private.required_modifiers =
 
 # Code Style | Naming | Specifications | Parameter
 dotnet_naming_symbols.parameter.applicable_kinds = parameter
 dotnet_naming_symbols.parameter.applicable_accessibilities = *
-dotnet_naming_symbols.parameter.required_modifiers = 
+dotnet_naming_symbols.parameter.required_modifiers =
 
 # Code Style | Naming | Specifications | Variable
 dotnet_naming_symbols.variable.applicable_kinds = local
 dotnet_naming_symbols.variable.applicable_accessibilities = local
-dotnet_naming_symbols.variable.required_modifiers = 
+dotnet_naming_symbols.variable.required_modifiers =
 
 # Code Style | Naming | Specifications | Const
 dotnet_naming_symbols.const.applicable_kinds = *
@@ -427,60 +427,60 @@ dotnet_naming_symbols.const_local.required_modifiers = const
 # Code Style | Naming | Specifications | Generic Parameter
 dotnet_naming_symbols.generic_parameter.applicable_kinds = type_parameter
 dotnet_naming_symbols.generic_parameter.applicable_accessibilities = *
-dotnet_naming_symbols.generic_parameter.required_modifiers = 
+dotnet_naming_symbols.generic_parameter.required_modifiers =
 
 # Code Style | Naming | Styles | Pascal Case
-dotnet_naming_style.pascal_case.required_prefix = 
-dotnet_naming_style.pascal_case.required_suffix = 
-dotnet_naming_style.pascal_case.word_separator = 
+dotnet_naming_style.pascal_case.required_prefix =
+dotnet_naming_style.pascal_case.required_suffix =
+dotnet_naming_style.pascal_case.word_separator =
 dotnet_naming_style.pascal_case.capitalization = pascal_case
 
 # Code Style | Naming | Styles | Camel Case
-dotnet_naming_style.camel_case.required_prefix = 
-dotnet_naming_style.camel_case.required_suffix = 
-dotnet_naming_style.camel_case.word_separator = 
+dotnet_naming_style.camel_case.required_prefix =
+dotnet_naming_style.camel_case.required_suffix =
+dotnet_naming_style.camel_case.word_separator =
 dotnet_naming_style.camel_case.capitalization = camel_case
 
 # Code Style | Naming | Styles | Upper Case
-#dotnet_naming_style.upper_case.required_prefix = 
-#dotnet_naming_style.upper_case.required_suffix = 
-#dotnet_naming_style.upper_case.word_separator = 
+#dotnet_naming_style.upper_case.required_prefix =
+#dotnet_naming_style.upper_case.required_suffix =
+#dotnet_naming_style.upper_case.word_separator =
 #dotnet_naming_style.upper_case.capitalization = all_upper
 
 # Code Style | Naming | Styles | Snake Case
-#dotnet_naming_style.snake_case.required_prefix = 
-#dotnet_naming_style.snake_case.required_suffix = 
+#dotnet_naming_style.snake_case.required_prefix =
+#dotnet_naming_style.snake_case.required_suffix =
 #dotnet_naming_style.snake_case.word_separator = _
 #dotnet_naming_style.snake_case.capitalization = all_lower
 
 # Code Style | Naming | Styles | Upper Snake Case
-dotnet_naming_style.upper_snake_case.required_prefix = 
-dotnet_naming_style.upper_snake_case.required_suffix = 
+dotnet_naming_style.upper_snake_case.required_prefix =
+dotnet_naming_style.upper_snake_case.required_suffix =
 dotnet_naming_style.upper_snake_case.word_separator = _
 dotnet_naming_style.upper_snake_case.capitalization = all_upper
 
 # Code Style | Naming | Styles | Begins with I
 dotnet_naming_style.begins_with_i.required_prefix = I
-dotnet_naming_style.begins_with_i.required_suffix = 
-dotnet_naming_style.begins_with_i.word_separator = 
+dotnet_naming_style.begins_with_i.required_suffix =
+dotnet_naming_style.begins_with_i.word_separator =
 dotnet_naming_style.begins_with_i.capitalization = pascal_case
 
 # Code Style | Naming | Styles | Begins with T
 dotnet_naming_style.begins_with_t.required_prefix = T
-dotnet_naming_style.begins_with_t.required_suffix = 
-dotnet_naming_style.begins_with_t.word_separator = 
+dotnet_naming_style.begins_with_t.required_suffix =
+dotnet_naming_style.begins_with_t.word_separator =
 dotnet_naming_style.begins_with_t.capitalization = pascal_case
 
 # Code Style | Naming | Styles | Begins with Underscore
 dotnet_naming_style.begins_with_underscore.required_prefix = _
-dotnet_naming_style.begins_with_underscore.required_suffix = 
-dotnet_naming_style.begins_with_underscore.word_separator = 
+dotnet_naming_style.begins_with_underscore.required_suffix =
+dotnet_naming_style.begins_with_underscore.word_separator =
 dotnet_naming_style.begins_with_underscore.capitalization = camel_case
 
 # Code Style | Naming | Styles | Ends with Async
-dotnet_naming_style.ends_with_async.required_prefix = 
+dotnet_naming_style.ends_with_async.required_prefix =
 dotnet_naming_style.ends_with_async.required_suffix = Async
-dotnet_naming_style.ends_with_async.word_separator = 
+dotnet_naming_style.ends_with_async.word_separator =
 dotnet_naming_style.ends_with_async.capitalization = pascal_case
 
 # Microsoft.CodeAnalysis.NetAnalyzers | Design
@@ -721,12 +721,12 @@ dotnet_diagnostic.CA5358.severity = warning
 dotnet_diagnostic.CA5359.severity = warning
 dotnet_diagnostic.CA5360.severity = warning
 dotnet_diagnostic.CA5361.severity = warning
-dotnet_diagnostic.CA5362.severity = suggestion 
+dotnet_diagnostic.CA5362.severity = suggestion
 dotnet_diagnostic.CA5363.severity = warning
 dotnet_diagnostic.CA5364.severity = warning
 dotnet_diagnostic.CA5365.severity = warning
 dotnet_diagnostic.CA5366.severity = warning
-dotnet_diagnostic.CA5367.severity = error 
+dotnet_diagnostic.CA5367.severity = error
 dotnet_diagnostic.CA5368.severity = warning
 dotnet_diagnostic.CA5369.severity = warning
 dotnet_diagnostic.CA5370.severity = warning
@@ -767,7 +767,7 @@ dotnet_diagnostic.CA5404.severity = warning
 dotnet_diagnostic.CA5405.severity = warning
 
 # Microsoft.CodeAnalysis.NetAnalyzers | Usage
-dotnet_diagnostic.CA1816.severity = suggestion 
+dotnet_diagnostic.CA1816.severity = suggestion
 dotnet_diagnostic.CA2200.severity = warning
 dotnet_diagnostic.CA2201.severity = warning
 dotnet_diagnostic.CA2207.severity = warning
@@ -777,7 +777,7 @@ dotnet_diagnostic.CA2213.severity = warning
 dotnet_diagnostic.CA2214.severity = warning
 dotnet_diagnostic.CA2215.severity = warning
 dotnet_diagnostic.CA2216.severity = warning
-dotnet_diagnostic.CA2217.severity = error 
+dotnet_diagnostic.CA2217.severity = error
 dotnet_diagnostic.CA2218.severity = warning
 dotnet_diagnostic.CA2219.severity = error
 dotnet_diagnostic.CA2224.severity = none
@@ -791,7 +791,7 @@ dotnet_diagnostic.CA2235.severity = warning
 dotnet_diagnostic.CA2237.severity = warning
 dotnet_diagnostic.CA2241.severity = error
 dotnet_diagnostic.CA2242.severity = error
-dotnet_diagnostic.CA2243.severity = error 
+dotnet_diagnostic.CA2243.severity = error
 dotnet_diagnostic.CA2244.severity = error
 dotnet_diagnostic.CA2245.severity = error
 dotnet_diagnostic.CA2246.severity = error
