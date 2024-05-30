@@ -840,19 +840,23 @@ dotnet_diagnostic.CA1056.severity = none
 [**[Dd]ependency[Ii]njection**.cs]
 dotnet_diagnostic.CA1724.severity = none
 ## CA1812: Avoid uninstantiated internal classes
+[*.{cs,vb}]
+dotnet_code_quality.CA1812.ignore_internalsvisibleto = true
 [**[Dd]b[Cc]ontext{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
 [**[Ee]ntit{y,i}{e,}{s,}**.cs]
+dotnet_diagnostic.CA1812.severity = none
+[**[Ee]xception[Hh]andler.cs]
+dotnet_diagnostic.CA1812.severity = none
+[**[Pp]rogram.cs]
+dotnet_diagnostic.CA1812.severity = none
+[**[Pp]rovider{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
 [**[Re]epositor{y,i}{e,}{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
 [**[Ss]ervice{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
 [**[Tt]est{s,}**.cs]
-dotnet_diagnostic.CA1812.severity = none
-[**[Ee]xception[Hh]andler.cs]
-dotnet_diagnostic.CA1812.severity = none
-[**[Pp]rogram.cs]
 dotnet_diagnostic.CA1812.severity = none
 ## CA1819: Properties should not return arrays
 [**[Dd][Tt][Oo]{S,s,}**.cs]
@@ -861,6 +865,9 @@ dotnet_diagnostic.CA1819.severity = none
 dotnet_diagnostic.CA1819.severity = none
 [**[Mm]odel{s,}**.cs]
 dotnet_diagnostic.CA1819.severity = none
+## CA2214: Do not call overridable methods in constructors
+[**[Pp]rofile.cs]
+dotnet_diagnostic.CA2214.severity = none
 ## CA2227: Collection properties should be read only
 [**[Dd][Tt][Oo]{S,s,}**.cs]
 dotnet_diagnostic.CA2227.severity = none
