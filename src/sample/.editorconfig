@@ -858,6 +858,8 @@ dotnet_diagnostic.CA1812.severity = none
 dotnet_diagnostic.CA1812.severity = none
 [**[Tt]est{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
+[**[Vv]alidator{s,}**.cs]
+dotnet_diagnostic.CA1812.severity = none
 ## CA1819: Properties should not return arrays
 [**[Dd][Tt][Oo]{S,s,}**.cs]
 dotnet_diagnostic.CA1819.severity = none
