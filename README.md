@@ -1329,6 +1329,7 @@ dotnet_diagnostic.CA5405.severity = warning
 ### Microsoft.CodeAnalysis.NetAnalyzers | Usage
 | Code                                                                                               | Description ___________________________________________________________________________                                                  | !! Severity !! |
 | :------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------- | :------------: |
+| [CA1801](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1801) | Review unused parameters                                                                                                                 | ⚠ Warning     |
 | [CA1816](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1816)  | Call GC.SuppressFinalize correctly                                                                                                       | 🛈 Suggestion   |
 | [CA2200](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2200)  | Rethrow to preserve stack details                                                                                                        | ⚠ Warning     |
 | [CA2201](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2201)  | Do not raise reserved exception types                                                                                                    | ⚠ Warning     |
@@ -1372,11 +1373,16 @@ dotnet_diagnostic.CA5405.severity = warning
 | [CA2259](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2259) | Ensure *ThreadStatic* is only used with static fields                                                                                    | ⚠ Warning     |
 | [CA2260](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2260) | Implement generic math interfaces correctly                                                                                              | ⚠ Warning     |
 | [CA2261](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2261) | Do not use _ConfigureAwaitOptions.SuppressThrowing_ with _Task<TResult>_                                                                 | ⚠ Warning     |
+| [CA2262](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2262) | Set _MaxResponseHeadersLength_ properly                                                                                                  | ⚠ Warning     |
+| [CA2263](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2263) | Prefer generic overload when type is known                                                                                               | ⚠ Warning     |
+| [CA2264](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2264) | Do not pass a non-nullable value to _ArgumentNullException.ThrowIfNull_                                                                  | ⚠ Warning     |
+| [CA2265](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2265) | Do not compare _Span<T>_ to _null_ or _default_                                                                                          | ⚠ Warning     |
 
 <details>
   <summary> .editorconfig </summary>
 
 ``` EditorConfig
+dotnet_diagnostic.CA1801.severity = warning
 dotnet_diagnostic.CA1816.severity = suggestion
 dotnet_diagnostic.CA2200.severity = warning
 dotnet_diagnostic.CA2201.severity = warning
@@ -1420,6 +1426,10 @@ dotnet_diagnostic.CA2258.severity = warning
 dotnet_diagnostic.CA2259.severity = warning
 dotnet_diagnostic.CA2260.severity = warning
 dotnet_diagnostic.CA2261.severity = warning
+dotnet_diagnostic.CA2262.severity = warning
+dotnet_diagnostic.CA2263.severity = warning
+dotnet_diagnostic.CA2264.severity = warning
+dotnet_diagnostic.CA2265.severity = warning
 ```
 
 </details>

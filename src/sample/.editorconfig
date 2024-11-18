@@ -772,6 +772,7 @@ dotnet_diagnostic.CA5404.severity = warning
 dotnet_diagnostic.CA5405.severity = warning
 
 # Microsoft.CodeAnalysis.NetAnalyzers | Usage
+dotnet_diagnostic.CA1801.severity = warning
 dotnet_diagnostic.CA1816.severity = suggestion
 dotnet_diagnostic.CA2200.severity = warning
 dotnet_diagnostic.CA2201.severity = warning
@@ -815,6 +816,10 @@ dotnet_diagnostic.CA2258.severity = warning
 dotnet_diagnostic.CA2259.severity = warning
 dotnet_diagnostic.CA2260.severity = warning
 dotnet_diagnostic.CA2261.severity = warning
+dotnet_diagnostic.CA2262.severity = warning
+dotnet_diagnostic.CA2263.severity = warning
+dotnet_diagnostic.CA2264.severity = warning
+dotnet_diagnostic.CA2265.severity = warning
 
 # Microsoft.CodeAnalysis Exceptions
 ## CA1002: Do not expose generic lists
