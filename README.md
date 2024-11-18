@@ -1097,6 +1097,7 @@ dotnet_diagnostic.CA1872.severity = warning
 | [CA2019](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2019) | *ThreadStatic* fields should not use inline initialization                                                                               | 🛈 Suggestion   |
 | [CA2020](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2020) | Prevent behavioral change caused by built-in operators of *IntPtr/UIntPtr*                                                               | 🛈 Suggestion   |
 | [CA2021](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2021) | Don't call _Enumerable.Cast<T>_ or _Enumerable.OfType<T>_ with incompatible types                                                        | ⚠ Warning     |
+| [CA2022](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2022) | Avoid inexact read with *Stream.Read*                                                                                                    | ⚠ Warning     |
 
 <details>
   <summary> .editorconfig </summary>
@@ -1118,6 +1119,7 @@ dotnet_diagnostic.CA2018.severity = warning
 dotnet_diagnostic.CA2019.severity = suggestion
 dotnet_diagnostic.CA2020.severity = suggestion
 dotnet_diagnostic.CA2021.severity = warning
+dotnet_diagnostic.CA2022.severity = warning
 ```
 
 </details>
