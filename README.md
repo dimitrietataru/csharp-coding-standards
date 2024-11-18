@@ -23,6 +23,7 @@ Compatible with Visual Studio 2022, and 2019*.
       * [using preferences](#code-style--general--using-preferences)
       * [Modifier preferences](#code-style--general--modifier-preferences)
       * [Parameter preferences](#code-style--general--parameter-preferences)
+      * [Style](#code-style--general--style)
       * [New line preferences](#code-style--general--new-line-preferences)
     * Formatting
       * [General](#code-style--formatting--general)
