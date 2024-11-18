@@ -652,6 +652,8 @@ dotnet_diagnostic.CA1867.severity = suggestion
 dotnet_diagnostic.CA1868.severity = warning
 dotnet_diagnostic.CA1869.severity = warning
 dotnet_diagnostic.CA1870.severity = warning
+dotnet_diagnostic.CA1871.severity = warning
+dotnet_diagnostic.CA1872.severity = warning
 
 # Microsoft.CodeAnalysis.NetAnalyzers | Reliability
 dotnet_diagnostic.CA2000.severity = suggestion

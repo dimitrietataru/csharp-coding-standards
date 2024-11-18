@@ -1005,6 +1005,8 @@ dotnet_diagnostic.CA1727.severity = warning
 | [CA1868](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1868) | Unnecessary call to _Contains_ for sets                                                                                                  | ⚠ Warning     |
 | [CA1869](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1869) | Cache and reuse _JsonSerializerOptions_ instances                                                                                        | ⚠ Warning     |
 | [CA1870](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1870) | Use a cached _SearchValues_ instance                                                                                                     | ⚠ Warning     |
+| [CA1871](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1871) | Do not pass a nullable struct to _ArgumentNullException.ThrowIfNull_                                                                      | ⚠ Warning     |
+| [CA1872](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1872) | Prefer *Convert.ToHexString* and *Convert.ToHexStringLower* over call chains based on _BitConverter.ToString_                             | ⚠ Warning     |
 
 <details>
   <summary> .editorconfig </summary>
@@ -1070,6 +1072,8 @@ dotnet_diagnostic.CA1867.severity = suggestion
 dotnet_diagnostic.CA1868.severity = warning
 dotnet_diagnostic.CA1869.severity = warning
 dotnet_diagnostic.CA1870.severity = warning
+dotnet_diagnostic.CA1871.severity = warning
+dotnet_diagnostic.CA1872.severity = warning
 ```
 
 </details>
