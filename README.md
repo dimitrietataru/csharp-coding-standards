@@ -874,6 +874,8 @@ dotnet_diagnostic.CA1422.severity = warning
 | [CA1511](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1511) | Use _ArgumentException_ throw helper                                                                                                     | ⚠ Warning     |
 | [CA1512](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1512) | Use _ArgumentOutOfRangeException_ throw helper                                                                                           | ⚠ Warning     |
 | [CA1513](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1513) | Use _ObjectDisposedException_ throw helper                                                                                               | ⚠ Warning     |
+| [CA1514](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1514) | Avoid redundant length argument                                                                                                          | ⚠ Warning     |
+| [CA1515](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1515) | Consider making public types internal                                                                                                    | ⚠ Warning     |
 
 <details>
   <summary> .editorconfig </summary>
@@ -890,6 +892,8 @@ dotnet_diagnostic.CA1510.severity = warning
 dotnet_diagnostic.CA1511.severity = warning
 dotnet_diagnostic.CA1512.severity = warning
 dotnet_diagnostic.CA1513.severity = warning
+dotnet_diagnostic.CA1514.severity = warning
+dotnet_diagnostic.CA1515.severity = warning
 ```
 
 </details>
