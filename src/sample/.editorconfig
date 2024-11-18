@@ -125,6 +125,15 @@ csharp_style_prefer_readonly_struct_member = true:suggestion
 # Code Style | General | Parameter preferences
 dotnet_code_quality_unused_parameters = non_public:warning
 
+# Code Style | General | Style
+dotnet_diagnostic.IDE0301.severity = warning
+dotnet_diagnostic.IDE0302.severity = suggestion
+dotnet_diagnostic.IDE0303.severity = warning
+dotnet_diagnostic.IDE0304.severity = warning
+dotnet_diagnostic.IDE0305.severity = warning
+dotnet_diagnostic.IDE0320.severity = suggestion
+dotnet_diagnostic.IDE0330.severity = error
+
 # Code Style | General | New line preferences
 dotnet_style_allow_multiple_blank_lines_experimental = false:warning
 csharp_style_allow_embedded_statements_on_same_line_experimental = false:warning

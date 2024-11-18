@@ -186,7 +186,7 @@ dotnet_style_parentheses_in_other_operators = never_if_unnecessary:warning
 | Prefer object initializer                                   | IDE0017 | Yes                     | 🛈 Suggestion  |
 | Prefer collection initializer                               | IDE0028 | Yes                     | 🛈 Suggestion  |
 | Prefer explicit tuple name                                  | IDE0033 | Yes                     | 🛈 Suggestion  |
-| Prefer simple 'default' expression                          | IDE0034 | Yes                     | ⚠ Warning    |
+| Prefer simple _default_ expression                          | IDE0034 | Yes                     | ⚠ Warning    |
 | Prefer inferred tuple element names                         | IDE0037 | No                      | 🛈 Suggestion  |
 | Prefer inferred anonymous type member names                 | IDE0037 | Yes                     | 🞅 Refactoring |
 | Prefer local function over anonymous function               | IDE0039 | Yes                     | ⚠ Warning    |
@@ -385,6 +385,32 @@ dotnet_code_quality_unused_parameters = non_public:warning
 
 </details>
 
+
+### Code Style | General | Style
+| Description _______________________________________________ | Code    | Preference ____________ | !! Severity !! |
+| :---------------------------------------------------------- | :-----: | :---------------------- | :-----------: |
+| Use collection expression for empty                         | IDE0301 | Yes                     | ⚠ Warning    |
+| Use collection expression for stackalloc                    | IDE0302 | Yes                     | 🛈 Suggestion  |
+| Use collection expression for _Create()_                    | IDE0303 | Yes                     | ⚠ Warning    |
+| Use collection expression for _builder_                     | IDE0304 | Yes                     | ⚠ Warning    |
+| Use collection expression for _fluent_                      | IDE0305 | Yes                     | ⚠ Warning    |
+| Make anonymous function static                              | IDE0320 | Yes                     | 🛈 Suggestion  |
+| Prefer _System.Threading.Lock_                              | IDE0330 | Yes                     | ⛔ Error  |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+dotnet_diagnostic.IDE0301.severity = warning
+dotnet_diagnostic.IDE0302.severity = suggestion
+dotnet_diagnostic.IDE0303.severity = warning
+dotnet_diagnostic.IDE0304.severity = warning
+dotnet_diagnostic.IDE0305.severity = warning
+dotnet_diagnostic.IDE0320.severity = suggestion
+dotnet_diagnostic.IDE0330.severity = error
+```
+
+</details>
 
 ### Code Style | General | New line preferences
 | Description _______________________________________________ | Code    | Preference ____________ | !! Severity !! |
