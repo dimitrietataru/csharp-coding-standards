@@ -2,7 +2,7 @@ using FluentAssertions;
 
 namespace CSharp.CodingStandards.Sample.App.RuleExceptions.E102.FluentAssertion;
 
-public static class FluentAssertionTests
+internal static class FluentAssertionTests
 {
     private const string GivenValue = "123";
     private const int ExpectedLength = 3;

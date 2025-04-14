@@ -1,7 +1,7 @@
-﻿namespace CSharp.CodingStandards.Sample.App.RuleExceptions.E501.SampleTests;
+namespace CSharp.CodingStandards.Sample.App.RuleExceptions.E501.SampleTests;
 
 ////#pragma warning disable IDE1006 // Naming Styles - Async Method should end in Async
-public static class RandomName
+internal static class RandomName
 {
     ////[Fact]
 

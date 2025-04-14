@@ -1,7 +1,7 @@
 namespace CSharp.CodingStandards.Sample.App.RuleExceptions.E301.Reflection;
 
 ////#pragma warning disable IDE0051 // Remove unused private members
-public static class FakeDto
+internal static class FakeDto
 {
     public static T Get<T>()
         where T : class

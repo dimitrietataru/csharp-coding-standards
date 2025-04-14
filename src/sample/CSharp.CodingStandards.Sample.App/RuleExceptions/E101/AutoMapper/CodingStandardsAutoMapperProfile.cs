@@ -2,7 +2,7 @@ using AutoMapper;
 
 namespace CSharp.CodingStandards.Sample.App.RuleExceptions.E101.AutoMapper;
 
-public sealed class CodingStandardsAutoMapperProfile : Profile
+internal sealed class CodingStandardsAutoMapperProfile : Profile
 {
     public CodingStandardsAutoMapperProfile()
     {

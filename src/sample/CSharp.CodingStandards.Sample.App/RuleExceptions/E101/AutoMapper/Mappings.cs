@@ -1,8 +1,8 @@
-﻿using AutoMapper;
+using AutoMapper;
 
 namespace CSharp.CodingStandards.Sample.App.RuleExceptions.E101.AutoMapper;
 
-public sealed class Mappings : Profile
+internal sealed class Mappings : Profile
 {
     public Mappings()
     {

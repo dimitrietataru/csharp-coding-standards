@@ -1,6 +1,6 @@
 namespace CSharp.CodingStandards.Sample.App.RuleExceptions.E101.AutoMapper;
 
-public sealed class SourceDto
+internal sealed class SourceDto
 {
     public int SourceProperty { get; set; }
 }
