@@ -581,6 +581,7 @@ dotnet_diagnostic.CA1512.severity = warning
 dotnet_diagnostic.CA1513.severity = warning
 dotnet_diagnostic.CA1514.severity = warning
 dotnet_diagnostic.CA1515.severity = warning
+dotnet_diagnostic.CA1516.severity = suggestion
 
 # Microsoft.CodeAnalysis.NetAnalyzers | Naming
 dotnet_diagnostic.CA1700.severity = suggestion
@@ -663,6 +664,17 @@ dotnet_diagnostic.CA1869.severity = warning
 dotnet_diagnostic.CA1870.severity = warning
 dotnet_diagnostic.CA1871.severity = warning
 dotnet_diagnostic.CA1872.severity = warning
+dotnet_diagnostic.CA1873.severity = warning
+dotnet_diagnostic.CA1874.severity = warning
+dotnet_diagnostic.CA1875.severity = warning
+dotnet_diagnostic.CA1877.severity = warning
+
+# Microsoft.CodeAnalysis.NetAnalyzers | SingleFile
+dotnet_diagnostic.IL3000.severity = suggestion
+dotnet_diagnostic.IL3001.severity = suggestion
+dotnet_diagnostic.IL3002.severity = suggestion
+dotnet_diagnostic.IL3003.severity = suggestion
+dotnet_diagnostic.IL3005.severity = suggestion
 
 # Microsoft.CodeAnalysis.NetAnalyzers | Reliability
 dotnet_diagnostic.CA2000.severity = suggestion
@@ -682,6 +694,10 @@ dotnet_diagnostic.CA2019.severity = suggestion
 dotnet_diagnostic.CA2020.severity = suggestion
 dotnet_diagnostic.CA2021.severity = warning
 dotnet_diagnostic.CA2022.severity = warning
+dotnet_diagnostic.CA2023.severity = warning
+dotnet_diagnostic.CA2024.severity = warning
+dotnet_diagnostic.CA2025.severity = warning
+dotnet_diagnostic.CA2026.severity = warning
 
 # Microsoft.CodeAnalysis.NetAnalyzers | Security
 dotnet_diagnostic.CA2100.severity = warning

@@ -50,6 +50,7 @@ Compatible with Visual Studio 2022, and 2019*.
   * [Maintainability](#microsoftcodeanalysisnetanalyzers--maintainability)
   * [Naming](#microsoftcodeanalysisnetanalyzers--naming)
   * [Performance](#microsoftcodeanalysisnetanalyzers--performance)
+  * [SingleFile](#microsoftcodeanalysisnetanalyzers--singlefile)
   * [Reliability](#microsoftcodeanalysisnetanalyzers--reliability)
   * [Security](#microsoftcodeanalysisnetanalyzers--security)
   * [Usage](#microsoftcodeanalysisnetanalyzers--usage)
@@ -903,6 +904,7 @@ dotnet_diagnostic.CA1422.severity = warning
 | [CA1513](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1513)  | Use _ObjectDisposedException_ throw helper                                                                                               | ⚠ Warning     |
 | [CA1514](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1514) | Avoid redundant length argument                                                                                                          | ⚠ Warning     |
 | [CA1515](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1515) | Consider making public types internal                                                                                                    | ⚠ Warning     |
+| [CA1516](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1516) | Use cross-platform intrinsics                                                                                                            | 🛈 Suggestion   |
 
 <details>
   <summary> .editorconfig </summary>
@@ -921,6 +923,7 @@ dotnet_diagnostic.CA1512.severity = warning
 dotnet_diagnostic.CA1513.severity = warning
 dotnet_diagnostic.CA1514.severity = warning
 dotnet_diagnostic.CA1515.severity = warning
+dotnet_diagnostic.CA1516.severity = suggestion
 ```
 
 </details>
@@ -1032,8 +1035,12 @@ dotnet_diagnostic.CA1727.severity = warning
 | [CA1868](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1868) | Unnecessary call to _Contains_ for sets                                                                                                  | ⚠ Warning     |
 | [CA1869](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1869) | Cache and reuse _JsonSerializerOptions_ instances                                                                                        | ⚠ Warning     |
 | [CA1870](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1870) | Use a cached _SearchValues_ instance                                                                                                     | ⚠ Warning     |
-| [CA1871](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1871) | Do not pass a nullable struct to _ArgumentNullException.ThrowIfNull_                                                                      | ⚠ Warning     |
-| [CA1872](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1872) | Prefer *Convert.ToHexString* and *Convert.ToHexStringLower* over call chains based on _BitConverter.ToString_                             | ⚠ Warning     |
+| [CA1871](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1871) | Do not pass a nullable struct to _ArgumentNullException.ThrowIfNull_                                                                     | ⚠ Warning     |
+| [CA1872](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1872) | Prefer *Convert.ToHexString* and *Convert.ToHexStringLower* over call chains based on _BitConverter.ToString_                            | ⚠ Warning     |
+| [CA1873](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1873) | Avoid potentially expensive logging                                                                                                      | ⚠ Warning     |
+| [CA1874](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1874) | Use *Regex.IsMatch*                                                                                                                      | ⚠ Warning     |
+| [CA1875](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1875) | Use *Regex.Count*                                                                                                                        | ⚠ Warning     |
+| [CA1877](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1877) | Use *Path.Combine* or *Path.Join* overloads                                                                                              | ⚠ Warning     |
 
 <details>
   <summary> .editorconfig </summary>
@@ -1101,6 +1108,32 @@ dotnet_diagnostic.CA1869.severity = warning
 dotnet_diagnostic.CA1870.severity = warning
 dotnet_diagnostic.CA1871.severity = warning
 dotnet_diagnostic.CA1872.severity = warning
+dotnet_diagnostic.CA1873.severity = warning
+dotnet_diagnostic.CA1874.severity = warning
+dotnet_diagnostic.CA1875.severity = warning
+dotnet_diagnostic.CA1877.severity = warning
+```
+
+</details>
+
+### Microsoft.CodeAnalysis.NetAnalyzers | SingleFile
+| Code                                                                                           | Description ___________________________________________________________________________                                                  | !! Severity !! |
+| :--------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------- | :------------: |
+| [IL3000](https://learn.microsoft.com/en-us/dotnet/core/deploying/single-file/warnings/il3000)  | Avoid accessing Assembly file path when publishing as a single file                                                                      | 🛈 Suggestion   |
+| [IL3001](https://learn.microsoft.com/en-us/dotnet/core/deploying/single-file/warnings/il3001)  | Avoid accessing Assembly file path when publishing as a single file                                                                      | 🛈 Suggestion   |
+| [IL3002](https://learn.microsoft.com/en-us/dotnet/core/deploying/single-file/warnings/il3002)  | Avoid calling members annotated with *RequiresAssemblyFilesAttribute* [..]                                                               | 🛈 Suggestion   |
+| [IL3003](https://learn.microsoft.com/en-us/dotnet/core/deploying/single-file/warnings/il3003)  | *RequiresAssemblyFilesAttribute* annotations must match [..]                                                                             | 🛈 Suggestion   |
+| [IL3005](https://learn.microsoft.com/en-us/dotnet/core/deploying/single-file/warnings/il3005)  | *RequiresAssemblyFilesAttribute* cannot be placed directly on application entry point                                                    | 🛈 Suggestion   |
+
+<details>
+  <summary> .editorconfig </summary>
+
+``` EditorConfig
+dotnet_diagnostic.IL3000.severity = suggestion
+dotnet_diagnostic.IL3001.severity = suggestion
+dotnet_diagnostic.IL3002.severity = suggestion
+dotnet_diagnostic.IL3003.severity = suggestion
+dotnet_diagnostic.IL3005.severity = suggestion
 ```
 
 </details>
@@ -1125,6 +1158,10 @@ dotnet_diagnostic.CA1872.severity = warning
 | [CA2020](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2020) | Prevent behavioral change caused by built-in operators of *IntPtr/UIntPtr*                                                               | 🛈 Suggestion   |
 | [CA2021](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2021) | Don't call _Enumerable.Cast<T>_ or _Enumerable.OfType<T>_ with incompatible types                                                        | ⚠ Warning     |
 | [CA2022](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2022) | Avoid inexact read with *Stream.Read*                                                                                                    | ⚠ Warning     |
+| [CA2023](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2023) | Invalid braces in message template                                                                                                       | ⚠ Warning     |
+| [CA2024](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2024) | Do not use *StreamReader.EndOfStream* in async methods                                                                                   | ⚠ Warning     |
+| [CA2025](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2025) | Do not pass *IDisposable* instances into unawaited tasks                                                                                 | ⚠ Warning     |
+| [CA2026](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2026) | Prefer *JsonElement.Parse* over *JsonDocument.Parse().RootElement*                                                                       | ⚠ Warning     |
 
 <details>
   <summary> .editorconfig </summary>
@@ -1147,6 +1184,10 @@ dotnet_diagnostic.CA2019.severity = suggestion
 dotnet_diagnostic.CA2020.severity = suggestion
 dotnet_diagnostic.CA2021.severity = warning
 dotnet_diagnostic.CA2022.severity = warning
+dotnet_diagnostic.CA2023.severity = warning
+dotnet_diagnostic.CA2024.severity = warning
+dotnet_diagnostic.CA2025.severity = warning
+dotnet_diagnostic.CA2026.severity = warning
 ```
 
 </details>
