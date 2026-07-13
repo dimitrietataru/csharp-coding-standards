@@ -877,6 +877,10 @@ dotnet_diagnostic.CA1724.severity = none
 ## CA1812: Avoid uninstantiated internal classes
 [*.{cs,vb}]
 dotnet_code_quality.CA1812.ignore_internalsvisibleto = true
+[**[Cc]onsumer{s,}**.cs]
+dotnet_diagnostic.CA1812.severity = none
+[**[Cc]onsumer[Dd]efinition{s,}**.cs]
+dotnet_diagnostic.CA1812.severity = none
 [**[Dd]b[Cc]ontext{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
 [**[Ee]ntit{y,i}{e,}{s,}**.cs]
@@ -902,9 +906,15 @@ dotnet_diagnostic.CA1819.severity = none
 dotnet_diagnostic.CA1819.severity = none
 [**[Mm]odel{s,}**.cs]
 dotnet_diagnostic.CA1819.severity = none
+## CA1848: Use the LoggerMessage delegates
+[**[Cc]onsumer{s,}**.cs]
+dotnet_diagnostic.CA1848.severity = none
 ## CA1859: Use concrete types when possible for improved performance
 [**[Tt]est{s,}**.cs]
 dotnet_diagnostic.CA1859.severity = none
+## CA1873: Avoid potentially expensive logging
+[**[Cc]onsumer{s,}**.cs]
+dotnet_diagnostic.CA1873.severity = none
 ## CA2213: Disposable fields should be disposed
 [**[Ii]ntegration[Tt]est{s,}**.cs]
 dotnet_diagnostic.CA2213.severity = none
