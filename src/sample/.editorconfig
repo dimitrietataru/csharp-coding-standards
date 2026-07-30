@@ -868,6 +868,15 @@ dotnet_diagnostic.CA1056.severity = none
 dotnet_diagnostic.CA1056.severity = none
 [**[Mm]odel{s,}**.cs]
 dotnet_diagnostic.CA1056.severity = none
+## CA1515: Consider making public types internal
+[**[Cc]ontroller{s,}**.cs]
+dotnet_diagnostic.CA1515.severity = none
+[**[Mm]arker**.cs]
+dotnet_diagnostic.CA1515.severity = none
+[**[Pp]rogram.cs]
+dotnet_diagnostic.CA1515.severity = none
+[**[Tt]est{s,}**.cs]
+dotnet_diagnostic.CA1515.severity = none
 ## CA1707: Identifiers should not contain underscores
 ####[**[Tt]est{s,}**.cs]
 ####dotnet_diagnostic.CA1707.severity = none
@@ -881,9 +890,13 @@ dotnet_code_quality.CA1812.ignore_internalsvisibleto = true
 dotnet_diagnostic.CA1812.severity = none
 [**[Cc]onsumer[Dd]efinition{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
+[**[Cc]sv[Mm]ap{s,}**.cs]
+dotnet_diagnostic.CA1812.severity = none
 [**[Dd]b[Cc]ontext{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
 [**[Ee]ntit{y,i}{e,}{s,}**.cs]
+dotnet_diagnostic.CA1812.severity = none
+[**[Ee]xcel[Mm]ap{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
 [**[Ee]xception[Hh]andler.cs]
 dotnet_diagnostic.CA1812.severity = none
