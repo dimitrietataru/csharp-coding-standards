@@ -941,6 +941,8 @@ dotnet_diagnostic.CA2227.severity = none
 dotnet_diagnostic.CA2227.severity = none
 [**[Mm]odel{s,}**.cs]
 dotnet_diagnostic.CA2227.severity = none
+[**[Qq]uery[Ff]ilter{s,}**.cs]
+dotnet_diagnostic.CA2227.severity = none
 
 # IDE.CodeAnalysis Exceptions
 ## IDE0051: Remove unused private member
@@ -987,7 +989,4 @@ dotnet_naming_rule.method_async_should_be_ends_with_async.severity = none
 
 # EF Migrations
 [**[Mm]igration{s,}**.cs]
-csharp_style_namespace_declarations = file_scoped:none
-dotnet_style_prefer_collection_expression = true:none
-dotnet_diagnostic.CA1814.severity = none
-dotnet_diagnostic.CA1861.severity = none
+generated_code = true
