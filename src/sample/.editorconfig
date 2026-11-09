@@ -890,11 +890,15 @@ dotnet_code_quality.CA1812.ignore_internalsvisibleto = true
 dotnet_diagnostic.CA1812.severity = none
 [**[Cc]onsumer[Dd]efinition{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
+[**[Cc]sv[Cc]onverter{s,}**.cs]
+dotnet_diagnostic.CA1812.severity = none
 [**[Cc]sv[Mm]ap{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
 [**[Dd]b[Cc]ontext{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
 [**[Ee]ntit{y,i}{e,}{s,}**.cs]
+dotnet_diagnostic.CA1812.severity = none
+[**[Ee]xcel[Cc]onverter{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
 [**[Ee]xcel[Mm]ap{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
@@ -904,7 +908,7 @@ dotnet_diagnostic.CA1812.severity = none
 dotnet_diagnostic.CA1812.severity = none
 [**[Pp]rovider{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
-[**[Re]epositor{y,i}{e,}{s,}**.cs]
+[**[Rr]epositor{y,i}{e,}{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
 [**[Ss]ervice{s,}**.cs]
 dotnet_diagnostic.CA1812.severity = none
